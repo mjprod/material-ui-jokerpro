@@ -1,6 +1,9 @@
 {
   "name": "material-ui-jokerpro",
   "packageManager": "yarn@3.6.4",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
