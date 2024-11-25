@@ -20,8 +20,10 @@ export default {
     commonjs(),
     typescript(),
     postcss({
-      extensions: [".css", ".scss"],
-      extract: true,
+      extensions: [".css"],
+      extract: "joker_tokens.css", // Extrai o CSS para um arquivo separado
+      minimize: true,
+      sourceMap: false,
     }),
   ],
   external: ["react", "react-dom"],

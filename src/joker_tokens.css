@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Teko:wght@400;500;600&display=swap");
+
+/* Variables */
+#root {
+  background-color: var(--color-jokerBlack900);
+}
+:root {
+  /*############### 🎨 COLORS 🎨 ############### */
+
+  /*-- JokerWhITE  🏎️ START --*/
+  --color-jokerWhite: 100%;
+
+  /*💠 BASECOLOR */
+  --color-jokerWhite50: hsl(
+    0 0% var(--color-jokerWhite) / 1
+  ); /* bgWhite50 / #ffffff */
+  --color-jokerWhite50-O0: hsl(
+    0 0% var(--color-jokerWhite) / 0
+  ); /* bgWhite50 / #ffffff */
+
+  /*-- JokerWHITE  🏁 END  --*/
+
+  /*--JokerBLACK 🏎️ START - --*/
+  --color-jokerBlack: 0;
+
+  --color-jokerBlack50: hsl(
+    var(--color-jokerBlack) 0% 65% /1
+  ); /* jokerBlack50 / #FFF4E0 */
+  --color-jokerBlack100: hsl(
+    var(--color-jokerBlack) 0% 37% /1
+  ); /* jokerBlack100 / #FFEAC7 */
+  --color-jokerBlack200: hsl(
+    var(--color-jokerBlack) 0% 24% /1
+  ); /* jokerBlack200 / #FFE8C2 */
+  --color-jokerBlack300: hsl(
+    var(--color-jokerBlack) 0% 15% /1
+  ); /* jokerBlack300 / #FFE4B8 */
+
+  /*💠 BASECOLOR */
+  --color-jokerBlack400: hsl(
+    var(--color-jokerBlack) 0% 13% /1
+  ); /* jokerBlack400 / #212121 */
+
+  --color-jokerBlack500: hsl(
+    var(--color-jokerBlack) 0% 12% /1
+  ); /* jokerBlack500 / #BBA072 */
+  --color-jokerBlack600: hsl(
+    var(--color-jokerBlack) 0% 10% /1
+  ); /* jokerBlack600 / #A88C5D */
+  --color-jokerBlack700: hsl(
+    var(--color-jokerBlack) 0% 9% /1
+  ); /* jokerBlack700 / #8E7348 */
+  --color-jokerBlack800: hsl(
+    var(--color-jokerBlack) 0% 8% /1
+  ); /* jokerBlack800 / #65512F */
+  --color-jokerBlack900: hsl(
+    var(--color-jokerBlack) 0% 0% /1
+  ); /* jokerBlack900 / #382E23 */
+
+  /*--JokerBLACK  🏁 END  --*/
+
+  /*--JokerGOLD 🏎️ START --*/
+  --color-jokerGold: 37;
+
+  --color-jokerGold50: hsl(
+    calc(var(--color-jokerGold) + 1) 100% 94% /1
+  ); /* jokerGold50 / #FFF4E0 */
+  --color-jokerGold100: hsl(
+    calc(var(--color-jokerGold) + 1) 100% 89% /1
+  ); /* jokerGold100 / #FFEAC7 */
+  --color-jokerGold200: hsl(
+    var(--color-jokerGold) 100% 88% /1
+  ); /* jokerGold200 / #FFE8C2 */
+  --color-jokerGold300: hsl(
+    var(--color-jokerGold) 100% 86% /1
+  ); /* jokerGold300 / #FFE4B8 */
+
+  /*💠 BASECOLOR */
+  --color-jokerGold400: hsl(
+    var(--color-jokerGold) 100% 83% /1
+  ); /* jokerGold400 / #FFDEA8 */
+
+  --color-jokerGold500: hsl(
+    calc(var(--color-jokerGold) + 1) 35% 59% /1
+  ); /* jokerGold500 / #BBA072 */
+  --color-jokerGold600: hsl(
+    calc(var(--color-jokerGold) + 1) 30% 51% /1
+  ); /* jokerGold600 / #A88C5D */
+  --color-jokerGold700: hsl(
+    var(--color-jokerGold) 30% 42% /1
+  ); /* jokerGold700 / #8E7348 */
+  --color-jokerGold800: hsl(
+    calc(var(--color-jokerGold) + 1) 36% 29% /1
+  ); /* jokerGold800 / #65512F */
+  --color-jokerGold900: hsl(
+    calc(var(--color-jokerGold) - 6) 23% 18% /1
+  ); /* jokerGold900 / #382E23 */
+  --color-jokerGold1000: hsl(
+    var(--color-jokerGold) 26% 9% /1
+  ); /* jokerGold1000 / #1D1811 */
+  /*--JokerGOLD  🏁 END  --*/
+
+  /*--JokerROSE 🏎️ START --*/
+  --color-jokerRose: 32;
+
+  --color-jokerRose50: hsl(
+    calc(var(--color-jokerRose) - 1) 40% 81%/1
+  ); /* jokerRose50 / #E2CFBB */
+  --color-jokerRose100: hsl(
+    var(--color-jokerRose) 40% 73%/1
+  ); /* jokerRose100 / #D6BC9E */
+  --color-jokerRose200: hsl(
+    var(--color-jokerRose) 40% 67%/1
+  ); /* jokerRose200 / #CCAC88 */
+  --color-jokerRose300: hsl(
+    calc(var(--color-jokerRose) + 1) 37% 60%/1
+  ); /* jokerRose300 / #BF9D75 */
+
+  /*💠 BASECOLOR */
+  --color-jokerRose400: hsl(
+    var(--color-jokerRose) 22% 54%/1
+  ); /* jokerRose400 / #A48C71 */
+
+  --color-jokerRose500: hsl(
+    calc(var(--color-jokerRose) - 1) 19% 47%/1
+  ); /* jokerRose500 / #8F7962 */
+  --color-jokerRose600: hsl(
+    var(--color-jokerRose) 19% 40%/1
+  ); /* jokerRose600 / #796752 */
+  --color-jokerRose700: hsl(
+    calc(var(--color-jokerRose) - 1) 20% 33%/1
+  ); /* jokerRose700 / #645443 */
+  --color-jokerRose800: hsl(
+    calc(var(--color-jokerRose) - 2) 21% 22%/1
+  ); /* jokerRose800 / #44382C */
+  --color-jokerRose900: hsl(
+    calc(var(--color-jokerRose) - 1) 23% 18%/1
+  ); /* jokerRose900 / #382E23 */
+
+  /*--JokerROSE  🏁 END  --*/
+
+  /*--JokerHONEY 🏎️ START --*/
+  --color-jokerHoney: 40;
+
+  --color-jokerHoney50: hsl(
+    calc(var(--color-jokerHoney) + 1) 68% 86%/1
+  ); /* jokerHoney50 / #F4E5C5*/
+  --color-jokerHoney100: hsl(
+    var(--color-jokerHoney) 69% 76%/1
+  ); /* jokerHoney100 / #ECD098 */
+  --color-jokerHoney200: hsl(
+    calc(var(--color-jokerHoney) + 1) 68% 69%/1
+  ); /* jokerHoney200 / #E6C37A */
+  --color-jokerHoney300: hsl(
+    var(--color-jokerHoney) 69% 62%/1
+  ); /* jokerHoney300 / #E1B55C */
+
+  /*💠 BASECOLOR */
+  --color-jokerHoney400: hsl(
+    var(--color-jokerHoney) 69% 55%/1
+  ); /* jokerHoney400 / #DBA73E   */
+
+  --color-jokerHoney500: hsl(
+    var(--color-jokerHoney) 57% 48%/1
+  ); /* jokerHoney500 / #C09235 */
+  --color-jokerHoney600: hsl(
+    calc(var(--color-jokerHoney) + 1) 61% 34%/1
+  ); /* jokerHoney600 / #8B6922 */
+  --color-jokerHoney700: hsl(
+    var(--color-jokerHoney) 64% 27%/1
+  ); /* jokerHoney700 / #715419 */
+  --color-jokerHoney800: hsl(
+    calc(var(--color-jokerHoney) - 4) 65% 24%/1
+  ); /* jokerHoney800 / #634915 */
+  --color-jokerHoney900: hsl(
+    var(--color-jokerHoney) 69% 20%/1
+  ); /* jokerHoney900 / #563F10 */
+
+  /*--JokerHONEY  🏁 END  --*/
+
+  /*--JokerGREEN 🏎️ START --*/
+  --color-jokerGreen: 121;
+
+  --color-jokerGreen50: hsl(
+    calc(var(--color-jokerGreen) + 10) 70% 91%/1
+  ); /* jokerGreen50 / #D8F8DE */
+  --color-jokerGreen100: hsl(
+    calc(var(--color-jokerGreen) + 9) 68% 86%/1
+  ); /* jokerGreen100 / #C5F4CD */
+  --color-jokerGreen200: hsl(
+    calc(var(--color-jokerGreen) + 9) 68% 69%/1
+  ); /* jokerGreen200 / #B2F1BC */
+  --color-jokerGreen300: hsl(
+    var(--color-jokerGreen) 68% 73%/1
+  ); /* jokerGreen300 / #8BE99B */
+
+  /*💠 BASECOLOR */
+  --color-jokerGreen400: hsl(
+    var(--color-jokerGreen) 68% 55%/1
+  ); /* jokerGreen400 / #3EDB58   */
+
+  --color-jokerGreen500: hsl(
+    calc(var(--color-jokerGreen) + 9) 57% 46%/1
+  ); /* jokerGreen500 / #33B849 */
+  --color-jokerGreen600: hsl(
+    calc(var(--color-jokerGreen) + 9) 58% 37%/1
+  ); /* jokerGreen600 / #28953A */
+  --color-jokerGreen700: hsl(
+    calc(var(--color-jokerGreen) + 9) 58% 28%/1
+  ); /* jokerGreen700 / #1E712C */
+  --color-jokerGreen800: hsl(
+    calc(var(--color-jokerGreen) + 9) 61% 19%/1
+  ); /* jokerGreen800 / #134E1D */
+  --color-jokerGreen900: hsl(
+    calc(var(--color-jokerGreen) + 9) 65% 15%/1
+  ); /* jokerGreen900 / #0D3D15 */
+
+  /*--JokerGREEN  🏁 END  --*/
+
+  /*--JokerRED 🏎️ START --*/
+  --color-jokerRed: 0;
+
+  --color-jokerRed50: hsl(
+    var(--color-jokerRed) 67% 89%/1
+  ); /* jokerRed50 / #F6D2D2 */
+  --color-jokerRed100: hsl(
+    var(--color-jokerRed) 68% 85%/1
+  ); /* jokerRed100 / #F3BFBF */
+  --color-jokerRed200: hsl(
+    var(--color-jokerRed) 67% 81%/1
+  ); /* jokerRed200 / #EFADAD */
+  --color-jokerRed300: hsl(
+    var(--color-jokerRed) 69% 72%/1
+  ); /* jokerRed300 / #E98888 */
+
+  /*💠 BASECOLOR */
+  --color-jokerRed400: hsl(
+    var(--color-jokerRed) 69% 55%/1
+  ); /* jokerRed400 / #DB3E3E   */
+
+  --color-jokerRed500: hsl(
+    var(--color-jokerRed) 56% 47%/1
+  ); /* jokerRed500 / #BA3434 */
+  --color-jokerRed600: hsl(
+    var(--color-jokerRed) 58% 38%/1
+  ); /* jokerRed600 / #982929 */
+  --color-jokerRed700: hsl(
+    var(--color-jokerRed) 59% 29%/1
+  ); /* jokerRed700 / #771F1F */
+  --color-jokerRed800: hsl(
+    var(--color-jokerRed) 62% 21%/1
+  ); /* jokerRed800 / #551414 */
+  --color-jokerRed900: hsl(
+    var(--color-jokerRed) 64% 16%/1
+  ); /* jokerRed900 / #450F0F */
+
+  /*--JokerRED  🏁 END  --*/
+
+  /*--JokerALERT 🏎️ START --*/
+  --color-jokerAlert: 22;
+
+  --color-jokerAlert50: hsl(
+    var(--color-jokerAlert) 68% 86%/1
+  ); /* jokerAlert50 / #F4D6C5 */
+  --color-jokerAlert100: hsl(
+    var(--color-jokerAlert) 69% 82%/1
+  ); /* jokerAlert100 / #F1C9B2 */
+  --color-jokerAlert200: hsl(
+    var(--color-jokerAlert) 68% 73%/1
+  ); /* jokerAlert200 / #E9AE8B */
+  --color-jokerAlert300: hsl(
+    var(--color-jokerAlert) 68% 64%/1
+  ); /* jokerAlert300 / #E29365 */
+
+  /*💠 BASECOLOR */
+  --color-jokerAlert400: hsl(
+    var(--color-jokerAlert) 69% 55%/1
+  ); /* jokerAlert400 / #DB783E   */
+
+  --color-jokerAlert500: hsl(
+    var(--color-jokerAlert) 56% 45%/1
+  ); /* jokerAlert500 / #B56333 */
+  --color-jokerAlert600: hsl(
+    var(--color-jokerAlert) 57% 36%/1
+  ); /* jokerAlert600 / #904E28 */
+  --color-jokerAlert700: hsl(
+    var(--color-jokerAlert) 58% 22%/1
+  ); /* jokerAlert700 / #572F17 */
+  --color-jokerAlert800: hsl(
+    var(--color-jokerAlert) 60% 17%/1
+  ); /* jokerAlert800 / #452411 */
+  --color-jokerAlert900: hsl(
+    var(--color-jokerAlert) 68% 7%/1
+  ); /* jokerAlert900 / #1F0F06 */
+
+  /*--JokerALERT  🏁 END  --*/
+
+  /*--JokerGRADIENT 🏎️ START --*/
+  --color-jokerCircleColor01: 277;
+  --color-jokerCircleColor02: 36;
+  --color-jokerCircleColor02: 133;
+
+  --color-jokerPurpleCircle: hsl(
+    var(var(--color-jokerCircleColor01) 19% 98% /0.17)
+  );
+  --color-jokerYellowCircle: hsl(
+    var(var(--color-jokerCircleColor02) 19% 98% /0.2)
+  );
+  --color-jokerGreenCircle: hsl(
+    var(var(--color-jokerCircleColor03) 19% 98% /0.2)
+  );
+
+  /*--JokerGRADIENT  🏁 END  --*/
+
+  /*############### 🈯 TYPOGRAPHY 🈯 ############### */
+
+  /*--fontprimaryFont 🏎️ START - --*/
+  --font-primaryFont: Inter, Arial, Helvetica, sans-serif;
+  /*--fontprimaryFont  🏁 END  --*/
+
+  /*--fontSizing 🏎️ START - --*/
+  --font-sizeBase: 1rem;
+
+  --font-sizeHeading01: clamp(
+    calc(var(--font-sizeBase) + 2rem),
+    calc(var(--font-sizeBase) + 1.8864rem) + 0.5682vw,
+    calc(var(--font-sizeBase) + 2.5rem)
+  );
+  --font-sizeHeading02: clamp(
+    calc(var(--font-sizeBase) + 1.5rem),
+    calc(var(--font-sizeBase) + 1.3864rem) + 0.5682vw,
+    calc(var(--font-sizeBase) + 2rem)
+  );
+  --font-sizeHeading03: clamp(
+    calc(var(--font-sizeBase) + 1rem),
+    calc(var(--font-sizeBase) + 0.8864rem) + 0.5682vw,
+    calc(var(--font-sizeBase) + 1.5rem)
+  );
+  --font-sizeHeading04: clamp(
+    calc(var(--font-sizeBase) + 0.5rem),
+    calc(var(--font-sizeBase) + 0.3864rem) + 0.5682vw,
+    calc(var(--font-sizeBase) + 1rem)
+  );
+  --font-sizeParagraph01: clamp(
+    calc(var(--font-sizeBase) + 0.125rem),
+    calc(var(--font-sizeBase) + 0.0966rem) + 0.142vw,
+    calc(var(--font-sizeBase) + 0.25rem)
+  );
+  --font-sizeParagraph02: clamp(
+    var(--font-sizeBase),
+    calc(var(--font-sizeBase) - 0.0284rem) + 0.142vw,
+    calc(var(--font-sizeBase) + 0.125rem)
+  );
+
+  --font-sizeParagraph03: clamp(
+    calc(var(--font-sizeBase) - 0.125rem),
+    calc(var(--font-sizeBase) - 0.1534rem) + 0.142vw,
+    var(--font-sizeBase)
+  );
+
+  /*--fontSizing  🏁 END  --*/
+
+  /*--fontLineHeight 🏎️ START --*/
+  --font-lineHeightBase: 150%;
+
+  /*--fontLineHeight  🏁 END  --*/
+
+  /*############### ⚛️ COMPONENT TOKENS ⚛️ ############### */
+
+  /*--borderRadius 🏎️ START --*/
+
+  --border-Radius200: 9px;
+  --border-Radius300: 11px;
+
+  /*💠 DEFAULT RADIUS */
+  --border-Radius400: 14px;
+  /*💠 DEFAULT RADIUS */
+
+  --border-Radius500: 18px;
+  --border-RadiusCircle: 50%; /* <---- use for making circle so shape would be same height and width and then you add border radiusCircle as the value and it will be a perfect circle. */
+
+  /*--borderRadius  🏁 END  --*/
+
+  /*--boxShadow 🏎️ START --*/
+
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low: 0px 1px 1.1px hsl(var(--shadow-color) / 0.18),
+    0px 4.1px 4.4px -2.8px hsl(var(--shadow-color) / 0.16);
+  --shadow-elevation-medium: 0px 1px 1.1px hsl(var(--shadow-color) / 0.17),
+    0px 5px 5.4px -1.4px hsl(var(--shadow-color) / 0.16),
+    -0.2px 20.3px 21.8px -2.8px hsl(var(--shadow-color) / 0.14);
+  --shadow-elevation-high: 0px 1px 1.1px hsl(var(--shadow-color) / 0.19),
+    -0.1px 8.8px 9.4px -0.7px hsl(var(--shadow-color) / 0.18),
+    -0.2px 22px 23.6px -1.4px hsl(var(--shadow-color) / 0.17),
+    -0.5px 50.2px 53.8px -2.1px hsl(var(--shadow-color) / 0.16),
+    -1px 103px 110.5px -2.8px hsl(var(--shadow-color) / 0.15);
+
+  /*--boxShadow  🏁 END  --*/
+
+  /*   Animated CTA Button */
+
+  /* END ROOT*/
+}
+
+/* Full navbar container */
+.navbar {
+  background-color: black;
+  width: 100%; /* Full-width navbar */
+  height: 80px;
+  box-sizing: border-box;
+}
+
+/* Inner container with flexbox for layout */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px; /* Set a max width for the navbar content */
+  width: 100%;
+  margin: 0 auto; /* Center the navbar content */
+  padding: 0 20px; /* Optional padding for spacing */
+}
+
+/* Logo aligned to the left with margin */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Add margin to the left of the logo */
+}
+
+.navbar-logo img {
+  height: 40px; /* Set the logo height */
+  object-fit: contain;
+  display: block;
+  margin-left: 40px; /* Add margin to the left of the logo */
+}
+
+/* Center links */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar-links li a {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+/* Link styling */
+.navbar-links li a {
+  color: #dfdfdf;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  color: #dfc293; /* Mouse over button link */
+}
+
+.navbar-links li a.active {
+  color: #dfc293; /* Highlight color for active links */
+}
+
+/* Buttons on the right */
+.navbar-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Pushes buttons to the far right */
+  margin-right: 40px; /* Add margin to the right of the buttons */
+}
+
+.navbar-buttons button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.navbar-buttons .log-in .icon {
+  margin-right: 8px;
+}
+
+.navbar-buttons .sign-up:hover,
+.navbar-buttons .log-in:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
