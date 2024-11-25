@@ -1423,9 +1423,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"materia-ui-jokerpro@workspace:.":
+"material-ui-jokerpro@workspace:.":
   version: 0.0.0-use.local
-  resolution: "materia-ui-jokerpro@workspace:."
+  resolution: "material-ui-jokerpro@workspace:."
   dependencies:
     "@rollup/plugin-commonjs": ^28.0.1
     "@rollup/plugin-node-resolve": ^15.3.0

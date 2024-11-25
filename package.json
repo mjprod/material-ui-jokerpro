@@ -1,5 +1,5 @@
 {
-  "name": "materia-ui-jokerpro",
+  "name": "material-ui-jokerpro",
   "packageManager": "yarn@3.6.4",
   "dependencies": {
     "prop-types": "^15.8.1",
