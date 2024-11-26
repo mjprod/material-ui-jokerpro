@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/index.css">
+
+    <style>
+      
+
+      .colorChip {
+        display: block;
+        padding: 1rem;
+        font-family: var(--font-primaryFont);
+        border: 1px solid var(--color-jokerWhite50-opacity15);
+        border-radius: 0.3rem;
+      }
+
+      /* White */
+      .whiteText {
+        color: var(--color-jokerWhite50);
+        font-family: var(--font-primaryFont);
+        font-weight: 400;
+      }
+
+      .jokerWhite50 {
+        background-color: var(--color-jokerWhite50);
+        color: var(--color-jokerBlack400);
+      }
+      /*Black */
+      .jokerBlack50 {
+        background-color: var(--color-jokerBlack50);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack100 {
+        background-color: var(--color-jokerBlack100);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack300 {
+        background-color: var(--color-jokerBlack300);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack400 {
+        background-color: var(--color-jokerBlack400);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack500 {
+        background-color: var(--color-jokerBlack500);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack600 {
+        background-color: var(--color-jokerBlack600);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack700 {
+        background-color: var(--color-jokerBlack700);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack800 {
+        background-color: var(--color-jokerBlack800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerBlack900 {
+        background-color: var(--color-jokerBlack900);
+        color: var(--color-jokerWhite50);
+      }
+      /*Gold */
+      .jokerGold50 {
+        background-color: var(--color-jokerGold50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold100 {
+        background-color: var(--color-jokerGold100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold300 {
+        background-color: var(--color-jokerGold300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold400 {
+        background-color: var(--color-jokerGold400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold500 {
+        background-color: var(--color-jokerGold500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold600 {
+        background-color: var(--color-jokerGold600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold700 {
+        background-color: var(--color-jokerGold700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold800 {
+        background-color: var(--color-jokerGold800);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGold900 {
+        background-color: var(--color-jokerGold900);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerGold1000 {
+        background-color: var(--color-jokerGold1000);
+        color: var(--color-jokerWhite50);
+      }
+
+      /*rose */
+
+      .jokerRose50 {
+        background-color: var(--color-jokerRose50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose100 {
+        background-color: var(--color-jokerRose100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose300 {
+        background-color: var(--color-jokerRose300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose400 {
+        background-color: var(--color-jokerRose400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose500 {
+        background-color: var(--color-jokerRose500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose600 {
+        background-color: var(--color-jokerRose600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose700 {
+        background-color: var(--color-jokerRose700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRose800 {
+        background-color: var(--color-jokerRose800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerRose900 {
+        background-color: var(--color-jokerRose900);
+        color: var(--color-jokerWhite50);
+      }
+
+      /* Honey */
+
+      .jokerHoney50 {
+        background-color: var(--color-jokerHoney50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney100 {
+        background-color: var(--color-jokerHoney100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney300 {
+        background-color: var(--color-jokerHoney300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney400 {
+        background-color: var(--color-jokerHoney400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney500 {
+        background-color: var(--color-jokerHoney500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney600 {
+        background-color: var(--color-jokerHoney600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney700 {
+        background-color: var(--color-jokerHoney700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerHoney800 {
+        background-color: var(--color-jokerHoney800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerHoney900 {
+        background-color: var(--color-jokerHoney900);
+        color: var(--color-jokerWhite50);
+      }
+
+      /* Green */
+
+      .jokerGreen50 {
+        background-color: var(--color-jokerGreen50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen100 {
+        background-color: var(--color-jokerGreen100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen300 {
+        background-color: var(--color-jokerGreen300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen400 {
+        background-color: var(--color-jokerGreen400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen500 {
+        background-color: var(--color-jokerGreen500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen600 {
+        background-color: var(--color-jokerGreen600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen700 {
+        background-color: var(--color-jokerGreen700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerGreen800 {
+        background-color: var(--color-jokerGreen800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerGreen900 {
+        background-color: var(--color-jokerGreen900);
+        color: var(--color-jokerWhite50);
+      }
+      /* Red */
+
+      .jokerRed50 {
+        background-color: var(--color-jokerRed50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed100 {
+        background-color: var(--color-jokerRed100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed300 {
+        background-color: var(--color-jokerRed300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed400 {
+        background-color: var(--color-jokerRed400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed500 {
+        background-color: var(--color-jokerRed500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed600 {
+        background-color: var(--color-jokerRed600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed700 {
+        background-color: var(--color-jokerRed700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerRed800 {
+        background-color: var(--color-jokerRed800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerRed900 {
+        background-color: var(--color-jokerRed900);
+        color: var(--color-jokerWhite50);
+      }
+
+      /* Alert */
+
+      .jokerAlert50 {
+        background-color: var(--color-jokerAlert50);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert100 {
+        background-color: var(--color-jokerAlert100);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert300 {
+        background-color: var(--color-jokerAlert300);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert400 {
+        background-color: var(--color-jokerAlert400);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert500 {
+        background-color: var(--color-jokerAlert500);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert600 {
+        background-color: var(--color-jokerAlert600);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert700 {
+        background-color: var(--color-jokerAlert700);
+        color: var(--color-jokerBlack400);
+      }
+      .jokerAlert800 {
+        background-color: var(--color-jokerAlert800);
+        color: var(--color-jokerWhite50);
+      }
+      .jokerAlert900 {
+        background-color: var(--color-jokerAlert900);
+        color: var(--color-jokerWhite50);
+      }
+
+    </style>
+    <link rel="stylesheet" href="./src/components/ButtonCTA.css">
+  </head>
+  <body style="background-color: var(--color-jokerBlack400)">
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+      "
+    >
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerWhite50">JokerWhite50</div>
+        <div class="colorChip jokerBlack50">JokerBlack50</div>
+        <div class="colorChip jokerBlack100">JokerBlack100</div>
+        <div class="colorChip jokerBlack300">JokerBlack300</div>
+        <div class="colorChip jokerBlack400">JokerBlack400</div>
+        <div class="colorChip jokerBlack500">JokerBlack500</div>
+        <div class="colorChip jokerBlack600">JokerBlack600</div>
+        <div class="colorChip jokerBlack700">JokerBlack700</div>
+        <div class="colorChip jokerBlack800">JokerBlack800</div>
+        <div class="colorChip jokerBlack900">JokerBlack900</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerGold50">JokerGold50</div>
+        <div class="colorChip jokerGold100">JokerGold100</div>
+        <div class="colorChip jokerGold300">JokerGold300</div>
+        <div class="colorChip jokerGold400">JokerGold400</div>
+        <div class="colorChip jokerGold500">JokerGold500</div>
+        <div class="colorChip jokerGold600">JokerGold600</div>
+        <div class="colorChip jokerGold700">JokerGold700</div>
+        <div class="colorChip jokerGold800">JokerGold800</div>
+        <div class="colorChip jokerGold900">JokerGold900</div>
+        <div class="colorChip jokerGold1000">JokerGold1000</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerRose50">JokerRose50</div>
+        <div class="colorChip jokerRose100">JokerRose100</div>
+        <div class="colorChip jokerRose300">JokerRose300</div>
+        <div class="colorChip jokerRose400">JokerRose400</div>
+        <div class="colorChip jokerRose500">JokerRose500</div>
+        <div class="colorChip jokerRose600">JokerRose600</div>
+        <div class="colorChip jokerRose700">JokerRose700</div>
+        <div class="colorChip jokerRose800">JokerRose800</div>
+        <div class="colorChip jokerRose900">JokerRose900</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerHoney50">JokerHoney50</div>
+        <div class="colorChip jokerHoney100">JokerHoney100</div>
+        <div class="colorChip jokerHoney300">JokerHoney300</div>
+        <div class="colorChip jokerHoney400">JokerHoney400</div>
+        <div class="colorChip jokerHoney500">JokerHoney500</div>
+        <div class="colorChip jokerHoney600">JokerHoney600</div>
+        <div class="colorChip jokerHoney700">JokerHoney700</div>
+        <div class="colorChip jokerHoney800">JokerHoney800</div>
+        <div class="colorChip jokerHoney900">JokerHoney900</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerGreen50">JokerGreen50</div>
+        <div class="colorChip jokerGreen100">JokerGreen100</div>
+        <div class="colorChip jokerGreen300">JokerGreen300</div>
+        <div class="colorChip jokerGreen400">JokerGreen400</div>
+        <div class="colorChip jokerGreen500">JokerGreen500</div>
+        <div class="colorChip jokerGreen600">JokerGreen600</div>
+        <div class="colorChip jokerGreen700">JokerGreen700</div>
+        <div class="colorChip jokerGreen800">JokerGreen800</div>
+        <div class="colorChip jokerGreen900">JokerGreen900</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerRed50">JokerRed50</div>
+        <div class="colorChip jokerRed100">JokerRed100</div>
+        <div class="colorChip jokerRed300">JokerRed300</div>
+        <div class="colorChip jokerRed400">JokerRed400</div>
+        <div class="colorChip jokerRed500">JokerRed500</div>
+        <div class="colorChip jokerRed600">JokerRed600</div>
+        <div class="colorChip jokerRed700">JokerRed700</div>
+        <div class="colorChip jokerRed800">JokerRed800</div>
+        <div class="colorChip jokerRed900">JokerRed900</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <div class="colorChip jokerAlert50">JokerAlert50</div>
+        <div class="colorChip jokerAlert100">JokerAlert100</div>
+        <div class="colorChip jokerAlert300">JokerAlert300</div>
+        <div class="colorChip jokerAlert400">JokerAlert400</div>
+        <div class="colorChip jokerAlert500">JokerAlert500</div>
+        <div class="colorChip jokerAlert600">JokerAlert600</div>
+        <div class="colorChip jokerAlert700">JokerAlert700</div>
+        <div class="colorChip jokerAlert800">JokerAlert800</div>
+        <div class="colorChip jokerAlert900">JokerAlert900</div>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 2rem;
+      "
+    >
+      <div style="display: flex; flex-direction: column; gap: 0.5rem">
+        <h1 class="whiteText" style="font-size: var(--font-sizeHeading01)">
+          Heading 1
+        </h1>
+        <h2 class="whiteText" style="font-size: var(--font-sizeHeading02)">
+          Heading 2
+        </h2>
+        <h3 class="whiteText" style="font-size: var(--font-sizeHeading03)">
+          Heading 3
+        </h3>
+        <h4 class="whiteText" style="font-size: var(--font-sizeHeading04)">
+          Heading 4
+        </h4>
+        <p class="whiteText" style="font-size: var(--font-sizeParagraph01)">
+          Paragraph 01
+        </p>
+        <p class="whiteText" style="font-size: var(--font-sizeParagraph02)">
+          Paragraph 02
+        </p>
+        <p class="whiteText" style="font-size: var(--font-sizeParagraph03)">
+          Paragraph 03
+        </p>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 2rem;
+      "
+    >
+      <div class="buttonCTA animatedBorder">
+        <button class="innerCTABg">
+          <div class="buttonCTAContainer">
+            <div class="buttonCTAIcon">
+              <svg
+                width="13"
+                height="12"
+                viewBox="0 0 13 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.4999 1.05C12.4999 0.784784 12.3946 0.530429 12.207 0.342893C12.0195 0.155357 11.7652 0.0500002 11.4999 0.0500002L3.49994 0C3.23472 0 2.98037 0.105357 2.79283 0.292893C2.6053 0.48043 2.49994 0.734784 2.49994 1C2.49994 1.26522 2.6053 1.51957 2.79283 1.70711C2.98037 1.89464 3.23472 2 3.49994 2H9.05994L0.789939 10.29C0.696211 10.383 0.621816 10.4936 0.571048 10.6154C0.520279 10.7373 0.494141 10.868 0.494141 11C0.494141 11.132 0.520279 11.2627 0.571048 11.3846C0.621816 11.5064 0.696211 11.617 0.789939 11.71C0.882902 11.8037 0.993503 11.8781 1.11536 11.9289C1.23722 11.9797 1.36793 12.0058 1.49994 12.0058C1.63195 12.0058 1.76266 11.9797 1.88452 11.9289C2.00638 11.8781 2.11698 11.8037 2.20994 11.71L10.4999 3.42V9C10.4999 9.26522 10.6053 9.51957 10.7928 9.70711C10.9804 9.89464 11.2347 10 11.4999 10C11.7652 10 12.0195 9.89464 12.207 9.70711C12.3946 9.51957 12.4999 9.26522 12.4999 9V1.05Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="buttonCTAfont">Get started</div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
