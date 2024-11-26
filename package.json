@@ -1,5 +1,6 @@
 {
   "name": "material-ui-jokerpro",
+  "version": "0.1.0",
   "packageManager": "yarn@3.6.4",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
