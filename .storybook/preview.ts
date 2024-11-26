@@ -5,6 +5,9 @@ import '../src/joker_tokens.css';
 
 const preview: Preview = {
   parameters: {
+    docs: {
+      toc: true, // 👈 Enables the table of contents
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -12,6 +15,10 @@ const preview: Preview = {
       },
     },
   },
+  
+  tags: ['autodocs'],
+  
+
 };
 
 export default preview;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Teko:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@400;500;600&display=swap');
 
 
 /* Variables */
@@ -164,7 +164,20 @@
   /*--JokerALERT  🏁 END  --*/
 
 
-   /*--JokerGRADIENT 🏎️ START --*/
+
+
+/*############### 🟧 GRADIENTS 🟧 ############### */
+
+
+   /*--JokerGRADIENTS 🏎️ START --*/
+
+  /* degrees */
+  --deg-vert:180deg;
+  --deg-horiz:90deg;
+
+
+
+  /* Joker Apple Website */
   --color-jokerCircleColor01:277;
   --color-jokerCircleColor02:36;
   --color-jokerCircleColor02:133;
@@ -173,6 +186,41 @@
   --color-jokerPurpleCircle: hsl(var(var(--color-jokerCircleColor01) 19% 98% /var(--opacity15)));
   --color-jokerYellowCircle: hsl(var(var(--color-jokerCircleColor02) 19% 98% /var(--opacity20)));
   --color-jokerGreenCircle: hsl(var(var(--color-jokerCircleColor03) 19% 98% /var(--opacity20)));
+
+
+
+/*joker Gradients default vertical*/
+  --color-jokerGradientGold01: linear-gradient(var(--deg-vert),var(--color-jokerGold200) 8.33%,var(--color-jokerGold600) 22.27%, var(--color-jokerGold800) 81.25%, var(--color-jokerGold200) 91.15%,var(--color-jokerGold600) 99.48%);
+  
+  --color-jokerGradientGold02: linear-gradient(var(--deg-vert), var(--color-jokerRose100) 3.8%, var(--color-jokerGold50) 50.91%, var(--color-jokerRose100) 98.51%);
+
+  --color-jokerGradientBlack01: linear-gradient(
+    var(--deg-vert),   var(--color-jokerBlack500) 0%,    var(--color-jokerBlack200) 21.88%,    var(--color-jokerBlack100) 49.48%,    var(--color-jokerBlack500) 52.6% );
+
+  --color-jokerGradientBlack02: linear-gradient(var(--deg-vert), var(--color-jokerBlack600)  3.1%, var(--color-jokerBlack200) 100%);
+
+  --color-jokerGradientHoney01: linear-gradient(var(--deg-vert), var(--color-jokerHoney600) 0%, var(--color-jokerHoney100) 7.16%, var(--color-jokerHoney400) 14.65%, var(--color-jokerHoney400) 68.23%, var(--color-jokerHoney100) 82.29%, var(--color-jokerHoney500) 91.15%, var(--color-jokerHoney600) 94.9%, var(--color-jokerHoney400) 100%);
+
+  --color-jokerGradientSilver01: linear-gradient(var(--deg-vert), var(--color-jokerBlack300) 0%, var(--color-jokerWhite50) 49.35%);
+
+
+
+
+
+
+    /*joker Gradients default horizontal*/
+    --color-jokerGradientGold01-horiz: linear-gradient(var(--deg-horiz),var(--color-jokerGold200) 8.33%,var(--color-jokerGold600) 22.27%, var(--color-jokerGold800) 81.25%, var(--color-jokerGold200) 91.15%,var(--color-jokerGold600) 99.48%);
+
+    --color-jokerGradientGold02-horiz: linear-gradient(var(--deg-horiz), var(--color-jokerRose100) 3.8%, var(--color-jokerGold50) 50.91%, var(--color-jokerRose100) 98.51%);
+
+    --color-jokerGradientBlack01-horiz: linear-gradient(
+      var(--deg-horiz),   var(--color-jokerBlack500) 0%,    var(--color-jokerBlack200) 21.88%,    var(--color-jokerBlack100) 49.48%,    var(--color-jokerBlack500) 52.6% );
+
+    --color-jokerGradientBlack02-horiz: linear-gradient(var(--deg-horiz), var(--color-jokerBlack600)  3.1%, var(--color-jokerBlack200) 100%);
+
+    --color-jokerGradientHoney01-horiz: linear-gradient(var(--deg-horiz), var(--color-jokerHoney600) 0%, var(--color-jokerHoney100) 7.16%, var(--color-jokerHoney400) 14.65%, var(--color-jokerHoney400) 68.23%, var(--color-jokerHoney100) 82.29%, var(--color-jokerHoney500) 91.15%, var(--color-jokerHoney600) 94.9%, var(--color-jokerHoney400) 100%);
+   
+    --color-jokerGradientSilver01-horiz: linear-gradient(var(--deg-horiz), var(--color-jokerBlack300) 0%, var(--color-jokerWhite50) 49.35%);
 
 
     /*--JokerGRADIENT  🏁 END  --*/
@@ -1869,6 +1917,8 @@
     var(--font-sizeBase)
   );
 
+  
+
   /*--fontSizing  🏁 END  --*/
 
   /*--fontLineHeight 🏎️ START --*/
@@ -1893,6 +1943,7 @@
 
  /*--borderRadius  🏁 END  --*/
 
+ 
    
 /*--boxShadow 🏎️ START --*/
 
@@ -1920,102 +1971,6 @@
 /* END ROOT*/
 }
 
-
-/* Full navbar container */
-.navbar {
-  background-color: var(--color-jokerBlack900);
-  width: 100%; /* Full-width navbar */
-  height: 80px;
-  box-sizing: border-box;
-}
-
-/* Inner container with flexbox for layout */
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  max-width: 1200px; /* Set a max width for the navbar content */
-  width: 100%;
-  margin: 0 auto; /* Center the navbar content */
-  padding: 0 20px; /* Optional padding for spacing */
-}
-
-/* Logo aligned to the left with margin */
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  margin-left: 10px; /* Add margin to the left of the logo */
-}
-
-.navbar-logo img {
-  height: 40px; /* Set the logo height */
-  object-fit: contain;
-  display: block;
-  margin-left: 40px; /* Add margin to the left of the logo */
-}
-
-/* Center links */
-.navbar-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
-}
-
-.navbar-links li a {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: var(--color-jokerWhite50);
-  text-decoration: none;
-}
-
-/* Link styling */
-.navbar-links li a {
-  color: var(--color-jokerBlack50);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navbar-links li a:hover {
- color: var(--color-jokerGold200); /* Mouse over button link */
-}
-
-.navbar-links li a.active {
-  color: var(--color-jokerGold200); /* Highlight color for active links */
-}
-
-/* Buttons on the right */
-.navbar-buttons {
-  display: flex;
-  gap: 10px;
-  margin-left: auto; /* Pushes buttons to the far right */
-  margin-right: 40px; /* Add margin to the right of the buttons */
-}
-
-.navbar-buttons button {
-  background-color: transparent;
-  border: 1px solid var(--color-jokerWhite50);
-  color: var(--color-jokerWhite50);
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.navbar-buttons .log-in .icon {
-  margin-right: 8px;
-}
-
-.navbar-buttons .sign-up:hover,
-.navbar-buttons .log-in:hover {
-  background-color: var(--color-jokerWhite50);
-  color: var(--color-jokerBlack900);
-}
 
 
 /* Global styles */
