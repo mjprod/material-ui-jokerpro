@@ -1,317 +1,1828 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Teko:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Teko:wght@400;500;600&display=swap');
+
 
 /* Variables */
-#root {
-  background-color: var(--color-jokerBlack900);
-}
+#root {background-color: var(--color-jokerBlack900);}
 :root {
+
   /*############### 🎨 COLORS 🎨 ############### */
 
-  /*-- JokerWhITE  🏎️ START --*/
+  /*-- JokerWHITE  🏎️ START --*/
   --color-jokerWhite: 100%;
 
   /*💠 BASECOLOR */
-  --color-jokerWhite50: hsl(
-    0 0% var(--color-jokerWhite) / 1
-  ); /* bgWhite50 / #ffffff */
-  --color-jokerWhite50-O0: hsl(
-    0 0% var(--color-jokerWhite) / 0
-  ); /* bgWhite50 / #ffffff */
+  --color-jokerWhite50: hsl(0 0% var(--color-jokerWhite) / var(--opacity100) ); /* bgWhite50 / #ffffff */
 
   /*-- JokerWHITE  🏁 END  --*/
 
+
+  
   /*--JokerBLACK 🏎️ START - --*/
   --color-jokerBlack: 0;
 
-  --color-jokerBlack50: hsl(
-    var(--color-jokerBlack) 0% 65% /1
-  ); /* jokerBlack50 / #FFF4E0 */
-  --color-jokerBlack100: hsl(
-    var(--color-jokerBlack) 0% 37% /1
-  ); /* jokerBlack100 / #FFEAC7 */
-  --color-jokerBlack200: hsl(
-    var(--color-jokerBlack) 0% 24% /1
-  ); /* jokerBlack200 / #FFE8C2 */
-  --color-jokerBlack300: hsl(
-    var(--color-jokerBlack) 0% 15% /1
-  ); /* jokerBlack300 / #FFE4B8 */
+  --color-jokerBlack50: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity100)); /* jokerBlack50 / #FFF4E0 */
+  --color-jokerBlack100: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity100));/* jokerBlack100 / #FFEAC7 */
+  --color-jokerBlack200: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity100)); /* jokerBlack200 / #FFE8C2 */
+  --color-jokerBlack300: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity100)); /* jokerBlack300 / #FFE4B8 */
 
   /*💠 BASECOLOR */
-  --color-jokerBlack400: hsl(
-    var(--color-jokerBlack) 0% 13% /1
-  ); /* jokerBlack400 / #212121 */
+  --color-jokerBlack400: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity100)); /* jokerBlack400 / #212121 */
 
-  --color-jokerBlack500: hsl(
-    var(--color-jokerBlack) 0% 12% /1
-  ); /* jokerBlack500 / #BBA072 */
-  --color-jokerBlack600: hsl(
-    var(--color-jokerBlack) 0% 10% /1
-  ); /* jokerBlack600 / #A88C5D */
-  --color-jokerBlack700: hsl(
-    var(--color-jokerBlack) 0% 9% /1
-  ); /* jokerBlack700 / #8E7348 */
-  --color-jokerBlack800: hsl(
-    var(--color-jokerBlack) 0% 8% /1
-  ); /* jokerBlack800 / #65512F */
-  --color-jokerBlack900: hsl(
-    var(--color-jokerBlack) 0% 0% /1
-  ); /* jokerBlack900 / #382E23 */
-
+  --color-jokerBlack500: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity100)); /* jokerBlack500 / #BBA072 */
+  --color-jokerBlack600: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity100)); /* jokerBlack600 / #A88C5D */
+  --color-jokerBlack700: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity100)); /* jokerBlack700 / #8E7348 */
+  --color-jokerBlack800: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity100)); /* jokerBlack800 / #65512F */
+  --color-jokerBlack900: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity100)); /* jokerBlack900 / #382E23 */
+ 
   /*--JokerBLACK  🏁 END  --*/
 
+
+  
   /*--JokerGOLD 🏎️ START --*/
   --color-jokerGold: 37;
 
-  --color-jokerGold50: hsl(
-    calc(var(--color-jokerGold) + 1) 100% 94% /1
-  ); /* jokerGold50 / #FFF4E0 */
-  --color-jokerGold100: hsl(
-    calc(var(--color-jokerGold) + 1) 100% 89% /1
-  ); /* jokerGold100 / #FFEAC7 */
-  --color-jokerGold200: hsl(
-    var(--color-jokerGold) 100% 88% /1
-  ); /* jokerGold200 / #FFE8C2 */
-  --color-jokerGold300: hsl(
-    var(--color-jokerGold) 100% 86% /1
-  ); /* jokerGold300 / #FFE4B8 */
+  --color-jokerGold50: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity100)); /* jokerGold50 / #FFF4E0 */
+  --color-jokerGold100: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity100)); /* jokerGold100 / #FFEAC7 */
+  --color-jokerGold200: hsl(var(--color-jokerGold) 100% 88% / var(--opacity100)); /* jokerGold200 / #FFE8C2 */
+  --color-jokerGold300: hsl(var(--color-jokerGold) 100% 86% / var(--opacity100)); /* jokerGold300 / #FFE4B8 */
 
   /*💠 BASECOLOR */
-  --color-jokerGold400: hsl(
-    var(--color-jokerGold) 100% 83% /1
-  ); /* jokerGold400 / #FFDEA8 */
+  --color-jokerGold400: hsl(var(--color-jokerGold) 100% 83% / var(--opacity100)); /* jokerGold400 / #FFDEA8 */
 
-  --color-jokerGold500: hsl(
-    calc(var(--color-jokerGold) + 1) 35% 59% /1
-  ); /* jokerGold500 / #BBA072 */
-  --color-jokerGold600: hsl(
-    calc(var(--color-jokerGold) + 1) 30% 51% /1
-  ); /* jokerGold600 / #A88C5D */
-  --color-jokerGold700: hsl(
-    var(--color-jokerGold) 30% 42% /1
-  ); /* jokerGold700 / #8E7348 */
-  --color-jokerGold800: hsl(
-    calc(var(--color-jokerGold) + 1) 36% 29% /1
-  ); /* jokerGold800 / #65512F */
-  --color-jokerGold900: hsl(
-    calc(var(--color-jokerGold) - 6) 23% 18% /1
-  ); /* jokerGold900 / #382E23 */
-  --color-jokerGold1000: hsl(
-    var(--color-jokerGold) 26% 9% /1
-  ); /* jokerGold1000 / #1D1811 */
+  --color-jokerGold500: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity100)); /* jokerGold500 / #BBA072 */
+  --color-jokerGold600: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity100)); /* jokerGold600 / #A88C5D */
+  --color-jokerGold700: hsl(var(--color-jokerGold) 30% 42% / var(--opacity100)); /* jokerGold700 / #8E7348 */
+  --color-jokerGold800: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity100)); /* jokerGold800 / #65512F */
+  --color-jokerGold900: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity100)); /* jokerGold900 / #382E23 */
+  --color-jokerGold1000: hsl(var(--color-jokerGold) 26% 9% / var(--opacity100)); /* jokerGold1000 / #1D1811 */
+
   /*--JokerGOLD  🏁 END  --*/
 
-  /*--JokerROSE 🏎️ START --*/
+
+  
+     /*--JokerROSE 🏎️ START --*/
   --color-jokerRose: 32;
 
-  --color-jokerRose50: hsl(
-    calc(var(--color-jokerRose) - 1) 40% 81%/1
-  ); /* jokerRose50 / #E2CFBB */
-  --color-jokerRose100: hsl(
-    var(--color-jokerRose) 40% 73%/1
-  ); /* jokerRose100 / #D6BC9E */
-  --color-jokerRose200: hsl(
-    var(--color-jokerRose) 40% 67%/1
-  ); /* jokerRose200 / #CCAC88 */
-  --color-jokerRose300: hsl(
-    calc(var(--color-jokerRose) + 1) 37% 60%/1
-  ); /* jokerRose300 / #BF9D75 */
+  --color-jokerRose50: hsl(calc(var(--color-jokerRose) - 1) 40% 81%/ var(--opacity100)); /* jokerRose50 / #E2CFBB */
+  --color-jokerRose100: hsl(var(--color-jokerRose) 40% 73%/ var(--opacity100)); /* jokerRose100 / #D6BC9E */
+  --color-jokerRose200: hsl(var(--color-jokerRose) 40% 67%/ var(--opacity100)); /* jokerRose200 / #CCAC88 */
+  --color-jokerRose300: hsl(calc(var(--color-jokerRose) + 1) 37% 60%/ var(--opacity100)); /* jokerRose300 / #BF9D75 */
 
   /*💠 BASECOLOR */
-  --color-jokerRose400: hsl(
-    var(--color-jokerRose) 22% 54%/1
-  ); /* jokerRose400 / #A48C71 */
+  --color-jokerRose400: hsl(var(--color-jokerRose) 22% 54%/ var(--opacity100)); /* jokerRose400 / #A48C71 */
 
-  --color-jokerRose500: hsl(
-    calc(var(--color-jokerRose) - 1) 19% 47%/1
-  ); /* jokerRose500 / #8F7962 */
-  --color-jokerRose600: hsl(
-    var(--color-jokerRose) 19% 40%/1
-  ); /* jokerRose600 / #796752 */
-  --color-jokerRose700: hsl(
-    calc(var(--color-jokerRose) - 1) 20% 33%/1
-  ); /* jokerRose700 / #645443 */
-  --color-jokerRose800: hsl(
-    calc(var(--color-jokerRose) - 2) 21% 22%/1
-  ); /* jokerRose800 / #44382C */
-  --color-jokerRose900: hsl(
-    calc(var(--color-jokerRose) - 1) 23% 18%/1
-  ); /* jokerRose900 / #382E23 */
+  --color-jokerRose500: hsl(calc(var(--color-jokerRose) - 1) 19% 47%/ var(--opacity100)); /* jokerRose500 / #8F7962 */
+  --color-jokerRose600: hsl(var(--color-jokerRose) 19% 40%/ var(--opacity100));   /* jokerRose600 / #796752 */
+  --color-jokerRose700: hsl(calc(var(--color-jokerRose) - 1) 20% 33%/ var(--opacity100)); /* jokerRose700 / #645443 */
+  --color-jokerRose800: hsl(calc(var(--color-jokerRose) - 2) 21% 22%/ var(--opacity100)); /* jokerRose800 / #44382C */
+  --color-jokerRose900: hsl(calc(var(--color-jokerRose) - 1) 23% 18%/ var(--opacity100)); /* jokerRose900 / #382E23 */
 
   /*--JokerROSE  🏁 END  --*/
 
-  /*--JokerHONEY 🏎️ START --*/
+
+  
+      /*--JokerHONEY 🏎️ START --*/
   --color-jokerHoney: 40;
 
-  --color-jokerHoney50: hsl(
-    calc(var(--color-jokerHoney) + 1) 68% 86%/1
-  ); /* jokerHoney50 / #F4E5C5*/
-  --color-jokerHoney100: hsl(
-    var(--color-jokerHoney) 69% 76%/1
-  ); /* jokerHoney100 / #ECD098 */
-  --color-jokerHoney200: hsl(
-    calc(var(--color-jokerHoney) + 1) 68% 69%/1
-  ); /* jokerHoney200 / #E6C37A */
-  --color-jokerHoney300: hsl(
-    var(--color-jokerHoney) 69% 62%/1
-  ); /* jokerHoney300 / #E1B55C */
+  --color-jokerHoney50: hsl(calc(var(--color-jokerHoney) + 1) 68% 86%/ var(--opacity100)); /* jokerHoney50 / #F4E5C5*/
+  --color-jokerHoney100: hsl(var(--color-jokerHoney) 69% 76%/ var(--opacity100)); /* jokerHoney100 / #ECD098 */
+  --color-jokerHoney200: hsl(calc(var(--color-jokerHoney) + 1) 68% 69%/ var(--opacity100)); /* jokerHoney200 / #E6C37A */
+  --color-jokerHoney300: hsl(var(--color-jokerHoney) 69% 62%/ var(--opacity100)); /* jokerHoney300 / #E1B55C */
 
   /*💠 BASECOLOR */
-  --color-jokerHoney400: hsl(
-    var(--color-jokerHoney) 69% 55%/1
-  ); /* jokerHoney400 / #DBA73E   */
+  --color-jokerHoney400: hsl(var(--color-jokerHoney) 69% 55%/ var(--opacity100)); /* jokerHoney400 / #DBA73E   */
 
-  --color-jokerHoney500: hsl(
-    var(--color-jokerHoney) 57% 48%/1
-  ); /* jokerHoney500 / #C09235 */
-  --color-jokerHoney600: hsl(
-    calc(var(--color-jokerHoney) + 1) 61% 34%/1
-  ); /* jokerHoney600 / #8B6922 */
-  --color-jokerHoney700: hsl(
-    var(--color-jokerHoney) 64% 27%/1
-  ); /* jokerHoney700 / #715419 */
-  --color-jokerHoney800: hsl(
-    calc(var(--color-jokerHoney) - 4) 65% 24%/1
-  ); /* jokerHoney800 / #634915 */
-  --color-jokerHoney900: hsl(
-    var(--color-jokerHoney) 69% 20%/1
-  ); /* jokerHoney900 / #563F10 */
+  --color-jokerHoney500: hsl(var(--color-jokerHoney) 57% 48%/ var(--opacity100)); /* jokerHoney500 / #C09235 */
+  --color-jokerHoney600: hsl(calc(var(--color-jokerHoney) + 1) 61% 34%/ var(--opacity100)); /* jokerHoney600 / #8B6922 */
+  --color-jokerHoney700: hsl(var(--color-jokerHoney) 64% 27%/ var(--opacity100)); /* jokerHoney700 / #715419 */
+  --color-jokerHoney800: hsl(calc(var(--color-jokerHoney) - 4) 65% 24%/ var(--opacity100)); /* jokerHoney800 / #634915 */
+  --color-jokerHoney900: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity100)); /* jokerHoney900 / #563F10 */
 
   /*--JokerHONEY  🏁 END  --*/
 
-  /*--JokerGREEN 🏎️ START --*/
+
+  
+ /*--JokerGREEN 🏎️ START --*/
   --color-jokerGreen: 121;
 
-  --color-jokerGreen50: hsl(
-    calc(var(--color-jokerGreen) + 10) 70% 91%/1
-  ); /* jokerGreen50 / #D8F8DE */
-  --color-jokerGreen100: hsl(
-    calc(var(--color-jokerGreen) + 9) 68% 86%/1
-  ); /* jokerGreen100 / #C5F4CD */
-  --color-jokerGreen200: hsl(
-    calc(var(--color-jokerGreen) + 9) 68% 69%/1
-  ); /* jokerGreen200 / #B2F1BC */
-  --color-jokerGreen300: hsl(
-    var(--color-jokerGreen) 68% 73%/1
-  ); /* jokerGreen300 / #8BE99B */
+  --color-jokerGreen50: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity100)); /* jokerGreen50 / #D8F8DE */
+  --color-jokerGreen100: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity100)); /* jokerGreen100 / #C5F4CD */
+  --color-jokerGreen200: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity100)); /* jokerGreen200 / #B2F1BC */
+  --color-jokerGreen300: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity100)); /* jokerGreen300 / #8BE99B */
 
   /*💠 BASECOLOR */
-  --color-jokerGreen400: hsl(
-    var(--color-jokerGreen) 68% 55%/1
-  ); /* jokerGreen400 / #3EDB58   */
+  --color-jokerGreen400: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity100)); /* jokerGreen400 / #3EDB58   */
 
-  --color-jokerGreen500: hsl(
-    calc(var(--color-jokerGreen) + 9) 57% 46%/1
-  ); /* jokerGreen500 / #33B849 */
-  --color-jokerGreen600: hsl(
-    calc(var(--color-jokerGreen) + 9) 58% 37%/1
-  ); /* jokerGreen600 / #28953A */
-  --color-jokerGreen700: hsl(
-    calc(var(--color-jokerGreen) + 9) 58% 28%/1
-  ); /* jokerGreen700 / #1E712C */
-  --color-jokerGreen800: hsl(
-    calc(var(--color-jokerGreen) + 9) 61% 19%/1
-  ); /* jokerGreen800 / #134E1D */
-  --color-jokerGreen900: hsl(
-    calc(var(--color-jokerGreen) + 9) 65% 15%/1
-  ); /* jokerGreen900 / #0D3D15 */
+  --color-jokerGreen500: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity100)); /* jokerGreen500 / #33B849 */
+  --color-jokerGreen600: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity100)); /* jokerGreen600 / #28953A */
+  --color-jokerGreen700: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity100)); /* jokerGreen700 / #1E712C */
+  --color-jokerGreen800: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity100)); /* jokerGreen800 / #134E1D */
+  --color-jokerGreen900: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity100)); /* jokerGreen900 / #0D3D15 */
 
   /*--JokerGREEN  🏁 END  --*/
 
+
+  
   /*--JokerRED 🏎️ START --*/
   --color-jokerRed: 0;
 
-  --color-jokerRed50: hsl(
-    var(--color-jokerRed) 67% 89%/1
-  ); /* jokerRed50 / #F6D2D2 */
-  --color-jokerRed100: hsl(
-    var(--color-jokerRed) 68% 85%/1
-  ); /* jokerRed100 / #F3BFBF */
-  --color-jokerRed200: hsl(
-    var(--color-jokerRed) 67% 81%/1
-  ); /* jokerRed200 / #EFADAD */
-  --color-jokerRed300: hsl(
-    var(--color-jokerRed) 69% 72%/1
-  ); /* jokerRed300 / #E98888 */
+  --color-jokerRed50: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity100)); /* jokerRed50 */
+  --color-jokerRed100: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity100)); /* jokerRed100 */
+  --color-jokerRed200: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity100)); /* jokerRed200 */
+  --color-jokerRed300: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity100)); /* jokerRed300 */
 
   /*💠 BASECOLOR */
-  --color-jokerRed400: hsl(
-    var(--color-jokerRed) 69% 55%/1
-  ); /* jokerRed400 / #DB3E3E   */
+  --color-jokerRed400: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity100)); /* jokerRed400 */
 
-  --color-jokerRed500: hsl(
-    var(--color-jokerRed) 56% 47%/1
-  ); /* jokerRed500 / #BA3434 */
-  --color-jokerRed600: hsl(
-    var(--color-jokerRed) 58% 38%/1
-  ); /* jokerRed600 / #982929 */
-  --color-jokerRed700: hsl(
-    var(--color-jokerRed) 59% 29%/1
-  ); /* jokerRed700 / #771F1F */
-  --color-jokerRed800: hsl(
-    var(--color-jokerRed) 62% 21%/1
-  ); /* jokerRed800 / #551414 */
-  --color-jokerRed900: hsl(
-    var(--color-jokerRed) 64% 16%/1
-  ); /* jokerRed900 / #450F0F */
+  --color-jokerRed500: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity100)); /* jokerRed500 */
+  --color-jokerRed600: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity100)); /* jokerRed600 */
+  --color-jokerRed700: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity100)); /* jokerRed700 */
+  --color-jokerRed800: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity100)); /* jokerRed800 */
+  --color-jokerRed900: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity100)); /* jokerRed900 */
 
   /*--JokerRED  🏁 END  --*/
+
+
 
   /*--JokerALERT 🏎️ START --*/
   --color-jokerAlert: 22;
 
-  --color-jokerAlert50: hsl(
-    var(--color-jokerAlert) 68% 86%/1
-  ); /* jokerAlert50 / #F4D6C5 */
-  --color-jokerAlert100: hsl(
-    var(--color-jokerAlert) 69% 82%/1
-  ); /* jokerAlert100 / #F1C9B2 */
-  --color-jokerAlert200: hsl(
-    var(--color-jokerAlert) 68% 73%/1
-  ); /* jokerAlert200 / #E9AE8B */
-  --color-jokerAlert300: hsl(
-    var(--color-jokerAlert) 68% 64%/1
-  ); /* jokerAlert300 / #E29365 */
+  --color-jokerAlert50: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity100)); /* jokerAlert50 / #F4D6C5 */
+  --color-jokerAlert100: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity100)); /* jokerAlert100 / #F1C9B2 */
+  --color-jokerAlert200: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity100)); /* jokerAlert200 / #E9AE8B */
+  --color-jokerAlert300: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity100)); /* jokerAlert300 / #E29365 */
 
   /*💠 BASECOLOR */
-  --color-jokerAlert400: hsl(
-    var(--color-jokerAlert) 69% 55%/1
-  ); /* jokerAlert400 / #DB783E   */
+  --color-jokerAlert400: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity100)); /* jokerAlert400 / #DB783E   */
 
-  --color-jokerAlert500: hsl(
-    var(--color-jokerAlert) 56% 45%/1
-  ); /* jokerAlert500 / #B56333 */
-  --color-jokerAlert600: hsl(
-    var(--color-jokerAlert) 57% 36%/1
-  ); /* jokerAlert600 / #904E28 */
-  --color-jokerAlert700: hsl(
-    var(--color-jokerAlert) 58% 22%/1
-  ); /* jokerAlert700 / #572F17 */
-  --color-jokerAlert800: hsl(
-    var(--color-jokerAlert) 60% 17%/1
-  ); /* jokerAlert800 / #452411 */
-  --color-jokerAlert900: hsl(
-    var(--color-jokerAlert) 68% 7%/1
-  ); /* jokerAlert900 / #1F0F06 */
+  --color-jokerAlert500: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity100)); /* jokerAlert500 / #B56333 */
+  --color-jokerAlert600: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity100)); /* jokerAlert600 / #904E28 */
+  --color-jokerAlert700: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity100)); /* jokerAlert700 / #572F17 */
+  --color-jokerAlert800: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity100)); /* jokerAlert800 / #452411 */
+  --color-jokerAlert900: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity100)); /* jokerAlert900 / #1F0F06 */
 
   /*--JokerALERT  🏁 END  --*/
 
-  /*--JokerGRADIENT 🏎️ START --*/
-  --color-jokerCircleColor01: 277;
-  --color-jokerCircleColor02: 36;
-  --color-jokerCircleColor02: 133;
 
-  --color-jokerPurpleCircle: hsl(
-    var(var(--color-jokerCircleColor01) 19% 98% /0.17)
-  );
-  --color-jokerYellowCircle: hsl(
-    var(var(--color-jokerCircleColor02) 19% 98% /0.2)
-  );
-  --color-jokerGreenCircle: hsl(
-    var(var(--color-jokerCircleColor03) 19% 98% /0.2)
-  );
+   /*--JokerGRADIENT 🏎️ START --*/
+  --color-jokerCircleColor01:277;
+  --color-jokerCircleColor02:36;
+  --color-jokerCircleColor02:133;
+  
 
-  /*--JokerGRADIENT  🏁 END  --*/
+  --color-jokerPurpleCircle: hsl(var(var(--color-jokerCircleColor01) 19% 98% /var(--opacity15)));
+  --color-jokerYellowCircle: hsl(var(var(--color-jokerCircleColor02) 19% 98% /var(--opacity20)));
+  --color-jokerGreenCircle: hsl(var(var(--color-jokerCircleColor03) 19% 98% /var(--opacity20)));
 
+
+    /*--JokerGRADIENT  🏁 END  --*/
+
+
+
+
+
+
+
+
+  /*############### 👻 OPACITIES & OPACITY COLORS 👻 ############### */
+  --opacity00:0.00;
+  --opacity05:0.05;
+  --opacity10:0.10;
+  --opacity15:0.15;
+  --opacity20:0.20;
+  --opacity25:0.25;
+  --opacity30:0.30;
+  --opacity35:0.35;
+  --opacity40:0.40;
+  --opacity45:0.45;
+  --opacity50:0.50;
+  --opacity55:0.55;
+  --opacity60:0.60;
+  --opacity65:0.65;
+  --opacity70:0.70;
+  --opacity75:0.75;
+  --opacity80:0.80;
+  --opacity85:0.85;
+  --opacity90:0.90;
+  --opacity95:0.95;
+  --opacity100:1.0;
+
+/* 👻 jokerWhite50 opacity variations */
+--color-jokerWhite50-opacity00: hsl(0 0% var(--color-jokerWhite) / var(--opacity00) ); /* bgWhite50  */
+--color-jokerWhite50-opacity05: hsl(0 0% var(--color-jokerWhite) / var(--opacity05) ); /* bgWhite50  */
+--color-jokerWhite50-opacity10: hsl(0 0% var(--color-jokerWhite) / var(--opacity10) ); /* bgWhite50 */
+--color-jokerWhite50-opacity15: hsl(0 0% var(--color-jokerWhite) / var(--opacity15) ); /* bgWhite50 */
+--color-jokerWhite50-opacity20: hsl(0 0% var(--color-jokerWhite) / var(--opacity20) ); /* bgWhite50 */
+--color-jokerWhite50-opacity25: hsl(0 0% var(--color-jokerWhite) / var(--opacity25) ); /* bgWhite50 */
+--color-jokerWhite50-opacity30: hsl(0 0% var(--color-jokerWhite) / var(--opacity30) ); /* bgWhite50 */
+--color-jokerWhite50-opacity35: hsl(0 0% var(--color-jokerWhite) / var(--opacity35) ); /* bgWhite50 */
+--color-jokerWhite50-opacity40: hsl(0 0% var(--color-jokerWhite) / var(--opacity40) ); /* bgWhite50 */
+--color-jokerWhite50-opacity45: hsl(0 0% var(--color-jokerWhite) / var(--opacity45) ); /* bgWhite50 */
+--color-jokerWhite50-opacity50: hsl(0 0% var(--color-jokerWhite) / var(--opacity50) ); /* bgWhite50 */
+--color-jokerWhite50-opacity55: hsl(0 0% var(--color-jokerWhite) / var(--opacity55) ); /* bgWhite50 */
+--color-jokerWhite50-opacity60: hsl(0 0% var(--color-jokerWhite) / var(--opacity60) ); /* bgWhite50 */
+--color-jokerWhite50-opacity65: hsl(0 0% var(--color-jokerWhite) / var(--opacity65) ); /* bgWhite50 */
+--color-jokerWhite50-opacity70: hsl(0 0% var(--color-jokerWhite) / var(--opacity70) ); /* bgWhite50 */
+--color-jokerWhite50-opacity75: hsl(0 0% var(--color-jokerWhite) / var(--opacity75) ); /* bgWhite50 */
+--color-jokerWhite50-opacity80: hsl(0 0% var(--color-jokerWhite) / var(--opacity80) ); /* bgWhite50 */
+--color-jokerWhite50-opacity85: hsl(0 0% var(--color-jokerWhite) / var(--opacity85) ); /* bgWhite50 */
+--color-jokerWhite50-opacity90: hsl(0 0% var(--color-jokerWhite) / var(--opacity90) ); /* bgWhite50 */
+--color-jokerWhite50-opacity95: hsl(0 0% var(--color-jokerWhite) / var(--opacity95) ); /* bgWhite50 */
+  
+
+/* 👻 jokerBlack opacity variations */
+
+/*jokerBlack50 opacity variations */
+--color-jokerBlack50-opacity00: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity00)); /* jokerBlack50 */
+--color-jokerBlack50-opacity05: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity05)); /* jokerBlack50 */
+--color-jokerBlack50-opacity10: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity10)); /* jokerBlack50 */
+--color-jokerBlack50-opacity15: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity15)); /* jokerBlack50 */
+--color-jokerBlack50-opacity20: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity20)); /* jokerBlack50 */
+--color-jokerBlack50-opacity25: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity25)); /* jokerBlack50 */
+--color-jokerBlack50-opacity30: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity30)); /* jokerBlack50 */
+--color-jokerBlack50-opacity35: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity35)); /* jokerBlack50 */
+--color-jokerBlack50-opacity40: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity40)); /* jokerBlack50 */
+--color-jokerBlack50-opacity45: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity45)); /* jokerBlack50 */
+--color-jokerBlack50-opacity50: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity50)); /* jokerBlack50 */
+--color-jokerBlack50-opacity55: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity55)); /* jokerBlack50 */
+--color-jokerBlack50-opacity60: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity60)); /* jokerBlack50 */
+--color-jokerBlack50-opacity65: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity65)); /* jokerBlack50 */
+--color-jokerBlack50-opacity70: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity70)); /* jokerBlack50 */
+--color-jokerBlack50-opacity75: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity75)); /* jokerBlack50 */
+--color-jokerBlack50-opacity80: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity80)); /* jokerBlack50 */
+--color-jokerBlack50-opacity85: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity85)); /* jokerBlack50 */
+--color-jokerBlack50-opacity90: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity90)); /* jokerBlack50 */
+--color-jokerBlack50-opacity95: hsl(var(--color-jokerBlack) 0% 65% / var(--opacity95)); /* jokerBlack50 */
+
+
+/*jokerBlack100 opacity variations */
+--color-jokerBlack100-opacity00: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity00));/* jokerBlack100 */
+--color-jokerBlack100-opacity05: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity05));/* jokerBlack100 */
+--color-jokerBlack100-opacity10: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity10));/* jokerBlack100 */
+--color-jokerBlack100-opacity15: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity15));/* jokerBlack100 */
+--color-jokerBlack100-opacity20: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity20));/* jokerBlack100 */
+--color-jokerBlack100-opacity25: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity25));/* jokerBlack100 */
+--color-jokerBlack100-opacity30: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity30));/* jokerBlack100 */
+--color-jokerBlack100-opacity35: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity35));/* jokerBlack100 */
+--color-jokerBlack100-opacity40: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity40));/* jokerBlack100 */
+--color-jokerBlack100-opacity45: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity45));/* jokerBlack100 */
+--color-jokerBlack100-opacity50: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity50));/* jokerBlack100 */
+--color-jokerBlack100-opacity55: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity55));/* jokerBlack100 */
+--color-jokerBlack100-opacity60: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity60));/* jokerBlack100 */
+--color-jokerBlack100-opacity65: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity65));/* jokerBlack100 */
+--color-jokerBlack100-opacity70: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity70));/* jokerBlack100 */
+--color-jokerBlack100-opacity75: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity75));/* jokerBlack100 */
+--color-jokerBlack100-opacity80: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity80));/* jokerBlack100 */
+--color-jokerBlack100-opacity85: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity85));/* jokerBlack100 */
+--color-jokerBlack100-opacity90: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity90));/* jokerBlack100 */
+--color-jokerBlack100-opacity95: hsl(var(--color-jokerBlack) 0% 37% / var(--opacity95));/* jokerBlack100 */
+
+/*jokerBlack200 opacity variations */
+--color-jokerBlack200-opacity00: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity00)); /* jokerBlack200 */
+--color-jokerBlack200-opacity05: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity05)); /* jokerBlack200 */
+--color-jokerBlack200-opacity10: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity10)); /* jokerBlack200 */
+--color-jokerBlack200-opacity15: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity15)); /* jokerBlack200 */
+--color-jokerBlack200-opacity20: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity20)); /* jokerBlack200 */
+--color-jokerBlack200-opacity25: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity25)); /* jokerBlack200 */
+--color-jokerBlack200-opacity30: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity30)); /* jokerBlack200 */
+--color-jokerBlack200-opacity35: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity35)); /* jokerBlack200 */
+--color-jokerBlack200-opacity40: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity40)); /* jokerBlack200 */
+--color-jokerBlack200-opacity45: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity45)); /* jokerBlack200 */
+--color-jokerBlack200-opacity50: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity50)); /* jokerBlack200 */
+--color-jokerBlack200-opacity55: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity55)); /* jokerBlack200 */
+--color-jokerBlack200-opacity60: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity60)); /* jokerBlack200 */
+--color-jokerBlack200-opacity65: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity65)); /* jokerBlack200 */
+--color-jokerBlack200-opacity70: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity70)); /* jokerBlack200 */
+--color-jokerBlack200-opacity75: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity75)); /* jokerBlack200 */
+--color-jokerBlack200-opacity80: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity80)); /* jokerBlack200 */
+--color-jokerBlack200-opacity85: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity85)); /* jokerBlack200 */
+--color-jokerBlack200-opacity90: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity90)); /* jokerBlack200 */
+--color-jokerBlack200-opacity95: hsl(var(--color-jokerBlack) 0% 24% / var(--opacity95)); /* jokerBlack200 */
+
+/*jokerBlack300 opacity variations */
+--color-jokerBlack300-opacity00: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity00)); /* jokerBlack300 */
+--color-jokerBlack300-opacity05: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity05)); /* jokerBlack300 */
+--color-jokerBlack300-opacity10: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity10)); /* jokerBlack300 */
+--color-jokerBlack300-opacity15: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity15)); /* jokerBlack300 */
+--color-jokerBlack300-opacity20: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity20)); /* jokerBlack300 */
+--color-jokerBlack300-opacity25: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity25)); /* jokerBlack300 */
+--color-jokerBlack300-opacity30: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity30)); /* jokerBlack300 */
+--color-jokerBlack300-opacity35: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity35)); /* jokerBlack300 */
+--color-jokerBlack300-opacity40: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity40)); /* jokerBlack300 */
+--color-jokerBlack300-opacity45: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity45)); /* jokerBlack300 */
+--color-jokerBlack300-opacity50: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity50)); /* jokerBlack300 */
+--color-jokerBlack300-opacity55: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity55)); /* jokerBlack300 */
+--color-jokerBlack300-opacity60: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity60)); /* jokerBlack300 */
+--color-jokerBlack300-opacity65: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity65)); /* jokerBlack300 */
+--color-jokerBlack300-opacity70: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity70)); /* jokerBlack300 */
+--color-jokerBlack300-opacity75: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity75)); /* jokerBlack300 */
+--color-jokerBlack300-opacity80: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity80)); /* jokerBlack300 */
+--color-jokerBlack300-opacity85: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity85)); /* jokerBlack300 */
+--color-jokerBlack300-opacity90: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity90)); /* jokerBlack300 */
+--color-jokerBlack300-opacity95: hsl(var(--color-jokerBlack) 0% 15% / var(--opacity95)); /* jokerBlack300 */
+
+
+ /*jokerBlack400 opacity variations */
+--color-jokerBlack400-opacity00: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity00)); /* jokerBlack400 */
+--color-jokerBlack400-opacity05: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity05)); /* jokerBlack400 */
+--color-jokerBlack400-opacity10: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity10)); /* jokerBlack400 */
+--color-jokerBlack400-opacity15: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity15)); /* jokerBlack400 */
+--color-jokerBlack400-opacity20: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity20)); /* jokerBlack400 */
+--color-jokerBlack400-opacity25: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity25)); /* jokerBlack400 */
+--color-jokerBlack400-opacity30: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity30)); /* jokerBlack400 */
+--color-jokerBlack400-opacity35: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity35)); /* jokerBlack400 */
+--color-jokerBlack400-opacity40: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity40)); /* jokerBlack400 */
+--color-jokerBlack400-opacity45: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity45)); /* jokerBlack400 */
+--color-jokerBlack400-opacity50: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity50)); /* jokerBlack400 */
+--color-jokerBlack400-opacity55: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity55)); /* jokerBlack400 */
+--color-jokerBlack400-opacity60: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity60)); /* jokerBlack400 */
+--color-jokerBlack400-opacity65: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity65)); /* jokerBlack400 */
+--color-jokerBlack400-opacity70: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity70)); /* jokerBlack400 */
+--color-jokerBlack400-opacity75: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity75)); /* jokerBlack400 */
+--color-jokerBlack400-opacity80: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity80)); /* jokerBlack400 */
+--color-jokerBlack400-opacity85: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity85)); /* jokerBlack400 */
+--color-jokerBlack400-opacity90: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity90)); /* jokerBlack400 */
+--color-jokerBlack400-opacity95: hsl(var(--color-jokerBlack) 0% 13% / var(--opacity95)); /* jokerBlack400 */
+
+
+/*jokerBlack500 opacity variations */
+--color-jokerBlack500-opacity00: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity00)); /* jokerBlack500 */
+--color-jokerBlack500-opacity05: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity05)); /* jokerBlack500 */
+--color-jokerBlack500-opacity10: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity10)); /* jokerBlack500 */
+--color-jokerBlack500-opacity15: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity15)); /* jokerBlack500 */
+--color-jokerBlack500-opacity20: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity20)); /* jokerBlack500 */
+--color-jokerBlack500-opacity25: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity25)); /* jokerBlack500 */
+--color-jokerBlack500-opacity30: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity30)); /* jokerBlack500 */
+--color-jokerBlack500-opacity35: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity35)); /* jokerBlack500 */
+--color-jokerBlack500-opacity40: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity40)); /* jokerBlack500 */
+--color-jokerBlack500-opacity45: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity45)); /* jokerBlack500 */
+--color-jokerBlack500-opacity50: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity50)); /* jokerBlack500 */
+--color-jokerBlack500-opacity55: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity55)); /* jokerBlack500 */
+--color-jokerBlack500-opacity60: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity60)); /* jokerBlack500 */
+--color-jokerBlack500-opacity65: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity65)); /* jokerBlack500 */
+--color-jokerBlack500-opacity70: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity70)); /* jokerBlack500 */
+--color-jokerBlack500-opacity75: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity75)); /* jokerBlack500 */
+--color-jokerBlack500-opacity80: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity80)); /* jokerBlack500 */
+--color-jokerBlack500-opacity85: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity85)); /* jokerBlack500 */
+--color-jokerBlack500-opacity90: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity90)); /* jokerBlack500 */
+--color-jokerBlack500-opacity95: hsl(var(--color-jokerBlack) 0% 12% / var(--opacity95)); /* jokerBlack500 */
+
+/*jokerBlack600 opacity variations */
+--color-jokerBlack600-opacity00: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity00)); /* jokerBlack600 */
+--color-jokerBlack600-opacity05: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity05)); /* jokerBlack600 */
+--color-jokerBlack600-opacity10: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity10)); /* jokerBlack600 */
+--color-jokerBlack600-opacity15: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity15)); /* jokerBlack600 */
+--color-jokerBlack600-opacity20: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity20)); /* jokerBlack600 */
+--color-jokerBlack600-opacity25: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity25)); /* jokerBlack600 */
+--color-jokerBlack600-opacity30: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity30)); /* jokerBlack600 */
+--color-jokerBlack600-opacity35: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity35)); /* jokerBlack600 */
+--color-jokerBlack600-opacity40: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity40)); /* jokerBlack600 */
+--color-jokerBlack600-opacity45: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity45)); /* jokerBlack600 */
+--color-jokerBlack600-opacity50: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity50)); /* jokerBlack600 */
+--color-jokerBlack600-opacity55: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity55)); /* jokerBlack600 */
+--color-jokerBlack600-opacity60: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity60)); /* jokerBlack600 */
+--color-jokerBlack600-opacity65: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity65)); /* jokerBlack600 */
+--color-jokerBlack600-opacity70: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity70)); /* jokerBlack600 */
+--color-jokerBlack600-opacity75: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity75)); /* jokerBlack600 */
+--color-jokerBlack600-opacity80: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity80)); /* jokerBlack600 */
+--color-jokerBlack600-opacity85: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity85)); /* jokerBlack600 */
+--color-jokerBlack600-opacity90: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity90)); /* jokerBlack600 */
+--color-jokerBlack600-opacity95: hsl(var(--color-jokerBlack) 0% 10% / var(--opacity95)); /* jokerBlack600 */
+
+/*jokerBlack700 opacity variations */
+--color-jokerBlack700-opacity00: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity00)); /* jokerBlack700 */
+--color-jokerBlack700-opacity05: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity05)); /* jokerBlack700 */
+--color-jokerBlack700-opacity10: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity10)); /* jokerBlack700 */
+--color-jokerBlack700-opacity15: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity15)); /* jokerBlack700 */
+--color-jokerBlack700-opacity20: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity20)); /* jokerBlack700 */
+--color-jokerBlack700-opacity25: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity25)); /* jokerBlack700 */
+--color-jokerBlack700-opacity30: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity30)); /* jokerBlack700 */
+--color-jokerBlack700-opacity35: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity35)); /* jokerBlack700 */
+--color-jokerBlack700-opacity40: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity40)); /* jokerBlack700 */
+--color-jokerBlack700-opacity45: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity45)); /* jokerBlack700 */
+--color-jokerBlack700-opacity50: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity50)); /* jokerBlack700 */
+--color-jokerBlack700-opacity55: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity55)); /* jokerBlack700 */
+--color-jokerBlack700-opacity60: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity60)); /* jokerBlack700 */
+--color-jokerBlack700-opacity65: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity65)); /* jokerBlack700 */
+--color-jokerBlack700-opacity70: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity70)); /* jokerBlack700 */
+--color-jokerBlack700-opacity75: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity75)); /* jokerBlack700 */
+--color-jokerBlack700-opacity80: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity80)); /* jokerBlack700 */
+--color-jokerBlack700-opacity85: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity85)); /* jokerBlack700 */
+--color-jokerBlack700-opacity90: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity90)); /* jokerBlack700 */
+--color-jokerBlack700-opacity95: hsl(var(--color-jokerBlack) 0% 9% / var(--opacity95)); /* jokerBlack700 */
+
+/*jokerBlack800 opacity variations */
+--color-jokerBlack800-opacity00: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity00)); /* jokerBlack800 */
+--color-jokerBlack800-opacity05: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity05)); /* jokerBlack800 */
+--color-jokerBlack800-opacity10: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity10)); /* jokerBlack800 */
+--color-jokerBlack800-opacity15: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity15)); /* jokerBlack800 */
+--color-jokerBlack800-opacity20: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity20)); /* jokerBlack800 */
+--color-jokerBlack800-opacity25: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity25)); /* jokerBlack800 */
+--color-jokerBlack800-opacity30: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity30)); /* jokerBlack800 */
+--color-jokerBlack800-opacity35: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity35)); /* jokerBlack800 */
+--color-jokerBlack800-opacity40: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity40)); /* jokerBlack800 */
+--color-jokerBlack800-opacity45: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity45)); /* jokerBlack800 */
+--color-jokerBlack800-opacity50: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity50)); /* jokerBlack800 */
+--color-jokerBlack800-opacity55: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity55)); /* jokerBlack800 */
+--color-jokerBlack800-opacity60: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity60)); /* jokerBlack800 */
+--color-jokerBlack800-opacity65: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity65)); /* jokerBlack800 */
+--color-jokerBlack800-opacity70: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity70)); /* jokerBlack800 */
+--color-jokerBlack800-opacity75: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity75)); /* jokerBlack800 */
+--color-jokerBlack800-opacity80: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity80)); /* jokerBlack800 */
+--color-jokerBlack800-opacity85: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity85)); /* jokerBlack800 */
+--color-jokerBlack800-opacity90: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity90)); /* jokerBlack800 */
+--color-jokerBlack800-opacity95: hsl(var(--color-jokerBlack) 0% 8% / var(--opacity95)); /* jokerBlack800 */
+
+/*jokerBlack900 opacity variations */
+--color-jokerBlack900-opacity00: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity00)); /* jokerBlack900 */
+--color-jokerBlack900-opacity05: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity05)); /* jokerBlack900 */
+--color-jokerBlack900-opacity10: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity10)); /* jokerBlack900 */
+--color-jokerBlack900-opacity15: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity15)); /* jokerBlack900 */
+--color-jokerBlack900-opacity20: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity20)); /* jokerBlack900 */
+--color-jokerBlack900-opacity25: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity25)); /* jokerBlack900 */
+--color-jokerBlack900-opacity30: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity30)); /* jokerBlack900 */
+--color-jokerBlack900-opacity35: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity35)); /* jokerBlack900 */
+--color-jokerBlack900-opacity40: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity40)); /* jokerBlack900 */
+--color-jokerBlack900-opacity45: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity45)); /* jokerBlack900 */
+--color-jokerBlack900-opacity50: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity50)); /* jokerBlack900 */
+--color-jokerBlack900-opacity55: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity55)); /* jokerBlack900 */
+--color-jokerBlack900-opacity60: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity60)); /* jokerBlack900 */
+--color-jokerBlack900-opacity65: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity65)); /* jokerBlack900 */
+--color-jokerBlack900-opacity70: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity70)); /* jokerBlack900 */
+--color-jokerBlack900-opacity75: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity75)); /* jokerBlack900 */
+--color-jokerBlack900-opacity80: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity80)); /* jokerBlack900 */
+--color-jokerBlack900-opacity85: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity85)); /* jokerBlack900 */
+--color-jokerBlack900-opacity90: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity90)); /* jokerBlack900 */
+--color-jokerBlack900-opacity95: hsl(var(--color-jokerBlack) 0% 0% / var(--opacity95)); /* jokerBlack900 */
+
+ /* 👻 jokerGold opacity variations */
+
+/*jokerGold50 opacity variations */
+--color-jokerGold50-opacity00: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity00)); /* jokerGold50 */
+--color-jokerGold50-opacity05: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity05)); /* jokerGold50 */
+--color-jokerGold50-opacity10: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity10)); /* jokerGold50 */
+--color-jokerGold50-opacity15: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity15)); /* jokerGold50 */
+--color-jokerGold50-opacity20: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity20)); /* jokerGold50 */
+--color-jokerGold50-opacity25: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity25)); /* jokerGold50 */
+--color-jokerGold50-opacity30: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity30)); /* jokerGold50 */
+--color-jokerGold50-opacity35: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity35)); /* jokerGold50 */
+--color-jokerGold50-opacity40: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity40)); /* jokerGold50 */
+--color-jokerGold50-opacity45: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity45)); /* jokerGold50 */
+--color-jokerGold50-opacity50: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity50)); /* jokerGold50 */
+--color-jokerGold50-opacity55: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity55)); /* jokerGold50 */
+--color-jokerGold50-opacity60: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity60)); /* jokerGold50 */
+--color-jokerGold50-opacity65: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity65)); /* jokerGold50 */
+--color-jokerGold50-opacity70: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity70)); /* jokerGold50 */
+--color-jokerGold50-opacity75: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity75)); /* jokerGold50 */
+--color-jokerGold50-opacity80: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity80)); /* jokerGold50 */
+--color-jokerGold50-opacity85: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity85)); /* jokerGold50 */
+--color-jokerGold50-opacity90: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity90)); /* jokerGold50 */
+--color-jokerGold50-opacity95: hsl(calc(var(--color-jokerGold) + 1) 100% 94% / var(--opacity95)); /* jokerGold50 */
+
+/*jokerGold100 opacity variations */
+--color-jokerGold100-opacity00: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity00)); /* jokerGold100 */
+--color-jokerGold100-opacity05: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity05)); /* jokerGold100 */
+--color-jokerGold100-opacity10: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity10)); /* jokerGold100 */
+--color-jokerGold100-opacity15: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity15)); /* jokerGold100 */
+--color-jokerGold100-opacity20: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity20)); /* jokerGold100 */
+--color-jokerGold100-opacity25: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity25)); /* jokerGold100 */
+--color-jokerGold100-opacity30: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity30)); /* jokerGold100 */
+--color-jokerGold100-opacity35: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity35)); /* jokerGold100 */
+--color-jokerGold100-opacity40: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity40)); /* jokerGold100 */
+--color-jokerGold100-opacity45: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity45)); /* jokerGold100 */
+--color-jokerGold100-opacity50: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity50)); /* jokerGold100 */
+--color-jokerGold100-opacity55: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity55)); /* jokerGold100 */
+--color-jokerGold100-opacity60: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity60)); /* jokerGold100 */
+--color-jokerGold100-opacity65: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity65)); /* jokerGold100 */
+--color-jokerGold100-opacity70: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity70)); /* jokerGold100 */
+--color-jokerGold100-opacity75: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity75)); /* jokerGold100 */
+--color-jokerGold100-opacity80: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity80)); /* jokerGold100 */
+--color-jokerGold100-opacity85: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity85)); /* jokerGold100 */
+--color-jokerGold100-opacity90: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity90)); /* jokerGold100 */
+--color-jokerGold100-opacity95: hsl(calc(var(--color-jokerGold) + 1) 100% 89% / var(--opacity95)); /* jokerGold100 */
+
+/*jokerGold200 opacity variations */
+--color-jokerGold200-opacity00: hsl(var(--color-jokerGold) 100% 88% / var(--opacity00)); /* jokerGold200 */
+--color-jokerGold200-opacity05: hsl(var(--color-jokerGold) 100% 88% / var(--opacity05)); /* jokerGold200 */
+--color-jokerGold200-opacity10: hsl(var(--color-jokerGold) 100% 88% / var(--opacity10)); /* jokerGold200 */
+--color-jokerGold200-opacity15: hsl(var(--color-jokerGold) 100% 88% / var(--opacity15)); /* jokerGold200 */
+--color-jokerGold200-opacity20: hsl(var(--color-jokerGold) 100% 88% / var(--opacity20)); /* jokerGold200 */
+--color-jokerGold200-opacity25: hsl(var(--color-jokerGold) 100% 88% / var(--opacity25)); /* jokerGold200 */
+--color-jokerGold200-opacity30: hsl(var(--color-jokerGold) 100% 88% / var(--opacity30)); /* jokerGold200 */
+--color-jokerGold200-opacity35: hsl(var(--color-jokerGold) 100% 88% / var(--opacity35)); /* jokerGold200 */
+--color-jokerGold200-opacity40: hsl(var(--color-jokerGold) 100% 88% / var(--opacity40)); /* jokerGold200 */
+--color-jokerGold200-opacity45: hsl(var(--color-jokerGold) 100% 88% / var(--opacity45)); /* jokerGold200 */
+--color-jokerGold200-opacity50: hsl(var(--color-jokerGold) 100% 88% / var(--opacity50)); /* jokerGold200 */
+--color-jokerGold200-opacity55: hsl(var(--color-jokerGold) 100% 88% / var(--opacity55)); /* jokerGold200 */
+--color-jokerGold200-opacity60: hsl(var(--color-jokerGold) 100% 88% / var(--opacity60)); /* jokerGold200 */
+--color-jokerGold200-opacity65: hsl(var(--color-jokerGold) 100% 88% / var(--opacity65)); /* jokerGold200 */
+--color-jokerGold200-opacity70: hsl(var(--color-jokerGold) 100% 88% / var(--opacity70)); /* jokerGold200 */
+--color-jokerGold200-opacity75: hsl(var(--color-jokerGold) 100% 88% / var(--opacity75)); /* jokerGold200 */
+--color-jokerGold200-opacity80: hsl(var(--color-jokerGold) 100% 88% / var(--opacity80)); /* jokerGold200 */
+--color-jokerGold200-opacity85: hsl(var(--color-jokerGold) 100% 88% / var(--opacity85)); /* jokerGold200 */
+--color-jokerGold200-opacity90: hsl(var(--color-jokerGold) 100% 88% / var(--opacity90)); /* jokerGold200 */
+--color-jokerGold200-opacity95: hsl(var(--color-jokerGold) 100% 88% / var(--opacity95)); /* jokerGold200 */
+
+/*jokerGold300 opacity variations */
+--color-jokerGold300-opacity00: hsl(var(--color-jokerGold) 100% 86% / var(--opacity00)); /* jokerGold300 */
+--color-jokerGold300-opacity05: hsl(var(--color-jokerGold) 100% 86% / var(--opacity05)); /* jokerGold300 */
+--color-jokerGold300-opacity10: hsl(var(--color-jokerGold) 100% 86% / var(--opacity10)); /* jokerGold300 */
+--color-jokerGold300-opacity15: hsl(var(--color-jokerGold) 100% 86% / var(--opacity15)); /* jokerGold300 */
+--color-jokerGold300-opacity20: hsl(var(--color-jokerGold) 100% 86% / var(--opacity20)); /* jokerGold300 */
+--color-jokerGold300-opacity25: hsl(var(--color-jokerGold) 100% 86% / var(--opacity25)); /* jokerGold300 */
+--color-jokerGold300-opacity30: hsl(var(--color-jokerGold) 100% 86% / var(--opacity30)); /* jokerGold300 */
+--color-jokerGold300-opacity35: hsl(var(--color-jokerGold) 100% 86% / var(--opacity35)); /* jokerGold300 */
+--color-jokerGold300-opacity40: hsl(var(--color-jokerGold) 100% 86% / var(--opacity40)); /* jokerGold300 */
+--color-jokerGold300-opacity45: hsl(var(--color-jokerGold) 100% 86% / var(--opacity45)); /* jokerGold300 */
+--color-jokerGold300-opacity50: hsl(var(--color-jokerGold) 100% 86% / var(--opacity50)); /* jokerGold300 */
+--color-jokerGold300-opacity55: hsl(var(--color-jokerGold) 100% 86% / var(--opacity55)); /* jokerGold300 */
+--color-jokerGold300-opacity60: hsl(var(--color-jokerGold) 100% 86% / var(--opacity60)); /* jokerGold300 */
+--color-jokerGold300-opacity65: hsl(var(--color-jokerGold) 100% 86% / var(--opacity65)); /* jokerGold300 */
+--color-jokerGold300-opacity70: hsl(var(--color-jokerGold) 100% 86% / var(--opacity70)); /* jokerGold300 */
+--color-jokerGold300-opacity75: hsl(var(--color-jokerGold) 100% 86% / var(--opacity75)); /* jokerGold300 */
+--color-jokerGold300-opacity80: hsl(var(--color-jokerGold) 100% 86% / var(--opacity80)); /* jokerGold300 */
+--color-jokerGold300-opacity85: hsl(var(--color-jokerGold) 100% 86% / var(--opacity85)); /* jokerGold300 */
+--color-jokerGold300-opacity90: hsl(var(--color-jokerGold) 100% 86% / var(--opacity90)); /* jokerGold300 */
+--color-jokerGold300-opacity95: hsl(var(--color-jokerGold) 100% 86% / var(--opacity95)); /* jokerGold300 */
+
+/*jokerGold400 opacity variations */
+--color-jokerGold400-opacity00: hsl(var(--color-jokerGold) 100% 83% / var(--opacity00)); /* jokerGold400 */
+--color-jokerGold400-opacity05: hsl(var(--color-jokerGold) 100% 83% / var(--opacity05)); /* jokerGold400 */
+--color-jokerGold400-opacity10: hsl(var(--color-jokerGold) 100% 83% / var(--opacity10)); /* jokerGold400 */
+--color-jokerGold400-opacity15: hsl(var(--color-jokerGold) 100% 83% / var(--opacity15)); /* jokerGold400 */
+--color-jokerGold400-opacity20: hsl(var(--color-jokerGold) 100% 83% / var(--opacity20)); /* jokerGold400 */
+--color-jokerGold400-opacity25: hsl(var(--color-jokerGold) 100% 83% / var(--opacity25)); /* jokerGold400 */
+--color-jokerGold400-opacity30: hsl(var(--color-jokerGold) 100% 83% / var(--opacity30)); /* jokerGold400 */
+--color-jokerGold400-opacity35: hsl(var(--color-jokerGold) 100% 83% / var(--opacity35)); /* jokerGold400 */
+--color-jokerGold400-opacity40: hsl(var(--color-jokerGold) 100% 83% / var(--opacity40)); /* jokerGold400 */
+--color-jokerGold400-opacity45: hsl(var(--color-jokerGold) 100% 83% / var(--opacity45)); /* jokerGold400 */
+--color-jokerGold400-opacity50: hsl(var(--color-jokerGold) 100% 83% / var(--opacity50)); /* jokerGold400 */
+--color-jokerGold400-opacity55: hsl(var(--color-jokerGold) 100% 83% / var(--opacity55)); /* jokerGold400 */
+--color-jokerGold400-opacity60: hsl(var(--color-jokerGold) 100% 83% / var(--opacity60)); /* jokerGold400 */
+--color-jokerGold400-opacity65: hsl(var(--color-jokerGold) 100% 83% / var(--opacity65)); /* jokerGold400 */
+--color-jokerGold400-opacity70: hsl(var(--color-jokerGold) 100% 83% / var(--opacity70)); /* jokerGold400 */
+--color-jokerGold400-opacity75: hsl(var(--color-jokerGold) 100% 83% / var(--opacity75)); /* jokerGold400 */
+--color-jokerGold400-opacity80: hsl(var(--color-jokerGold) 100% 83% / var(--opacity80)); /* jokerGold400 */
+--color-jokerGold400-opacity85: hsl(var(--color-jokerGold) 100% 83% / var(--opacity85)); /* jokerGold400 */
+--color-jokerGold400-opacity90: hsl(var(--color-jokerGold) 100% 83% / var(--opacity90)); /* jokerGold400 */
+--color-jokerGold400-opacity95: hsl(var(--color-jokerGold) 100% 83% / var(--opacity95)); /* jokerGold400 */
+
+/*jokerGold500 opacity variations */
+--color-jokerGold500-opacity00: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity00)); /* jokerGold500 */
+--color-jokerGold500-opacity05: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity05)); /* jokerGold500 */
+--color-jokerGold500-opacity10: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity10)); /* jokerGold500 */
+--color-jokerGold500-opacity15: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity15)); /* jokerGold500 */
+--color-jokerGold500-opacity20: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity20)); /* jokerGold500 */
+--color-jokerGold500-opacity25: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity25)); /* jokerGold500 */
+--color-jokerGold500-opacity30: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity30)); /* jokerGold500 */
+--color-jokerGold500-opacity35: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity35)); /* jokerGold500 */
+--color-jokerGold500-opacity40: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity40)); /* jokerGold500 */
+--color-jokerGold500-opacity45: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity45)); /* jokerGold500 */
+--color-jokerGold500-opacity50: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity50)); /* jokerGold500 */
+--color-jokerGold500-opacity55: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity55)); /* jokerGold500 */
+--color-jokerGold500-opacity60: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity60)); /* jokerGold500 */
+--color-jokerGold500-opacity65: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity65)); /* jokerGold500 */
+--color-jokerGold500-opacity70: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity70)); /* jokerGold500 */
+--color-jokerGold500-opacity75: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity75)); /* jokerGold500 */
+--color-jokerGold500-opacity80: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity80)); /* jokerGold500 */
+--color-jokerGold500-opacity85: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity85)); /* jokerGold500 */
+--color-jokerGold500-opacity90: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity90)); /* jokerGold500 */
+--color-jokerGold500-opacity95: hsl(calc(var(--color-jokerGold) + 1) 35% 59% / var(--opacity95)); /* jokerGold500 */
+
+/*jokerGold600 opacity variations */
+--color-jokerGold600-opacity00: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity00)); /* jokerGold600 */
+--color-jokerGold600-opacity05: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity05)); /* jokerGold600 */
+--color-jokerGold600-opacity10: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity10)); /* jokerGold600 */
+--color-jokerGold600-opacity15: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity15)); /* jokerGold600 */
+--color-jokerGold600-opacity20: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity20)); /* jokerGold600 */
+--color-jokerGold600-opacity25: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity25)); /* jokerGold600 */
+--color-jokerGold600-opacity30: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity30)); /* jokerGold600 */
+--color-jokerGold600-opacity35: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity35)); /* jokerGold600 */
+--color-jokerGold600-opacity40: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity40)); /* jokerGold600 */
+--color-jokerGold600-opacity45: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity45)); /* jokerGold600 */
+--color-jokerGold600-opacity50: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity50)); /* jokerGold600 */
+--color-jokerGold600-opacity55: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity55)); /* jokerGold600 */
+--color-jokerGold600-opacity60: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity60)); /* jokerGold600 */
+--color-jokerGold600-opacity65: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity65)); /* jokerGold600 */
+--color-jokerGold600-opacity70: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity70)); /* jokerGold600 */
+--color-jokerGold600-opacity75: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity75)); /* jokerGold600 */
+--color-jokerGold600-opacity80: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity80)); /* jokerGold600 */
+--color-jokerGold600-opacity85: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity85)); /* jokerGold600 */
+--color-jokerGold600-opacity90: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity90)); /* jokerGold600 */
+--color-jokerGold600-opacity95: hsl(calc(var(--color-jokerGold) + 1) 30% 51% / var(--opacity95)); /* jokerGold600 */
+
+/*jokerGold700 opacity variations */
+--color-jokerGold700-opacity00: hsl(var(--color-jokerGold) 30% 42% / var(--opacity00)); /* jokerGold700 */
+--color-jokerGold700-opacity05: hsl(var(--color-jokerGold) 30% 42% / var(--opacity05)); /* jokerGold700 */
+--color-jokerGold700-opacity10: hsl(var(--color-jokerGold) 30% 42% / var(--opacity10)); /* jokerGold700 */
+--color-jokerGold700-opacity15: hsl(var(--color-jokerGold) 30% 42% / var(--opacity15)); /* jokerGold700 */
+--color-jokerGold700-opacity20: hsl(var(--color-jokerGold) 30% 42% / var(--opacity20)); /* jokerGold700 */
+--color-jokerGold700-opacity25: hsl(var(--color-jokerGold) 30% 42% / var(--opacity25)); /* jokerGold700 */
+--color-jokerGold700-opacity30: hsl(var(--color-jokerGold) 30% 42% / var(--opacity30)); /* jokerGold700 */
+--color-jokerGold700-opacity35: hsl(var(--color-jokerGold) 30% 42% / var(--opacity35)); /* jokerGold700 */
+--color-jokerGold700-opacity40: hsl(var(--color-jokerGold) 30% 42% / var(--opacity40)); /* jokerGold700 */
+--color-jokerGold700-opacity45: hsl(var(--color-jokerGold) 30% 42% / var(--opacity45)); /* jokerGold700 */
+--color-jokerGold700-opacity50: hsl(var(--color-jokerGold) 30% 42% / var(--opacity50)); /* jokerGold700 */
+--color-jokerGold700-opacity55: hsl(var(--color-jokerGold) 30% 42% / var(--opacity55)); /* jokerGold700 */
+--color-jokerGold700-opacity60: hsl(var(--color-jokerGold) 30% 42% / var(--opacity60)); /* jokerGold700 */
+--color-jokerGold700-opacity65: hsl(var(--color-jokerGold) 30% 42% / var(--opacity65)); /* jokerGold700 */
+--color-jokerGold700-opacity70: hsl(var(--color-jokerGold) 30% 42% / var(--opacity70)); /* jokerGold700 */
+--color-jokerGold700-opacity75: hsl(var(--color-jokerGold) 30% 42% / var(--opacity75)); /* jokerGold700 */
+--color-jokerGold700-opacity80: hsl(var(--color-jokerGold) 30% 42% / var(--opacity80)); /* jokerGold700 */
+--color-jokerGold700-opacity85: hsl(var(--color-jokerGold) 30% 42% / var(--opacity85)); /* jokerGold700 */
+--color-jokerGold700-opacity90: hsl(var(--color-jokerGold) 30% 42% / var(--opacity90)); /* jokerGold700 */
+--color-jokerGold700-opacity95: hsl(var(--color-jokerGold) 30% 42% / var(--opacity95)); /* jokerGold700 */
+
+
+/*jokerGold800 opacity variations */
+--color-jokerGold800-opacity00: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity00)); /* jokerGold800 */
+--color-jokerGold800-opacity05: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity05)); /* jokerGold800 */
+--color-jokerGold800-opacity10: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity10)); /* jokerGold800 */
+--color-jokerGold800-opacity15: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity15)); /* jokerGold800 */
+--color-jokerGold800-opacity20: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity20)); /* jokerGold800 */
+--color-jokerGold800-opacity25: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity25)); /* jokerGold800 */
+--color-jokerGold800-opacity30: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity30)); /* jokerGold800 */
+--color-jokerGold800-opacity35: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity35)); /* jokerGold800 */
+--color-jokerGold800-opacity40: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity40)); /* jokerGold800 */
+--color-jokerGold800-opacity45: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity45)); /* jokerGold800 */
+--color-jokerGold800-opacity50: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity50)); /* jokerGold800 */
+--color-jokerGold800-opacity55: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity55)); /* jokerGold800 */
+--color-jokerGold800-opacity60: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity60)); /* jokerGold800 */
+--color-jokerGold800-opacity65: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity65)); /* jokerGold800 */
+--color-jokerGold800-opacity70: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity70)); /* jokerGold800 */
+--color-jokerGold800-opacity75: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity75)); /* jokerGold800 */
+--color-jokerGold800-opacity80: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity80)); /* jokerGold800 */
+--color-jokerGold800-opacity85: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity85)); /* jokerGold800 */
+--color-jokerGold800-opacity90: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity90)); /* jokerGold800 */
+--color-jokerGold800-opacity95: hsl(calc(var(--color-jokerGold) + 1) 36% 29% / var(--opacity95)); /* jokerGold800 */
+
+/*jokerGold900 opacity variations */
+--color-jokerGold900-opacity00: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity00)); /* jokerGold900 */
+--color-jokerGold900-opacity05: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity05)); /* jokerGold900 */
+--color-jokerGold900-opacity10: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity10)); /* jokerGold900 */
+--color-jokerGold900-opacity15: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity15)); /* jokerGold900 */
+--color-jokerGold900-opacity20: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity20)); /* jokerGold900 */
+--color-jokerGold900-opacity25: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity25)); /* jokerGold900 */
+--color-jokerGold900-opacity30: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity30)); /* jokerGold900 */
+--color-jokerGold900-opacity35: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity35)); /* jokerGold900 */
+--color-jokerGold900-opacity40: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity40)); /* jokerGold900 */
+--color-jokerGold900-opacity45: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity45)); /* jokerGold900 */
+--color-jokerGold900-opacity50: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity50)); /* jokerGold900 */
+--color-jokerGold900-opacity55: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity55)); /* jokerGold900 */
+--color-jokerGold900-opacity60: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity60)); /* jokerGold900 */
+--color-jokerGold900-opacity65: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity65)); /* jokerGold900 */
+--color-jokerGold900-opacity70: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity70)); /* jokerGold900 */
+--color-jokerGold900-opacity75: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity75)); /* jokerGold900 */
+--color-jokerGold900-opacity80: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity80)); /* jokerGold900 */
+--color-jokerGold900-opacity85: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity85)); /* jokerGold900 */
+--color-jokerGold900-opacity90: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity90)); /* jokerGold900 */
+--color-jokerGold900-opacity95: hsl(calc(var(--color-jokerGold) - 6) 23% 18% / var(--opacity95)); /* jokerGold900 */
+
+
+/*jokerGold1000 opacity variations */
+--color-jokerGold1000-opacity00: hsl(var(--color-jokerGold) 26% 9% / var(--opacity00)); /* jokerGold1000 */
+--color-jokerGold1000-opacity05: hsl(var(--color-jokerGold) 26% 9% / var(--opacity05)); /* jokerGold1000 */
+--color-jokerGold1000-opacity10: hsl(var(--color-jokerGold) 26% 9% / var(--opacity10)); /* jokerGold1000 */
+--color-jokerGold1000-opacity15: hsl(var(--color-jokerGold) 26% 9% / var(--opacity15)); /* jokerGold1000 */
+--color-jokerGold1000-opacity20: hsl(var(--color-jokerGold) 26% 9% / var(--opacity20)); /* jokerGold1000 */
+--color-jokerGold1000-opacity25: hsl(var(--color-jokerGold) 26% 9% / var(--opacity25)); /* jokerGold1000 */
+--color-jokerGold1000-opacity30: hsl(var(--color-jokerGold) 26% 9% / var(--opacity30)); /* jokerGold1000 */
+--color-jokerGold1000-opacity35: hsl(var(--color-jokerGold) 26% 9% / var(--opacity35)); /* jokerGold1000 */
+--color-jokerGold1000-opacity40: hsl(var(--color-jokerGold) 26% 9% / var(--opacity40)); /* jokerGold1000 */
+--color-jokerGold1000-opacity45: hsl(var(--color-jokerGold) 26% 9% / var(--opacity45)); /* jokerGold1000 */
+--color-jokerGold1000-opacity50: hsl(var(--color-jokerGold) 26% 9% / var(--opacity50)); /* jokerGold1000 */
+--color-jokerGold1000-opacity55: hsl(var(--color-jokerGold) 26% 9% / var(--opacity55)); /* jokerGold1000 */
+--color-jokerGold1000-opacity60: hsl(var(--color-jokerGold) 26% 9% / var(--opacity60)); /* jokerGold1000 */
+--color-jokerGold1000-opacity65: hsl(var(--color-jokerGold) 26% 9% / var(--opacity65)); /* jokerGold1000 */
+--color-jokerGold1000-opacity70: hsl(var(--color-jokerGold) 26% 9% / var(--opacity70)); /* jokerGold1000 */
+--color-jokerGold1000-opacity75: hsl(var(--color-jokerGold) 26% 9% / var(--opacity75)); /* jokerGold1000 */
+--color-jokerGold1000-opacity80: hsl(var(--color-jokerGold) 26% 9% / var(--opacity80)); /* jokerGold1000 */
+--color-jokerGold1000-opacity85: hsl(var(--color-jokerGold) 26% 9% / var(--opacity85)); /* jokerGold1000 */
+--color-jokerGold1000-opacity90: hsl(var(--color-jokerGold) 26% 9% / var(--opacity90)); /* jokerGold1000 */
+--color-jokerGold1000-opacity95: hsl(var(--color-jokerGold) 26% 9% / var(--opacity95)); /* jokerGold1000 */
+
+
+ /* 👻 jokerRose opacity variations */
+
+/*jokerRose50 opacity variations */
+--color-jokerRose50-opacity00: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity00)); /* jokerRose50 */
+--color-jokerRose50-opacity05: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity05)); /* jokerRose50 */
+--color-jokerRose50-opacity10: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity10)); /* jokerRose50 */
+--color-jokerRose50-opacity15: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity15)); /* jokerRose50 */
+--color-jokerRose50-opacity20: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity20)); /* jokerRose50 */
+--color-jokerRose50-opacity25: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity25)); /* jokerRose50 */
+--color-jokerRose50-opacity30: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity30)); /* jokerRose50 */
+--color-jokerRose50-opacity35: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity35)); /* jokerRose50 */
+--color-jokerRose50-opacity40: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity40)); /* jokerRose50 */
+--color-jokerRose50-opacity45: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity45)); /* jokerRose50 */
+--color-jokerRose50-opacity50: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity50)); /* jokerRose50 */
+--color-jokerRose50-opacity55: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity55)); /* jokerRose50 */
+--color-jokerRose50-opacity60: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity60)); /* jokerRose50 */
+--color-jokerRose50-opacity65: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity65)); /* jokerRose50 */
+--color-jokerRose50-opacity70: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity70)); /* jokerRose50 */
+--color-jokerRose50-opacity75: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity75)); /* jokerRose50 */
+--color-jokerRose50-opacity80: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity80)); /* jokerRose50 */
+--color-jokerRose50-opacity85: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity85)); /* jokerRose50 */
+--color-jokerRose50-opacity90: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity90)); /* jokerRose50 */
+--color-jokerRose50-opacity95: hsl(calc(var(--color-jokerRose) - 1) 40% 81% / var(--opacity95)); /* jokerRose50 */
+
+/*jokerRose100 opacity variations */
+--color-jokerRose100-opacity00: hsl(var(--color-jokerRose) 40% 73% / var(--opacity00)); /* jokerRose100 */
+--color-jokerRose100-opacity05: hsl(var(--color-jokerRose) 40% 73% / var(--opacity05)); /* jokerRose100 */
+--color-jokerRose100-opacity10: hsl(var(--color-jokerRose) 40% 73% / var(--opacity10)); /* jokerRose100 */
+--color-jokerRose100-opacity15: hsl(var(--color-jokerRose) 40% 73% / var(--opacity15)); /* jokerRose100 */
+--color-jokerRose100-opacity20: hsl(var(--color-jokerRose) 40% 73% / var(--opacity20)); /* jokerRose100 */
+--color-jokerRose100-opacity25: hsl(var(--color-jokerRose) 40% 73% / var(--opacity25)); /* jokerRose100 */
+--color-jokerRose100-opacity30: hsl(var(--color-jokerRose) 40% 73% / var(--opacity30)); /* jokerRose100 */
+--color-jokerRose100-opacity35: hsl(var(--color-jokerRose) 40% 73% / var(--opacity35)); /* jokerRose100 */
+--color-jokerRose100-opacity40: hsl(var(--color-jokerRose) 40% 73% / var(--opacity40)); /* jokerRose100 */
+--color-jokerRose100-opacity45: hsl(var(--color-jokerRose) 40% 73% / var(--opacity45)); /* jokerRose100 */
+--color-jokerRose100-opacity50: hsl(var(--color-jokerRose) 40% 73% / var(--opacity50)); /* jokerRose100 */
+--color-jokerRose100-opacity55: hsl(var(--color-jokerRose) 40% 73% / var(--opacity55)); /* jokerRose100 */
+--color-jokerRose100-opacity60: hsl(var(--color-jokerRose) 40% 73% / var(--opacity60)); /* jokerRose100 */
+--color-jokerRose100-opacity65: hsl(var(--color-jokerRose) 40% 73% / var(--opacity65)); /* jokerRose100 */
+--color-jokerRose100-opacity70: hsl(var(--color-jokerRose) 40% 73% / var(--opacity70)); /* jokerRose100 */
+--color-jokerRose100-opacity75: hsl(var(--color-jokerRose) 40% 73% / var(--opacity75)); /* jokerRose100 */
+--color-jokerRose100-opacity80: hsl(var(--color-jokerRose) 40% 73% / var(--opacity80)); /* jokerRose100 */
+--color-jokerRose100-opacity85: hsl(var(--color-jokerRose) 40% 73% / var(--opacity85)); /* jokerRose100 */
+--color-jokerRose100-opacity90: hsl(var(--color-jokerRose) 40% 73% / var(--opacity90)); /* jokerRose100 */
+--color-jokerRose100-opacity95: hsl(var(--color-jokerRose) 40% 73% / var(--opacity95)); /* jokerRose100 */
+
+/*jokerRose200 opacity variations */
+--color-jokerRose200-opacity00: hsl(var(--color-jokerRose) 40% 67% / var(--opacity00)); /* jokerRose200 */
+--color-jokerRose200-opacity05: hsl(var(--color-jokerRose) 40% 67% / var(--opacity05)); /* jokerRose200 */
+--color-jokerRose200-opacity10: hsl(var(--color-jokerRose) 40% 67% / var(--opacity10)); /* jokerRose200 */
+--color-jokerRose200-opacity15: hsl(var(--color-jokerRose) 40% 67% / var(--opacity15)); /* jokerRose200 */
+--color-jokerRose200-opacity20: hsl(var(--color-jokerRose) 40% 67% / var(--opacity20)); /* jokerRose200 */
+--color-jokerRose200-opacity25: hsl(var(--color-jokerRose) 40% 67% / var(--opacity25)); /* jokerRose200 */
+--color-jokerRose200-opacity30: hsl(var(--color-jokerRose) 40% 67% / var(--opacity30)); /* jokerRose200 */
+--color-jokerRose200-opacity35: hsl(var(--color-jokerRose) 40% 67% / var(--opacity35)); /* jokerRose200 */
+--color-jokerRose200-opacity40: hsl(var(--color-jokerRose) 40% 67% / var(--opacity40)); /* jokerRose200 */
+--color-jokerRose200-opacity45: hsl(var(--color-jokerRose) 40% 67% / var(--opacity45)); /* jokerRose200 */
+--color-jokerRose200-opacity50: hsl(var(--color-jokerRose) 40% 67% / var(--opacity50)); /* jokerRose200 */
+--color-jokerRose200-opacity55: hsl(var(--color-jokerRose) 40% 67% / var(--opacity55)); /* jokerRose200 */
+--color-jokerRose200-opacity60: hsl(var(--color-jokerRose) 40% 67% / var(--opacity60)); /* jokerRose200 */
+--color-jokerRose200-opacity65: hsl(var(--color-jokerRose) 40% 67% / var(--opacity65)); /* jokerRose200 */
+--color-jokerRose200-opacity70: hsl(var(--color-jokerRose) 40% 67% / var(--opacity70)); /* jokerRose200 */
+--color-jokerRose200-opacity75: hsl(var(--color-jokerRose) 40% 67% / var(--opacity75)); /* jokerRose200 */
+--color-jokerRose200-opacity80: hsl(var(--color-jokerRose) 40% 67% / var(--opacity80)); /* jokerRose200 */
+--color-jokerRose200-opacity85: hsl(var(--color-jokerRose) 40% 67% / var(--opacity85)); /* jokerRose200 */
+--color-jokerRose200-opacity90: hsl(var(--color-jokerRose) 40% 67% / var(--opacity90)); /* jokerRose200 */
+--color-jokerRose200-opacity95: hsl(var(--color-jokerRose) 40% 67% / var(--opacity95)); /* jokerRose200 */
+
+/*jokerRose300 opacity variations */
+--color-jokerRose300-opacity00: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity00)); /* jokerRose300 */
+--color-jokerRose300-opacity05: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity05)); /* jokerRose300 */
+--color-jokerRose300-opacity10: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity10)); /* jokerRose300 */
+--color-jokerRose300-opacity15: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity15)); /* jokerRose300 */
+--color-jokerRose300-opacity20: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity20)); /* jokerRose300 */
+--color-jokerRose300-opacity25: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity25)); /* jokerRose300 */
+--color-jokerRose300-opacity30: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity30)); /* jokerRose300 */
+--color-jokerRose300-opacity35: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity35)); /* jokerRose300 */
+--color-jokerRose300-opacity40: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity40)); /* jokerRose300 */
+--color-jokerRose300-opacity45: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity45)); /* jokerRose300 */
+--color-jokerRose300-opacity50: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity50)); /* jokerRose300 */
+--color-jokerRose300-opacity55: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity55)); /* jokerRose300 */
+--color-jokerRose300-opacity60: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity60)); /* jokerRose300 */
+--color-jokerRose300-opacity65: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity65)); /* jokerRose300 */
+--color-jokerRose300-opacity70: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity70)); /* jokerRose300 */
+--color-jokerRose300-opacity75: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity75)); /* jokerRose300 */
+--color-jokerRose300-opacity80: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity80)); /* jokerRose300 */
+--color-jokerRose300-opacity85: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity85)); /* jokerRose300 */
+--color-jokerRose300-opacity90: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity90)); /* jokerRose300 */
+--color-jokerRose300-opacity95: hsl(calc(var(--color-jokerRose) + 1) 37% 60% / var(--opacity95)); /* jokerRose300 */
+
+/*jokerRose400 opacity variations */
+--color-jokerRose400-opacity00: hsl(var(--color-jokerRose) 22% 54% / var(--opacity00)); /* jokerRose400 */
+--color-jokerRose400-opacity05: hsl(var(--color-jokerRose) 22% 54% / var(--opacity05)); /* jokerRose400 */
+--color-jokerRose400-opacity10: hsl(var(--color-jokerRose) 22% 54% / var(--opacity10)); /* jokerRose400 */
+--color-jokerRose400-opacity15: hsl(var(--color-jokerRose) 22% 54% / var(--opacity15)); /* jokerRose400 */
+--color-jokerRose400-opacity20: hsl(var(--color-jokerRose) 22% 54% / var(--opacity20)); /* jokerRose400 */
+--color-jokerRose400-opacity25: hsl(var(--color-jokerRose) 22% 54% / var(--opacity25)); /* jokerRose400 */
+--color-jokerRose400-opacity30: hsl(var(--color-jokerRose) 22% 54% / var(--opacity30)); /* jokerRose400 */
+--color-jokerRose400-opacity35: hsl(var(--color-jokerRose) 22% 54% / var(--opacity35)); /* jokerRose400 */
+--color-jokerRose400-opacity40: hsl(var(--color-jokerRose) 22% 54% / var(--opacity40)); /* jokerRose400 */
+--color-jokerRose400-opacity45: hsl(var(--color-jokerRose) 22% 54% / var(--opacity45)); /* jokerRose400 */
+--color-jokerRose400-opacity50: hsl(var(--color-jokerRose) 22% 54% / var(--opacity50)); /* jokerRose400 */
+--color-jokerRose400-opacity55: hsl(var(--color-jokerRose) 22% 54% / var(--opacity55)); /* jokerRose400 */
+--color-jokerRose400-opacity60: hsl(var(--color-jokerRose) 22% 54% / var(--opacity60)); /* jokerRose400 */
+--color-jokerRose400-opacity65: hsl(var(--color-jokerRose) 22% 54% / var(--opacity65)); /* jokerRose400 */
+--color-jokerRose400-opacity70: hsl(var(--color-jokerRose) 22% 54% / var(--opacity70)); /* jokerRose400 */
+--color-jokerRose400-opacity75: hsl(var(--color-jokerRose) 22% 54% / var(--opacity75)); /* jokerRose400 */
+--color-jokerRose400-opacity80: hsl(var(--color-jokerRose) 22% 54% / var(--opacity80)); /* jokerRose400 */
+--color-jokerRose400-opacity85: hsl(var(--color-jokerRose) 22% 54% / var(--opacity85)); /* jokerRose400 */
+--color-jokerRose400-opacity90: hsl(var(--color-jokerRose) 22% 54% / var(--opacity90)); /* jokerRose400 */
+--color-jokerRose400-opacity95: hsl(var(--color-jokerRose) 22% 54% / var(--opacity95)); /* jokerRose400 */
+
+/*jokerRose500 opacity variations */
+--color-jokerRose500-opacity00: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity00)); /* jokerRose500 */
+--color-jokerRose500-opacity05: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity05)); /* jokerRose500 */
+--color-jokerRose500-opacity10: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity10)); /* jokerRose500 */
+--color-jokerRose500-opacity15: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity15)); /* jokerRose500 */
+--color-jokerRose500-opacity20: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity20)); /* jokerRose500 */
+--color-jokerRose500-opacity25: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity25)); /* jokerRose500 */
+--color-jokerRose500-opacity30: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity30)); /* jokerRose500 */
+--color-jokerRose500-opacity35: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity35)); /* jokerRose500 */
+--color-jokerRose500-opacity40: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity40)); /* jokerRose500 */
+--color-jokerRose500-opacity45: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity45)); /* jokerRose500 */
+--color-jokerRose500-opacity50: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity50)); /* jokerRose500 */
+--color-jokerRose500-opacity55: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity55)); /* jokerRose500 */
+--color-jokerRose500-opacity60: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity60)); /* jokerRose500 */
+--color-jokerRose500-opacity65: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity65)); /* jokerRose500 */
+--color-jokerRose500-opacity70: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity70)); /* jokerRose500 */
+--color-jokerRose500-opacity75: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity75)); /* jokerRose500 */
+--color-jokerRose500-opacity80: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity80)); /* jokerRose500 */
+--color-jokerRose500-opacity85: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity85)); /* jokerRose500 */
+--color-jokerRose500-opacity90: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity90)); /* jokerRose500 */
+--color-jokerRose500-opacity95: hsl(calc(var(--color-jokerRose) - 1) 19% 47% / var(--opacity95)); /* jokerRose500 */
+
+/*jokerRose600 opacity variations */
+--color-jokerRose600-opacity00: hsl(var(--color-jokerRose) 19% 40% / var(--opacity00)); /* jokerRose600 */
+--color-jokerRose600-opacity05: hsl(var(--color-jokerRose) 19% 40% / var(--opacity05)); /* jokerRose600 */
+--color-jokerRose600-opacity10: hsl(var(--color-jokerRose) 19% 40% / var(--opacity10)); /* jokerRose600 */
+--color-jokerRose600-opacity15: hsl(var(--color-jokerRose) 19% 40% / var(--opacity15)); /* jokerRose600 */
+--color-jokerRose600-opacity20: hsl(var(--color-jokerRose) 19% 40% / var(--opacity20)); /* jokerRose600 */
+--color-jokerRose600-opacity25: hsl(var(--color-jokerRose) 19% 40% / var(--opacity25)); /* jokerRose600 */
+--color-jokerRose600-opacity30: hsl(var(--color-jokerRose) 19% 40% / var(--opacity30)); /* jokerRose600 */
+--color-jokerRose600-opacity35: hsl(var(--color-jokerRose) 19% 40% / var(--opacity35)); /* jokerRose600 */
+--color-jokerRose600-opacity40: hsl(var(--color-jokerRose) 19% 40% / var(--opacity40)); /* jokerRose600 */
+--color-jokerRose600-opacity45: hsl(var(--color-jokerRose) 19% 40% / var(--opacity45)); /* jokerRose600 */
+--color-jokerRose600-opacity50: hsl(var(--color-jokerRose) 19% 40% / var(--opacity50)); /* jokerRose600 */
+--color-jokerRose600-opacity55: hsl(var(--color-jokerRose) 19% 40% / var(--opacity55)); /* jokerRose600 */
+--color-jokerRose600-opacity60: hsl(var(--color-jokerRose) 19% 40% / var(--opacity60)); /* jokerRose600 */
+--color-jokerRose600-opacity65: hsl(var(--color-jokerRose) 19% 40% / var(--opacity65)); /* jokerRose600 */
+--color-jokerRose600-opacity70: hsl(var(--color-jokerRose) 19% 40% / var(--opacity70)); /* jokerRose600 */
+--color-jokerRose600-opacity75: hsl(var(--color-jokerRose) 19% 40% / var(--opacity75)); /* jokerRose600 */
+--color-jokerRose600-opacity80: hsl(var(--color-jokerRose) 19% 40% / var(--opacity80)); /* jokerRose600 */
+--color-jokerRose600-opacity85: hsl(var(--color-jokerRose) 19% 40% / var(--opacity85)); /* jokerRose600 */
+--color-jokerRose600-opacity90: hsl(var(--color-jokerRose) 19% 40% / var(--opacity90)); /* jokerRose600 */
+--color-jokerRose600-opacity95: hsl(var(--color-jokerRose) 19% 40% / var(--opacity95)); /* jokerRose600 */
+
+/*jokerRose700 opacity variations */
+--color-jokerRose700-opacity00: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity00)); /* jokerRose700 */
+--color-jokerRose700-opacity05: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity05)); /* jokerRose700 */
+--color-jokerRose700-opacity10: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity10)); /* jokerRose700 */
+--color-jokerRose700-opacity15: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity15)); /* jokerRose700 */
+--color-jokerRose700-opacity20: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity20)); /* jokerRose700 */
+--color-jokerRose700-opacity25: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity25)); /* jokerRose700 */
+--color-jokerRose700-opacity30: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity30)); /* jokerRose700 */
+--color-jokerRose700-opacity35: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity35)); /* jokerRose700 */
+--color-jokerRose700-opacity40: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity40)); /* jokerRose700 */
+--color-jokerRose700-opacity45: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity45)); /* jokerRose700 */
+--color-jokerRose700-opacity50: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity50)); /* jokerRose700 */
+--color-jokerRose700-opacity55: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity55)); /* jokerRose700 */
+--color-jokerRose700-opacity60: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity60)); /* jokerRose700 */
+--color-jokerRose700-opacity65: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity65)); /* jokerRose700 */
+--color-jokerRose700-opacity70: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity70)); /* jokerRose700 */
+--color-jokerRose700-opacity75: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity75)); /* jokerRose700 */
+--color-jokerRose700-opacity80: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity80)); /* jokerRose700 */
+--color-jokerRose700-opacity85: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity85)); /* jokerRose700 */
+--color-jokerRose700-opacity90: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity90)); /* jokerRose700 */
+--color-jokerRose700-opacity95: hsl(calc(var(--color-jokerRose) - 1) 20% 33% / var(--opacity95)); /* jokerRose700 */
+
+/*jokerRose800 opacity variations */
+--color-jokerRose800-opacity00: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity00)); /* jokerRose800 */
+--color-jokerRose800-opacity05: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity05)); /* jokerRose800 */
+--color-jokerRose800-opacity10: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity10)); /* jokerRose800 */
+--color-jokerRose800-opacity15: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity15)); /* jokerRose800 */
+--color-jokerRose800-opacity20: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity20)); /* jokerRose800 */
+--color-jokerRose800-opacity25: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity25)); /* jokerRose800 */
+--color-jokerRose800-opacity30: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity30)); /* jokerRose800 */
+--color-jokerRose800-opacity35: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity35)); /* jokerRose800 */
+--color-jokerRose800-opacity40: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity40)); /* jokerRose800 */
+--color-jokerRose800-opacity45: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity45)); /* jokerRose800 */
+--color-jokerRose800-opacity50: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity50)); /* jokerRose800 */
+--color-jokerRose800-opacity55: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity55)); /* jokerRose800 */
+--color-jokerRose800-opacity60: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity60)); /* jokerRose800 */
+--color-jokerRose800-opacity65: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity65)); /* jokerRose800 */
+--color-jokerRose800-opacity70: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity70)); /* jokerRose800 */
+--color-jokerRose800-opacity75: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity75)); /* jokerRose800 */
+--color-jokerRose800-opacity80: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity80)); /* jokerRose800 */
+--color-jokerRose800-opacity85: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity85)); /* jokerRose800 */
+--color-jokerRose800-opacity90: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity90)); /* jokerRose800 */
+--color-jokerRose800-opacity95: hsl(calc(var(--color-jokerRose) - 2) 21% 22% / var(--opacity95)); /* jokerRose800 */
+
+/*jokerRose900 opacity variations */
+--color-jokerRose900-opacity00: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity00)); /* jokerRose900 */
+--color-jokerRose900-opacity05: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity05)); /* jokerRose900 */
+--color-jokerRose900-opacity10: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity10)); /* jokerRose900 */
+--color-jokerRose900-opacity15: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity15)); /* jokerRose900 */
+--color-jokerRose900-opacity20: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity20)); /* jokerRose900 */
+--color-jokerRose900-opacity25: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity25)); /* jokerRose900 */
+--color-jokerRose900-opacity30: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity30)); /* jokerRose900 */
+--color-jokerRose900-opacity35: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity35)); /* jokerRose900 */
+--color-jokerRose900-opacity40: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity40)); /* jokerRose900 */
+--color-jokerRose900-opacity45: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity45)); /* jokerRose900 */
+--color-jokerRose900-opacity50: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity50)); /* jokerRose900 */
+--color-jokerRose900-opacity55: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity55)); /* jokerRose900 */
+--color-jokerRose900-opacity60: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity60)); /* jokerRose900 */
+--color-jokerRose900-opacity65: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity65)); /* jokerRose900 */
+--color-jokerRose900-opacity70: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity70)); /* jokerRose900 */
+--color-jokerRose900-opacity75: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity75)); /* jokerRose900 */
+--color-jokerRose900-opacity80: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity80)); /* jokerRose900 */
+--color-jokerRose900-opacity85: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity85)); /* jokerRose900 */
+--color-jokerRose900-opacity90: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity90)); /* jokerRose900 */
+--color-jokerRose900-opacity95: hsl(calc(var(--color-jokerRose) - 1) 23% 18% / var(--opacity95)); /* jokerRose900 */
+
+/* 👻 jokerHoney opacity variations */
+
+ /* jokerHoney50 opacity variations */
+ --color-jokerHoney50-opacity00: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity00)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity05: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity05)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity10: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity10)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity15: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity15)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity20: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity20)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity25: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity25)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity30: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity30)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity35: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity35)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity40: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity40)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity45: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity45)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity50: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity50)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity55: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity55)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity60: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity60)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity65: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity65)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity70: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity70)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity75: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity75)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity80: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity80)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity85: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity85)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity90: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity90)); /* jokerHoney50 */
+ --color-jokerHoney50-opacity95: hsl(calc(var(--color-jokerHoney) + 1) 68% 86% / var(--opacity95)); /* jokerHoney50 */
+
+
+ /* jokerHoney100 opacity variations */
+ --color-jokerHoney100-opacity00: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity00)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity05: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity05)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity10: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity10)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity15: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity15)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity20: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity20)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity25: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity25)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity30: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity30)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity35: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity35)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity40: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity40)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity45: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity45)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity50: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity50)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity55: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity55)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity60: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity60)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity65: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity65)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity70: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity70)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity75: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity75)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity80: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity80)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity85: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity85)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity90: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity90)); /* jokerHoney100 */
+ --color-jokerHoney100-opacity95: hsl(var(--color-jokerHoney) 69% 76% / var(--opacity95)); /* jokerHoney100 */
+
+ /* jokerHoney200 opacity variations */
+ --color-jokerHoney200-opacity00: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity00)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity05: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity05)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity10: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity10)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity15: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity15)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity20: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity20)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity25: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity25)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity30: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity30)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity35: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity35)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity40: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity40)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity45: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity45)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity50: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity50)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity55: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity55)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity60: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity60)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity65: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity65)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity70: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity70)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity75: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity75)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity80: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity80)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity85: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity85)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity90: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity90)); /* jokerHoney200 */
+ --color-jokerHoney200-opacity95: hsl(calc(var(--color-jokerHoney) + 1) 68% 69% / var(--opacity95)); /* jokerHoney200 */
+
+ /* jokerHoney300 opacity variations */
+ --color-jokerHoney300-opacity00: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity00)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity05: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity05)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity10: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity10)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity15: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity15)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity20: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity20)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity25: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity25)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity30: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity30)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity35: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity35)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity40: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity40)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity45: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity45)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity50: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity50)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity55: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity55)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity60: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity60)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity65: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity65)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity70: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity70)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity75: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity75)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity80: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity80)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity85: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity85)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity90: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity90)); /* jokerHoney300 */
+ --color-jokerHoney300-opacity95: hsl(var(--color-jokerHoney) 69% 62% / var(--opacity95)); /* jokerHoney300 */
+
+ /* jokerHoney400 opacity variations */
+ --color-jokerHoney400-opacity00: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity00)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity05: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity05)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity10: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity10)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity15: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity15)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity20: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity20)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity25: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity25)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity30: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity30)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity35: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity35)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity40: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity40)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity45: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity45)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity50: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity50)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity55: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity55)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity60: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity60)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity65: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity65)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity70: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity70)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity75: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity75)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity80: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity80)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity85: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity85)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity90: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity90)); /* jokerHoney400 */
+ --color-jokerHoney400-opacity95: hsl(var(--color-jokerHoney) 69% 55% / var(--opacity95)); /* jokerHoney400 */
+
+ /* jokerHoney500 opacity variations */
+ --color-jokerHoney500-opacity00: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity00)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity05: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity05)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity10: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity10)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity15: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity15)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity20: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity20)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity25: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity25)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity30: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity30)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity35: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity35)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity40: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity40)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity45: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity45)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity50: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity50)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity55: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity55)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity60: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity60)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity65: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity65)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity70: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity70)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity75: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity75)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity80: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity80)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity85: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity85)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity90: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity90)); /* jokerHoney500 */
+ --color-jokerHoney500-opacity95: hsl(var(--color-jokerHoney) 57% 48% / var(--opacity95)); /* jokerHoney500 */
+
+ /* jokerHoney600 opacity variations */
+ --color-jokerHoney600-opacity00: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity00)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity05: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity05)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity10: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity10)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity15: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity15)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity20: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity20)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity25: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity25)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity30: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity30)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity35: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity35)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity40: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity40)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity45: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity45)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity50: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity50)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity55: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity55)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity60: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity60)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity65: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity65)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity70: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity70)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity75: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity75)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity80: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity80)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity85: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity85)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity90: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity90)); /* jokerHoney600 */
+ --color-jokerHoney600-opacity95: hsl(calc(var(--color-jokerHoney) + 1) 61% 34% / var(--opacity95)); /* jokerHoney600 */
+
+ /* jokerHoney700 opacity variations */
+ --color-jokerHoney700-opacity00: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity00)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity05: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity05)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity10: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity10)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity15: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity15)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity20: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity20)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity25: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity25)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity30: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity30)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity35: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity35)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity40: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity40)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity45: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity45)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity50: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity50)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity55: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity55)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity60: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity60)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity65: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity65)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity70: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity70)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity75: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity75)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity80: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity80)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity85: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity85)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity90: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity90)); /* jokerHoney700 */
+ --color-jokerHoney700-opacity95: hsl(var(--color-jokerHoney) 64% 27% / var(--opacity95)); /* jokerHoney700 */
+
+ /* jokerHoney800 opacity variations */
+ --color-jokerHoney800-opacity00: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity00)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity05: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity05)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity10: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity10)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity15: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity15)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity20: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity20)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity25: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity25)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity30: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity30)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity35: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity35)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity40: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity40)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity45: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity45)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity50: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity50)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity55: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity55)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity60: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity60)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity65: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity65)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity70: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity70)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity75: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity75)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity80: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity80)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity85: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity85)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity90: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity90)); /* jokerHoney800 */
+ --color-jokerHoney800-opacity95: hsl(calc(var(--color-jokerHoney) - 4) 65% 24% / var(--opacity95)); /* jokerHoney800 */
+
+ /* jokerHoney900 opacity variations */
+ --color-jokerHoney900-opacity00: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity00)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity05: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity05)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity10: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity10)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity15: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity15)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity20: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity20)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity25: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity25)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity30: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity30)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity35: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity35)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity40: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity40)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity45: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity45)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity50: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity50)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity55: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity55)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity60: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity60)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity65: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity65)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity70: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity70)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity75: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity75)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity80: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity80)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity85: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity85)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity90: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity90)); /* jokerHoney900 */
+ --color-jokerHoney900-opacity95: hsl(var(--color-jokerHoney) 69% 20%/ var(--opacity95)); /* jokerHoney900 */
+
+
+/* 👻 jokerGreen opacity variations */
+
+/* jokerGreen50 opacity variations */
+--color-jokerGreen50-opacity00: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity00)); /* jokerGreen50 */
+--color-jokerGreen50-opacity05: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity05)); /* jokerGreen50 */
+--color-jokerGreen50-opacity10: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity10)); /* jokerGreen50 */
+--color-jokerGreen50-opacity15: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity15)); /* jokerGreen50 */
+--color-jokerGreen50-opacity20: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity20)); /* jokerGreen50 */
+--color-jokerGreen50-opacity25: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity25)); /* jokerGreen50 */
+--color-jokerGreen50-opacity30: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity30)); /* jokerGreen50 */
+--color-jokerGreen50-opacity35: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity35)); /* jokerGreen50 */
+--color-jokerGreen50-opacity40: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity40)); /* jokerGreen50 */
+--color-jokerGreen50-opacity45: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity45)); /* jokerGreen50 */
+--color-jokerGreen50-opacity50: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity50)); /* jokerGreen50 */
+--color-jokerGreen50-opacity55: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity55)); /* jokerGreen50 */
+--color-jokerGreen50-opacity60: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity60)); /* jokerGreen50 */
+--color-jokerGreen50-opacity65: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity65)); /* jokerGreen50 */
+--color-jokerGreen50-opacity70: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity70)); /* jokerGreen50 */
+--color-jokerGreen50-opacity75: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity75)); /* jokerGreen50 */
+--color-jokerGreen50-opacity80: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity80)); /* jokerGreen50 */
+--color-jokerGreen50-opacity85: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity85)); /* jokerGreen50 */
+--color-jokerGreen50-opacity90: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity90)); /* jokerGreen50 */
+--color-jokerGreen50-opacity95: hsl(calc(var(--color-jokerGreen) + 10) 70% 91%/ var(--opacity95)); /* jokerGreen50 */
+
+/* jokerGreen100 opacity variations */
+--color-jokerGreen100-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity00)); /* jokerGreen100 */
+--color-jokerGreen100-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity05)); /* jokerGreen100 */
+--color-jokerGreen100-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity10)); /* jokerGreen100 */
+--color-jokerGreen100-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity15)); /* jokerGreen100 */
+--color-jokerGreen100-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity20)); /* jokerGreen100 */
+--color-jokerGreen100-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity25)); /* jokerGreen100 */
+--color-jokerGreen100-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity30)); /* jokerGreen100 */
+--color-jokerGreen100-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity35)); /* jokerGreen100 */
+--color-jokerGreen100-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity40)); /* jokerGreen100 */
+--color-jokerGreen100-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity45)); /* jokerGreen100 */
+--color-jokerGreen100-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity50)); /* jokerGreen100 */
+--color-jokerGreen100-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity55)); /* jokerGreen100 */
+--color-jokerGreen100-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity60)); /* jokerGreen100 */
+--color-jokerGreen100-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity65)); /* jokerGreen100 */
+--color-jokerGreen100-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity70)); /* jokerGreen100 */
+--color-jokerGreen100-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity75)); /* jokerGreen100 */
+--color-jokerGreen100-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity80)); /* jokerGreen100 */
+--color-jokerGreen100-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity85)); /* jokerGreen100 */
+--color-jokerGreen100-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity90)); /* jokerGreen100 */
+--color-jokerGreen100-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 68% 86%/ var(--opacity95)); /* jokerGreen100 */
+
+/* jokerGreen200 opacity variations */
+--color-jokerGreen200-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity00)); /* jokerGreen200 */
+--color-jokerGreen200-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity05)); /* jokerGreen200 */
+--color-jokerGreen200-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity10)); /* jokerGreen200 */
+--color-jokerGreen200-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity15)); /* jokerGreen200 */
+--color-jokerGreen200-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity20)); /* jokerGreen200 */
+--color-jokerGreen200-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity25)); /* jokerGreen200 */
+--color-jokerGreen200-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity30)); /* jokerGreen200 */
+--color-jokerGreen200-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity35)); /* jokerGreen200 */
+--color-jokerGreen200-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity40)); /* jokerGreen200 */
+--color-jokerGreen200-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity45)); /* jokerGreen200 */
+--color-jokerGreen200-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity50)); /* jokerGreen200 */
+--color-jokerGreen200-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity55)); /* jokerGreen200 */
+--color-jokerGreen200-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity60)); /* jokerGreen200 */
+--color-jokerGreen200-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity65)); /* jokerGreen200 */
+--color-jokerGreen200-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity70)); /* jokerGreen200 */
+--color-jokerGreen200-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity75)); /* jokerGreen200 */
+--color-jokerGreen200-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity80)); /* jokerGreen200 */
+--color-jokerGreen200-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity85)); /* jokerGreen200 */
+--color-jokerGreen200-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity90)); /* jokerGreen200 */
+--color-jokerGreen200-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 68% 69%/ var(--opacity95)); /* jokerGreen200 */
+
+/* jokerGreen300 opacity variations */
+--color-jokerGreen300-opacity00: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity00)); /* jokerGreen300 */
+--color-jokerGreen300-opacity05: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity05)); /* jokerGreen300 */
+--color-jokerGreen300-opacity10: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity10)); /* jokerGreen300 */
+--color-jokerGreen300-opacity15: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity15)); /* jokerGreen300 */
+--color-jokerGreen300-opacity20: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity20)); /* jokerGreen300 */
+--color-jokerGreen300-opacity25: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity25)); /* jokerGreen300 */
+--color-jokerGreen300-opacity30: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity30)); /* jokerGreen300 */
+--color-jokerGreen300-opacity35: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity35)); /* jokerGreen300 */
+--color-jokerGreen300-opacity40: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity40)); /* jokerGreen300 */
+--color-jokerGreen300-opacity45: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity45)); /* jokerGreen300 */
+--color-jokerGreen300-opacity50: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity50)); /* jokerGreen300 */
+--color-jokerGreen300-opacity55: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity55)); /* jokerGreen300 */
+--color-jokerGreen300-opacity60: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity60)); /* jokerGreen300 */
+--color-jokerGreen300-opacity65: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity65)); /* jokerGreen300 */
+--color-jokerGreen300-opacity70: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity70)); /* jokerGreen300 */
+--color-jokerGreen300-opacity75: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity75)); /* jokerGreen300 */
+--color-jokerGreen300-opacity80: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity80)); /* jokerGreen300 */
+--color-jokerGreen300-opacity85: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity85)); /* jokerGreen300 */
+--color-jokerGreen300-opacity90: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity90)); /* jokerGreen300 */
+--color-jokerGreen300-opacity95: hsl(var(--color-jokerGreen) 68% 73%/ var(--opacity95)); /* jokerGreen300 */
+
+/* jokerGreen400 opacity variations */
+--color-jokerGreen400-opacity00: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity00)); /* jokerGreen400 */
+--color-jokerGreen400-opacity05: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity05)); /* jokerGreen400 */
+--color-jokerGreen400-opacity10: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity10)); /* jokerGreen400 */
+--color-jokerGreen400-opacity15: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity15)); /* jokerGreen400 */
+--color-jokerGreen400-opacity20: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity20)); /* jokerGreen400 */
+--color-jokerGreen400-opacity25: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity25)); /* jokerGreen400 */
+--color-jokerGreen400-opacity30: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity30)); /* jokerGreen400 */
+--color-jokerGreen400-opacity35: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity35)); /* jokerGreen400 */
+--color-jokerGreen400-opacity40: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity40)); /* jokerGreen400 */
+--color-jokerGreen400-opacity45: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity45)); /* jokerGreen400 */
+--color-jokerGreen400-opacity50: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity50)); /* jokerGreen400 */
+--color-jokerGreen400-opacity55: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity55)); /* jokerGreen400 */
+--color-jokerGreen400-opacity60: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity60)); /* jokerGreen400 */
+--color-jokerGreen400-opacity65: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity65)); /* jokerGreen400 */
+--color-jokerGreen400-opacity70: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity70)); /* jokerGreen400 */
+--color-jokerGreen400-opacity75: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity75)); /* jokerGreen400 */
+--color-jokerGreen400-opacity80: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity80)); /* jokerGreen400 */
+--color-jokerGreen400-opacity85: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity85)); /* jokerGreen400 */
+--color-jokerGreen400-opacity90: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity90)); /* jokerGreen400 */
+--color-jokerGreen400-opacity95: hsl(var(--color-jokerGreen) 68% 55%/ var(--opacity95)); /* jokerGreen400 */
+
+/* jokerGreen500 opacity variations */
+--color-jokerGreen500-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity00)); /* jokerGreen500 */
+--color-jokerGreen500-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity05)); /* jokerGreen500 */
+--color-jokerGreen500-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity10)); /* jokerGreen500 */
+--color-jokerGreen500-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity15)); /* jokerGreen500 */
+--color-jokerGreen500-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity20)); /* jokerGreen500 */
+--color-jokerGreen500-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity25)); /* jokerGreen500 */
+--color-jokerGreen500-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity30)); /* jokerGreen500 */
+--color-jokerGreen500-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity35)); /* jokerGreen500 */
+--color-jokerGreen500-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity40)); /* jokerGreen500 */
+--color-jokerGreen500-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity45)); /* jokerGreen500 */
+--color-jokerGreen500-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity50)); /* jokerGreen500 */
+--color-jokerGreen500-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity55)); /* jokerGreen500 */
+--color-jokerGreen500-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity60)); /* jokerGreen500 */
+--color-jokerGreen500-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity65)); /* jokerGreen500 */
+--color-jokerGreen500-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity70)); /* jokerGreen500 */
+--color-jokerGreen500-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity75)); /* jokerGreen500 */
+--color-jokerGreen500-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity80)); /* jokerGreen500 */
+--color-jokerGreen500-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity85)); /* jokerGreen500 */
+--color-jokerGreen500-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity90)); /* jokerGreen500 */
+--color-jokerGreen500-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 57% 46%/ var(--opacity95)); /* jokerGreen500 */
+
+/* jokerGreen600 opacity variations */
+--color-jokerGreen600-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity00)); /* jokerGreen600 */
+--color-jokerGreen600-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity05)); /* jokerGreen600 */
+--color-jokerGreen600-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity10)); /* jokerGreen600 */
+--color-jokerGreen600-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity15)); /* jokerGreen600 */
+--color-jokerGreen600-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity20)); /* jokerGreen600 */
+--color-jokerGreen600-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity25)); /* jokerGreen600 */
+--color-jokerGreen600-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity30)); /* jokerGreen600 */
+--color-jokerGreen600-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity35)); /* jokerGreen600 */
+--color-jokerGreen600-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity40)); /* jokerGreen600 */
+--color-jokerGreen600-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity45)); /* jokerGreen600 */
+--color-jokerGreen600-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity50)); /* jokerGreen600 */
+--color-jokerGreen600-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity55)); /* jokerGreen600 */
+--color-jokerGreen600-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity60)); /* jokerGreen600 */
+--color-jokerGreen600-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity65)); /* jokerGreen600 */
+--color-jokerGreen600-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity70)); /* jokerGreen600 */
+--color-jokerGreen600-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity75)); /* jokerGreen600 */
+--color-jokerGreen600-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity80)); /* jokerGreen600 */
+--color-jokerGreen600-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity85)); /* jokerGreen600 */
+--color-jokerGreen600-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity90)); /* jokerGreen600 */
+--color-jokerGreen600-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 58% 37%/ var(--opacity95)); /* jokerGreen600 */
+
+/* jokerGreen700 opacity variations */
+--color-jokerGreen700-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity00)); /* jokerGreen700 */
+--color-jokerGreen700-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity05)); /* jokerGreen700 */
+--color-jokerGreen700-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity10)); /* jokerGreen700 */
+--color-jokerGreen700-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity15)); /* jokerGreen700 */
+--color-jokerGreen700-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity20)); /* jokerGreen700 */
+--color-jokerGreen700-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity25)); /* jokerGreen700 */
+--color-jokerGreen700-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity30)); /* jokerGreen700 */
+--color-jokerGreen700-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity35)); /* jokerGreen700 */
+--color-jokerGreen700-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity40)); /* jokerGreen700 */
+--color-jokerGreen700-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity45)); /* jokerGreen700 */
+--color-jokerGreen700-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity50)); /* jokerGreen700 */
+--color-jokerGreen700-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity55)); /* jokerGreen700 */
+--color-jokerGreen700-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity60)); /* jokerGreen700 */
+--color-jokerGreen700-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity65)); /* jokerGreen700 */
+--color-jokerGreen700-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity70)); /* jokerGreen700 */
+--color-jokerGreen700-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity75)); /* jokerGreen700 */
+--color-jokerGreen700-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity80)); /* jokerGreen700 */
+--color-jokerGreen700-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity85)); /* jokerGreen700 */
+--color-jokerGreen700-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity90)); /* jokerGreen700 */
+--color-jokerGreen700-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 58% 28%/ var(--opacity95)); /* jokerGreen700 */
+
+/* jokerGreen800 opacity variations */
+--color-jokerGreen800-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity00)); /* jokerGreen800 */
+--color-jokerGreen800-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity05)); /* jokerGreen800 */
+--color-jokerGreen800-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity10)); /* jokerGreen800 */
+--color-jokerGreen800-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity15)); /* jokerGreen800 */
+--color-jokerGreen800-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity20)); /* jokerGreen800 */
+--color-jokerGreen800-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity25)); /* jokerGreen800 */
+--color-jokerGreen800-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity30)); /* jokerGreen800 */
+--color-jokerGreen800-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity35)); /* jokerGreen800 */
+--color-jokerGreen800-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity40)); /* jokerGreen800 */
+--color-jokerGreen800-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity45)); /* jokerGreen800 */
+--color-jokerGreen800-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity50)); /* jokerGreen800 */
+--color-jokerGreen800-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity55)); /* jokerGreen800 */
+--color-jokerGreen800-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity60)); /* jokerGreen800 */
+--color-jokerGreen800-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity65)); /* jokerGreen800 */
+--color-jokerGreen800-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity70)); /* jokerGreen800 */
+--color-jokerGreen800-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity75)); /* jokerGreen800 */
+--color-jokerGreen800-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity80)); /* jokerGreen800 */
+--color-jokerGreen800-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity85)); /* jokerGreen800 */
+--color-jokerGreen800-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity90)); /* jokerGreen800 */
+--color-jokerGreen800-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 61% 19%/ var(--opacity95)); /* jokerGreen800 */
+
+/* jokerGreen900 opacity variations */
+--color-jokerGreen900-opacity00: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity00)); /* jokerGreen900 */
+--color-jokerGreen900-opacity05: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity05)); /* jokerGreen900 */
+--color-jokerGreen900-opacity10: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity10)); /* jokerGreen900 */
+--color-jokerGreen900-opacity15: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity15)); /* jokerGreen900 */
+--color-jokerGreen900-opacity20: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity20)); /* jokerGreen900 */
+--color-jokerGreen900-opacity25: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity25)); /* jokerGreen900 */
+--color-jokerGreen900-opacity30: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity30)); /* jokerGreen900 */
+--color-jokerGreen900-opacity35: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity35)); /* jokerGreen900 */
+--color-jokerGreen900-opacity40: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity40)); /* jokerGreen900 */
+--color-jokerGreen900-opacity45: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity45)); /* jokerGreen900 */
+--color-jokerGreen900-opacity50: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity50)); /* jokerGreen900 */
+--color-jokerGreen900-opacity55: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity55)); /* jokerGreen900 */
+--color-jokerGreen900-opacity60: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity60)); /* jokerGreen900 */
+--color-jokerGreen900-opacity65: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity65)); /* jokerGreen900 */
+--color-jokerGreen900-opacity70: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity70)); /* jokerGreen900 */
+--color-jokerGreen900-opacity75: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity75)); /* jokerGreen900 */
+--color-jokerGreen900-opacity80: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity80)); /* jokerGreen900 */
+--color-jokerGreen900-opacity85: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity85)); /* jokerGreen900 */
+--color-jokerGreen900-opacity90: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity90)); /* jokerGreen900 */
+--color-jokerGreen900-opacity95: hsl(calc(var(--color-jokerGreen) + 9) 65% 15%/ var(--opacity95)); /* jokerGreen900 */
+
+/* 👻 jokerRed opacity variations */
+
+/* jokerRed50 */
+--color-jokerRed50-opacity00: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity00)); /* jokerRed50 */
+--color-jokerRed50-opacity05: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity05)); /* jokerRed50 */
+--color-jokerRed50-opacity10: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity10)); /* jokerRed50 */
+--color-jokerRed50-opacity15: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity15)); /* jokerRed50 */
+--color-jokerRed50-opacity20: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity20)); /* jokerRed50 */
+--color-jokerRed50-opacity25: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity25)); /* jokerRed50 */
+--color-jokerRed50-opacity30: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity30)); /* jokerRed50 */
+--color-jokerRed50-opacity35: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity35)); /* jokerRed50 */
+--color-jokerRed50-opacity40: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity40)); /* jokerRed50 */
+--color-jokerRed50-opacity45: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity45)); /* jokerRed50 */
+--color-jokerRed50-opacity50: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity50)); /* jokerRed50 */
+--color-jokerRed50-opacity55: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity55)); /* jokerRed50 */
+--color-jokerRed50-opacity60: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity60)); /* jokerRed50 */
+--color-jokerRed50-opacity65: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity65)); /* jokerRed50 */
+--color-jokerRed50-opacity70: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity70)); /* jokerRed50 */
+--color-jokerRed50-opacity75: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity75)); /* jokerRed50 */
+--color-jokerRed50-opacity80: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity80)); /* jokerRed50 */
+--color-jokerRed50-opacity85: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity85)); /* jokerRed50 */
+--color-jokerRed50-opacity90: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity90)); /* jokerRed50 */
+--color-jokerRed50-opacity95: hsl(var(--color-jokerRed) 67% 89%/ var(--opacity95)); /* jokerRed50 */
+
+/* jokerRed100 */
+--color-jokerRed100-opacity00: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity00)); /* jokerRed100 */
+--color-jokerRed100-opacity05: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity05)); /* jokerRed100 */
+--color-jokerRed100-opacity10: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity10)); /* jokerRed100 */
+--color-jokerRed100-opacity15: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity15)); /* jokerRed100 */
+--color-jokerRed100-opacity20: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity20)); /* jokerRed100 */
+--color-jokerRed100-opacity25: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity25)); /* jokerRed100 */
+--color-jokerRed100-opacity30: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity30)); /* jokerRed100 */
+--color-jokerRed100-opacity35: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity35)); /* jokerRed100 */
+--color-jokerRed100-opacity40: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity40)); /* jokerRed100 */
+--color-jokerRed100-opacity45: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity45)); /* jokerRed100 */
+--color-jokerRed100-opacity50: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity50)); /* jokerRed100 */
+--color-jokerRed100-opacity55: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity55)); /* jokerRed100 */
+--color-jokerRed100-opacity60: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity60)); /* jokerRed100 */
+--color-jokerRed100-opacity65: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity65)); /* jokerRed100 */
+--color-jokerRed100-opacity70: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity70)); /* jokerRed100 */
+--color-jokerRed100-opacity75: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity75)); /* jokerRed100 */
+--color-jokerRed100-opacity80: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity80)); /* jokerRed100 */
+--color-jokerRed100-opacity85: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity85)); /* jokerRed100 */
+--color-jokerRed100-opacity90: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity90)); /* jokerRed100 */
+--color-jokerRed100-opacity95: hsl(var(--color-jokerRed) 68% 85%/ var(--opacity95)); /* jokerRed100 */
+
+/* jokerRed200 */
+--color-jokerRed200-opacity00: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity00)); /* jokerRed200 */
+--color-jokerRed200-opacity05: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity05)); /* jokerRed200 */
+--color-jokerRed200-opacity10: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity10)); /* jokerRed200 */
+--color-jokerRed200-opacity15: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity15)); /* jokerRed200 */
+--color-jokerRed200-opacity20: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity20)); /* jokerRed200 */
+--color-jokerRed200-opacity25: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity25)); /* jokerRed200 */
+--color-jokerRed200-opacity30: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity30)); /* jokerRed200 */
+--color-jokerRed200-opacity35: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity35)); /* jokerRed200 */
+--color-jokerRed200-opacity40: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity40)); /* jokerRed200 */
+--color-jokerRed200-opacity45: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity45)); /* jokerRed200 */
+--color-jokerRed200-opacity50: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity50)); /* jokerRed200 */
+--color-jokerRed200-opacity55: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity55)); /* jokerRed200 */
+--color-jokerRed200-opacity60: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity60)); /* jokerRed200 */
+--color-jokerRed200-opacity65: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity65)); /* jokerRed200 */
+--color-jokerRed200-opacity70: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity70)); /* jokerRed200 */
+--color-jokerRed200-opacity75: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity75)); /* jokerRed200 */
+--color-jokerRed200-opacity80: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity80)); /* jokerRed200 */
+--color-jokerRed200-opacity85: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity85)); /* jokerRed200 */
+--color-jokerRed200-opacity90: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity90)); /* jokerRed200 */
+--color-jokerRed200-opacity95: hsl(var(--color-jokerRed) 67% 81%/ var(--opacity95)); /* jokerRed200 */
+
+/* jokerRed300 */
+--color-jokerRed300-opacity00: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity00)); /* jokerRed300 */
+--color-jokerRed300-opacity05: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity05)); /* jokerRed300 */
+--color-jokerRed300-opacity10: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity10)); /* jokerRed300 */
+--color-jokerRed300-opacity15: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity15)); /* jokerRed300 */
+--color-jokerRed300-opacity20: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity20)); /* jokerRed300 */
+--color-jokerRed300-opacity25: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity25)); /* jokerRed300 */
+--color-jokerRed300-opacity30: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity30)); /* jokerRed300 */
+--color-jokerRed300-opacity35: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity35)); /* jokerRed300 */
+--color-jokerRed300-opacity40: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity40)); /* jokerRed300 */
+--color-jokerRed300-opacity45: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity45)); /* jokerRed300 */
+--color-jokerRed300-opacity50: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity50)); /* jokerRed300 */
+--color-jokerRed300-opacity55: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity55)); /* jokerRed300 */
+--color-jokerRed300-opacity60: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity60)); /* jokerRed300 */
+--color-jokerRed300-opacity65: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity65)); /* jokerRed300 */
+--color-jokerRed300-opacity70: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity70)); /* jokerRed300 */
+--color-jokerRed300-opacity75: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity75)); /* jokerRed300 */
+--color-jokerRed300-opacity80: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity80)); /* jokerRed300 */
+--color-jokerRed300-opacity85: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity85)); /* jokerRed300 */
+--color-jokerRed300-opacity90: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity90)); /* jokerRed300 */
+--color-jokerRed300-opacity95: hsl(var(--color-jokerRed) 69% 72%/ var(--opacity95)); /* jokerRed300 */
+
+
+/* jokerRed400 */
+--color-jokerRed400-opacity00: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity00)); /* jokerRed400 */
+--color-jokerRed400-opacity05: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity05)); /* jokerRed400 */
+--color-jokerRed400-opacity10: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity10)); /* jokerRed400 */
+--color-jokerRed400-opacity15: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity15)); /* jokerRed400 */
+--color-jokerRed400-opacity20: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity20)); /* jokerRed400 */
+--color-jokerRed400-opacity25: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity25)); /* jokerRed400 */
+--color-jokerRed400-opacity30: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity30)); /* jokerRed400 */
+--color-jokerRed400-opacity35: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity35)); /* jokerRed400 */
+--color-jokerRed400-opacity40: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity40)); /* jokerRed400 */
+--color-jokerRed400-opacity45: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity45)); /* jokerRed400 */
+--color-jokerRed400-opacity50: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity50)); /* jokerRed400 */
+--color-jokerRed400-opacity55: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity55)); /* jokerRed400 */
+--color-jokerRed400-opacity60: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity60)); /* jokerRed400 */
+--color-jokerRed400-opacity65: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity65)); /* jokerRed400 */
+--color-jokerRed400-opacity70: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity70)); /* jokerRed400 */
+--color-jokerRed400-opacity75: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity75)); /* jokerRed400 */
+--color-jokerRed400-opacity80: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity80)); /* jokerRed400 */
+--color-jokerRed400-opacity85: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity85)); /* jokerRed400 */
+--color-jokerRed400-opacity90: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity90)); /* jokerRed400 */
+--color-jokerRed400-opacity95: hsl(var(--color-jokerRed) 69% 55%/ var(--opacity95)); /* jokerRed400 */
+
+/* jokerRed500 */
+--color-jokerRed500-opacity00: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity00)); /* jokerRed500 */
+--color-jokerRed500-opacity05: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity05)); /* jokerRed500 */
+--color-jokerRed500-opacity10: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity10)); /* jokerRed500 */
+--color-jokerRed500-opacity15: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity15)); /* jokerRed500 */
+--color-jokerRed500-opacity20: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity20)); /* jokerRed500 */
+--color-jokerRed500-opacity25: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity25)); /* jokerRed500 */
+--color-jokerRed500-opacity30: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity30)); /* jokerRed500 */
+--color-jokerRed500-opacity35: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity35)); /* jokerRed500 */
+--color-jokerRed500-opacity40: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity40)); /* jokerRed500 */
+--color-jokerRed500-opacity45: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity45)); /* jokerRed500 */
+--color-jokerRed500-opacity50: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity50)); /* jokerRed500 */
+--color-jokerRed500-opacity55: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity55)); /* jokerRed500 */
+--color-jokerRed500-opacity60: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity60)); /* jokerRed500 */
+--color-jokerRed500-opacity65: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity65)); /* jokerRed500 */
+--color-jokerRed500-opacity70: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity70)); /* jokerRed500 */
+--color-jokerRed500-opacity75: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity75)); /* jokerRed500 */
+--color-jokerRed500-opacity80: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity80)); /* jokerRed500 */
+--color-jokerRed500-opacity85: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity85)); /* jokerRed500 */
+--color-jokerRed500-opacity90: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity90)); /* jokerRed500 */
+--color-jokerRed500-opacity95: hsl(var(--color-jokerRed) 56% 47%/ var(--opacity95)); /* jokerRed500 */
+
+
+/* jokerRed600 */
+--color-jokerRed600-opacity00: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity00)); /* jokerRed600 */
+ --color-jokerRed600-opacity05: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity05)); /* jokerRed600 */
+--color-jokerRed600-opacity10: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity10)); /* jokerRed600 */
+--color-jokerRed600-opacity15: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity15)); /* jokerRed600 */
+--color-jokerRed600-opacity20: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity20)); /* jokerRed600 */
+--color-jokerRed600-opacity25: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity25)); /* jokerRed600 */
+--color-jokerRed600-opacity30: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity30)); /* jokerRed600 */
+--color-jokerRed600-opacity35: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity35)); /* jokerRed600 */
+--color-jokerRed600-opacity40: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity40)); /* jokerRed600 */
+--color-jokerRed600-opacity45: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity45)); /* jokerRed600 */
+--color-jokerRed600-opacity50: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity50)); /* jokerRed600 */
+--color-jokerRed600-opacity55: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity55)); /* jokerRed600 */
+--color-jokerRed600-opacity60: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity60)); /* jokerRed600 */
+--color-jokerRed600-opacity65: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity65)); /* jokerRed600 */
+--color-jokerRed600-opacity70: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity70)); /* jokerRed600 */
+--color-jokerRed600-opacity75: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity75)); /* jokerRed600 */
+--color-jokerRed600-opacity80: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity80)); /* jokerRed600 */
+--color-jokerRed600-opacity85: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity85)); /* jokerRed600 */
+--color-jokerRed600-opacity90: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity90)); /* jokerRed600 */
+--color-jokerRed600-opacity95: hsl(var(--color-jokerRed) 58% 38%/ var(--opacity95)); /* jokerRed600 */
+
+/* jokerRed700 */
+--color-jokerRed700-opacity00: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity00)); /* jokerRed700 */
+--color-jokerRed700-opacity05: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity05)); /* jokerRed700 */
+--color-jokerRed700-opacity10: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity10)); /* jokerRed700 */
+--color-jokerRed700-opacity15: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity15)); /* jokerRed700 */
+--color-jokerRed700-opacity20: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity20)); /* jokerRed700 */
+--color-jokerRed700-opacity25: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity25)); /* jokerRed700 */
+--color-jokerRed700-opacity30: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity30)); /* jokerRed700 */
+--color-jokerRed700-opacity35: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity35)); /* jokerRed700 */
+--color-jokerRed700-opacity40: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity40)); /* jokerRed700 */
+--color-jokerRed700-opacity45: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity45)); /* jokerRed700 */
+--color-jokerRed700-opacity50: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity50)); /* jokerRed700 */
+--color-jokerRed700-opacity55: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity55)); /* jokerRed700 */
+--color-jokerRed700-opacity60: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity60)); /* jokerRed700 */
+--color-jokerRed700-opacity65: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity65)); /* jokerRed700 */
+--color-jokerRed700-opacity70: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity70)); /* jokerRed700 */
+--color-jokerRed700-opacity75: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity75)); /* jokerRed700 */
+--color-jokerRed700-opacity80: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity80)); /* jokerRed700 */
+--color-jokerRed700-opacity85: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity85)); /* jokerRed700 */
+--color-jokerRed700-opacity90: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity90)); /* jokerRed700 */
+--color-jokerRed700-opacity95: hsl(var(--color-jokerRed) 59% 29%/ var(--opacity95)); /* jokerRed700 */
+
+/* jokerRed800 */
+--color-jokerRed800-opacity00: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity00)); /* jokerRed800 */
+--color-jokerRed800-opacity05: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity05)); /* jokerRed800 */
+--color-jokerRed800-opacity10: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity10)); /* jokerRed800 */
+--color-jokerRed800-opacity15: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity15)); /* jokerRed800 */
+--color-jokerRed800-opacity20: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity20)); /* jokerRed800 */
+--color-jokerRed800-opacity25: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity25)); /* jokerRed800 */
+--color-jokerRed800-opacity30: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity30)); /* jokerRed800 */
+--color-jokerRed800-opacity35: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity35)); /* jokerRed800 */
+--color-jokerRed800-opacity40: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity40)); /* jokerRed800 */
+--color-jokerRed800-opacity45: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity45)); /* jokerRed800 */
+--color-jokerRed800-opacity50: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity50)); /* jokerRed800 */
+--color-jokerRed800-opacity55: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity55)); /* jokerRed800 */
+--color-jokerRed800-opacity60: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity60)); /* jokerRed800 */
+--color-jokerRed800-opacity65: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity65)); /* jokerRed800 */
+--color-jokerRed800-opacity70: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity70)); /* jokerRed800 */
+--color-jokerRed800-opacity75: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity75)); /* jokerRed800 */
+--color-jokerRed800-opacity80: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity80)); /* jokerRed800 */
+--color-jokerRed800-opacity85: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity85)); /* jokerRed800 */
+--color-jokerRed800-opacity90: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity90)); /* jokerRed800 */
+--color-jokerRed800-opacity95: hsl(var(--color-jokerRed) 62% 21%/ var(--opacity95)); /* jokerRed800 */
+
+/* jokerRed900 */
+--color-jokerRed900-opacity00: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity00)); /* jokerRed900 */
+--color-jokerRed900-opacity05: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity05)); /* jokerRed900 */
+--color-jokerRed900-opacity10: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity10)); /* jokerRed900 */
+--color-jokerRed900-opacity15: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity15)); /* jokerRed900 */
+--color-jokerRed900-opacity20: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity20)); /* jokerRed900 */
+--color-jokerRed900-opacity25: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity25)); /* jokerRed900 */
+--color-jokerRed900-opacity30: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity30)); /* jokerRed900 */
+--color-jokerRed900-opacity35: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity35)); /* jokerRed900 */
+--color-jokerRed900-opacity40: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity40)); /* jokerRed900 */
+--color-jokerRed900-opacity45: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity45)); /* jokerRed900 */
+--color-jokerRed900-opacity50: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity50)); /* jokerRed900 */
+--color-jokerRed900-opacity55: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity55)); /* jokerRed900 */
+--color-jokerRed900-opacity60: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity60)); /* jokerRed900 */
+--color-jokerRed900-opacity65: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity65)); /* jokerRed900 */
+--color-jokerRed900-opacity70: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity70)); /* jokerRed900 */
+--color-jokerRed900-opacity75: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity75)); /* jokerRed900 */
+--color-jokerRed900-opacity80: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity80)); /* jokerRed900 */
+--color-jokerRed900-opacity85: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity85)); /* jokerRed900 */
+--color-jokerRed900-opacity90: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity90)); /* jokerRed900 */
+--color-jokerRed900-opacity95: hsl(var(--color-jokerRed) 64% 16%/ var(--opacity95)); /* jokerRed900 */
+
+
+ /* 👻 jokerRed opacity variations */
+
+/* jokerAlert50 */
+--color-jokerAlert50-opacity00: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity00)); /* jokerAlert50 */
+--color-jokerAlert50-opacity05: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity05)); /* jokerAlert50 */
+--color-jokerAlert50-opacity10: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity10)); /* jokerAlert50 */
+--color-jokerAlert50-opacity15: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity15)); /* jokerAlert50 */
+--color-jokerAlert50-opacity20: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity20)); /* jokerAlert50 */
+--color-jokerAlert50-opacity25: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity25)); /* jokerAlert50 */
+--color-jokerAlert50-opacity30: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity30)); /* jokerAlert50 */
+--color-jokerAlert50-opacity35: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity35)); /* jokerAlert50 */
+--color-jokerAlert50-opacity40: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity40)); /* jokerAlert50 */
+--color-jokerAlert50-opacity45: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity45)); /* jokerAlert50 */
+--color-jokerAlert50-opacity50: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity50)); /* jokerAlert50 */
+--color-jokerAlert50-opacity55: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity55)); /* jokerAlert50 */
+--color-jokerAlert50-opacity60: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity60)); /* jokerAlert50 */
+--color-jokerAlert50-opacity65: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity65)); /* jokerAlert50 */
+--color-jokerAlert50-opacity70: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity70)); /* jokerAlert50 */
+--color-jokerAlert50-opacity75: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity75)); /* jokerAlert50 */
+--color-jokerAlert50-opacity80: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity80)); /* jokerAlert50 */
+--color-jokerAlert50-opacity85: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity85)); /* jokerAlert50 */
+--color-jokerAlert50-opacity90: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity90)); /* jokerAlert50 */
+--color-jokerAlert50-opacity95: hsl(var(--color-jokerAlert) 68% 86%/ var(--opacity95)); /* jokerAlert50 */
+
+/* jokerAlert100 */
+--color-jokerAlert100-opacity00: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity00)); /* jokerAlert100 */
+--color-jokerAlert100-opacity05: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity05)); /* jokerAlert100 */
+--color-jokerAlert100-opacity10: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity10)); /* jokerAlert100 */
+--color-jokerAlert100-opacity15: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity15)); /* jokerAlert100 */
+--color-jokerAlert100-opacity20: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity20)); /* jokerAlert100 */
+--color-jokerAlert100-opacity25: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity25)); /* jokerAlert100 */
+--color-jokerAlert100-opacity30: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity30)); /* jokerAlert100 */
+--color-jokerAlert100-opacity35: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity35)); /* jokerAlert100 */
+--color-jokerAlert100-opacity40: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity40)); /* jokerAlert100 */
+--color-jokerAlert100-opacity45: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity45)); /* jokerAlert100 */
+--color-jokerAlert100-opacity50: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity50)); /* jokerAlert100 */
+--color-jokerAlert100-opacity55: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity55)); /* jokerAlert100 */
+--color-jokerAlert100-opacity60: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity60)); /* jokerAlert100 */
+--color-jokerAlert100-opacity65: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity65)); /* jokerAlert100 */
+--color-jokerAlert100-opacity70: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity70)); /* jokerAlert100 */
+--color-jokerAlert100-opacity75: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity75)); /* jokerAlert100 */
+--color-jokerAlert100-opacity80: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity80)); /* jokerAlert100 */
+--color-jokerAlert100-opacity85: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity85)); /* jokerAlert100 */
+--color-jokerAlert100-opacity90: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity90)); /* jokerAlert100 */
+--color-jokerAlert100-opacity95: hsl(var(--color-jokerAlert) 69% 82%/ var(--opacity95)); /* jokerAlert100 */
+
+/* jokerAlert200 */
+--color-jokerAlert200-opacity00: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity00)); /* jokerAlert200 */
+--color-jokerAlert200-opacity05: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity05)); /* jokerAlert200 */
+--color-jokerAlert200-opacity10: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity10)); /* jokerAlert200 */
+--color-jokerAlert200-opacity15: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity15)); /* jokerAlert200 */
+--color-jokerAlert200-opacity20: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity20)); /* jokerAlert200 */
+--color-jokerAlert200-opacity25: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity25)); /* jokerAlert200 */
+--color-jokerAlert200-opacity30: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity30)); /* jokerAlert200 */
+--color-jokerAlert200-opacity35: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity35)); /* jokerAlert200 */
+--color-jokerAlert200-opacity40: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity40)); /* jokerAlert200 */
+--color-jokerAlert200-opacity45: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity45)); /* jokerAlert200 */
+--color-jokerAlert200-opacity50: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity50)); /* jokerAlert200 */
+--color-jokerAlert200-opacity55: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity55)); /* jokerAlert200 */
+--color-jokerAlert200-opacity60: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity60)); /* jokerAlert200 */
+--color-jokerAlert200-opacity65: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity65)); /* jokerAlert200 */
+--color-jokerAlert200-opacity70: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity70)); /* jokerAlert200 */
+--color-jokerAlert200-opacity75: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity75)); /* jokerAlert200 */
+--color-jokerAlert200-opacity80: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity80)); /* jokerAlert200 */
+--color-jokerAlert200-opacity85: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity85)); /* jokerAlert200 */
+--color-jokerAlert200-opacity90: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity90)); /* jokerAlert200 */
+--color-jokerAlert200-opacity95: hsl(var(--color-jokerAlert) 68% 73%/ var(--opacity95)); /* jokerAlert200 */
+
+/* jokerAlert300 */
+--color-jokerAlert300-opacity00: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity00)); /* jokerAlert300 */
+--color-jokerAlert300-opacity05: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity05)); /* jokerAlert300 */
+--color-jokerAlert300-opacity10: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity10)); /* jokerAlert300 */
+--color-jokerAlert300-opacity15: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity15)); /* jokerAlert300 */
+--color-jokerAlert300-opacity20: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity20)); /* jokerAlert300 */
+--color-jokerAlert300-opacity25: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity25)); /* jokerAlert300 */
+--color-jokerAlert300-opacity30: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity30)); /* jokerAlert300 */
+--color-jokerAlert300-opacity35: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity35)); /* jokerAlert300 */
+--color-jokerAlert300-opacity40: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity40)); /* jokerAlert300 */
+--color-jokerAlert300-opacity45: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity45)); /* jokerAlert300 */
+--color-jokerAlert300-opacity50: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity50)); /* jokerAlert300 */
+--color-jokerAlert300-opacity55: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity55)); /* jokerAlert300 */
+--color-jokerAlert300-opacity60: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity60)); /* jokerAlert300 */
+--color-jokerAlert300-opacity65: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity65)); /* jokerAlert300 */
+--color-jokerAlert300-opacity70: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity70)); /* jokerAlert300 */
+--color-jokerAlert300-opacity75: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity75)); /* jokerAlert300 */
+--color-jokerAlert300-opacity80: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity80)); /* jokerAlert300 */
+--color-jokerAlert300-opacity85: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity85)); /* jokerAlert300 */
+--color-jokerAlert300-opacity90: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity90)); /* jokerAlert300 */
+--color-jokerAlert300-opacity95: hsl(var(--color-jokerAlert) 68% 64%/ var(--opacity95)); /* jokerAlert300 */
+
+/* jokerAlert400 */
+--color-jokerAlert400-opacity00: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity00)); /* jokerAlert400 */
+--color-jokerAlert400-opacity05: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity05)); /* jokerAlert400 */
+--color-jokerAlert400-opacity10: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity10)); /* jokerAlert400 */
+--color-jokerAlert400-opacity15: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity15)); /* jokerAlert400 */
+--color-jokerAlert400-opacity20: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity20)); /* jokerAlert400 */
+--color-jokerAlert400-opacity25: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity25)); /* jokerAlert400 */
+--color-jokerAlert400-opacity30: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity30)); /* jokerAlert400 */
+--color-jokerAlert400-opacity35: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity35)); /* jokerAlert400 */
+--color-jokerAlert400-opacity40: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity40)); /* jokerAlert400 */
+--color-jokerAlert400-opacity45: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity45)); /* jokerAlert400 */
+--color-jokerAlert400-opacity50: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity50)); /* jokerAlert400 */
+--color-jokerAlert400-opacity55: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity55)); /* jokerAlert400 */
+--color-jokerAlert400-opacity60: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity60)); /* jokerAlert400 */
+--color-jokerAlert400-opacity65: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity65)); /* jokerAlert400 */
+--color-jokerAlert400-opacity70: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity70)); /* jokerAlert400 */
+--color-jokerAlert400-opacity75: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity75)); /* jokerAlert400 */
+--color-jokerAlert400-opacity80: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity80)); /* jokerAlert400 */
+--color-jokerAlert400-opacity85: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity85)); /* jokerAlert400 */
+--color-jokerAlert400-opacity90: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity90)); /* jokerAlert400 */
+--color-jokerAlert400-opacity95: hsl(var(--color-jokerAlert) 69% 55%/ var(--opacity95)); /* jokerAlert400 */
+
+/* jokerAlert500 */
+--color-jokerAlert500-opacity00: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity00)); /* jokerAlert500 */
+--color-jokerAlert500-opacity05: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity05)); /* jokerAlert500 */
+--color-jokerAlert500-opacity10: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity10)); /* jokerAlert500 */
+--color-jokerAlert500-opacity15: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity15)); /* jokerAlert500 */
+--color-jokerAlert500-opacity20: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity20)); /* jokerAlert500 */
+--color-jokerAlert500-opacity25: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity25)); /* jokerAlert500 */
+--color-jokerAlert500-opacity30: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity30)); /* jokerAlert500 */
+--color-jokerAlert500-opacity35: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity35)); /* jokerAlert500 */
+--color-jokerAlert500-opacity40: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity40)); /* jokerAlert500 */
+--color-jokerAlert500-opacity45: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity45)); /* jokerAlert500 */
+--color-jokerAlert500-opacity50: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity50)); /* jokerAlert500 */
+--color-jokerAlert500-opacity55: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity55)); /* jokerAlert500 */
+--color-jokerAlert500-opacity60: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity60)); /* jokerAlert500 */
+--color-jokerAlert500-opacity65: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity65)); /* jokerAlert500 */
+--color-jokerAlert500-opacity70: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity70)); /* jokerAlert500 */
+--color-jokerAlert500-opacity75: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity75)); /* jokerAlert500 */
+--color-jokerAlert500-opacity80: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity80)); /* jokerAlert500 */
+--color-jokerAlert500-opacity85: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity85)); /* jokerAlert500 */
+--color-jokerAlert500-opacity90: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity90)); /* jokerAlert500 */
+--color-jokerAlert500-opacity95: hsl(var(--color-jokerAlert) 56% 45%/ var(--opacity95)); /* jokerAlert500 */
+
+   /* jokerAlert600 */
+--color-jokerAlert600-opacity00: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity00)); /* jokerAlert600 */
+--color-jokerAlert600-opacity05: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity05)); /* jokerAlert600 */
+--color-jokerAlert600-opacity10: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity10)); /* jokerAlert600 */
+--color-jokerAlert600-opacity15: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity15)); /* jokerAlert600 */
+--color-jokerAlert600-opacity20: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity20)); /* jokerAlert600 */
+--color-jokerAlert600-opacity25: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity25)); /* jokerAlert600 */
+--color-jokerAlert600-opacity30: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity30)); /* jokerAlert600 */
+--color-jokerAlert600-opacity35: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity35)); /* jokerAlert600 */
+--color-jokerAlert600-opacity40: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity40)); /* jokerAlert600 */
+--color-jokerAlert600-opacity45: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity45)); /* jokerAlert600 */
+--color-jokerAlert600-opacity50: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity50)); /* jokerAlert600 */
+--color-jokerAlert600-opacity55: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity55)); /* jokerAlert600 */
+--color-jokerAlert600-opacity60: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity60)); /* jokerAlert600 */
+--color-jokerAlert600-opacity65: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity65)); /* jokerAlert600 */
+--color-jokerAlert600-opacity70: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity70)); /* jokerAlert600 */
+--color-jokerAlert600-opacity75: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity75)); /* jokerAlert600 */
+--color-jokerAlert600-opacity80: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity80)); /* jokerAlert600 */
+--color-jokerAlert600-opacity85: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity85)); /* jokerAlert600 */
+--color-jokerAlert600-opacity90: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity90)); /* jokerAlert600 */
+--color-jokerAlert600-opacity95: hsl(var(--color-jokerAlert) 57% 36%/ var(--opacity95)); /* jokerAlert600 */
+
+/* jokerAlert700 */
+--color-jokerAlert700-opacity00: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity00)); /* jokerAlert700 */
+--color-jokerAlert700-opacity05: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity05)); /* jokerAlert700 */
+--color-jokerAlert700-opacity10: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity10)); /* jokerAlert700 */
+--color-jokerAlert700-opacity15: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity15)); /* jokerAlert700 */
+--color-jokerAlert700-opacity20: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity20)); /* jokerAlert700 */
+--color-jokerAlert700-opacity25: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity25)); /* jokerAlert700 */
+--color-jokerAlert700-opacity30: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity30)); /* jokerAlert700 */
+--color-jokerAlert700-opacity35: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity35)); /* jokerAlert700 */
+--color-jokerAlert700-opacity40: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity40)); /* jokerAlert700 */
+--color-jokerAlert700-opacity45: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity45)); /* jokerAlert700 */
+--color-jokerAlert700-opacity50: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity50)); /* jokerAlert700 */
+--color-jokerAlert700-opacity55: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity55)); /* jokerAlert700 */
+--color-jokerAlert700-opacity60: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity60)); /* jokerAlert700 */
+--color-jokerAlert700-opacity65: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity65)); /* jokerAlert700 */
+--color-jokerAlert700-opacity70: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity70)); /* jokerAlert700 */
+--color-jokerAlert700-opacity75: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity75)); /* jokerAlert700 */
+--color-jokerAlert700-opacity80: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity80)); /* jokerAlert700 */
+--color-jokerAlert700-opacity85: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity85)); /* jokerAlert700 */
+--color-jokerAlert700-opacity90: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity90)); /* jokerAlert700 */
+--color-jokerAlert700-opacity95: hsl(var(--color-jokerAlert) 58% 22%/ var(--opacity95)); /* jokerAlert700 */
+
+/* jokerAlert800 */
+--color-jokerAlert800-opacity00: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity00)); /* jokerAlert800 */
+--color-jokerAlert800-opacity05: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity05)); /* jokerAlert800 */
+--color-jokerAlert800-opacity10: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity10)); /* jokerAlert800 */
+--color-jokerAlert800-opacity15: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity15)); /* jokerAlert800 */
+--color-jokerAlert800-opacity20: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity20)); /* jokerAlert800 */
+--color-jokerAlert800-opacity25: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity25)); /* jokerAlert800 */
+--color-jokerAlert800-opacity30: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity30)); /* jokerAlert800 */
+--color-jokerAlert800-opacity35: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity35)); /* jokerAlert800 */
+--color-jokerAlert800-opacity40: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity40)); /* jokerAlert800 */
+--color-jokerAlert800-opacity45: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity45)); /* jokerAlert800 */
+--color-jokerAlert800-opacity50: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity50)); /* jokerAlert800 */
+--color-jokerAlert800-opacity55: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity55)); /* jokerAlert800 */
+--color-jokerAlert800-opacity60: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity60)); /* jokerAlert800 */
+--color-jokerAlert800-opacity65: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity65)); /* jokerAlert800 */
+--color-jokerAlert800-opacity70: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity70)); /* jokerAlert800 */
+--color-jokerAlert800-opacity75: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity75)); /* jokerAlert800 */
+--color-jokerAlert800-opacity80: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity80)); /* jokerAlert800 */
+--color-jokerAlert800-opacity85: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity85)); /* jokerAlert800 */
+--color-jokerAlert800-opacity90: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity90)); /* jokerAlert800 */
+--color-jokerAlert800-opacity95: hsl(var(--color-jokerAlert) 60% 17%/ var(--opacity95)); /* jokerAlert800 */
+
+  /* jokerAlert900 */
+--color-jokerAlert900-opacity00: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity00)); /* jokerAlert900 */
+--color-jokerAlert900-opacity05: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity05)); /* jokerAlert900 */
+--color-jokerAlert900-opacity10: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity10)); /* jokerAlert900 */
+--color-jokerAlert900-opacity15: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity15)); /* jokerAlert900 */
+--color-jokerAlert900-opacity20: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity20)); /* jokerAlert900 */
+--color-jokerAlert900-opacity25: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity25)); /* jokerAlert900 */
+--color-jokerAlert900-opacity30: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity30)); /* jokerAlert900 */
+--color-jokerAlert900-opacity35: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity35)); /* jokerAlert900 */
+--color-jokerAlert900-opacity40: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity40)); /* jokerAlert900 */
+--color-jokerAlert900-opacity45: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity45)); /* jokerAlert900 */
+--color-jokerAlert900-opacity50: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity50)); /* jokerAlert900 */
+--color-jokerAlert900-opacity55: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity55)); /* jokerAlert900 */
+--color-jokerAlert900-opacity60: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity60)); /* jokerAlert900 */
+--color-jokerAlert900-opacity65: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity65)); /* jokerAlert900 */
+--color-jokerAlert900-opacity70: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity70)); /* jokerAlert900 */
+--color-jokerAlert900-opacity75: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity75)); /* jokerAlert900 */
+--color-jokerAlert900-opacity80: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity80)); /* jokerAlert900 */
+--color-jokerAlert900-opacity85: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity85)); /* jokerAlert900 */
+--color-jokerAlert900-opacity90: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity90)); /* jokerAlert900 */
+--color-jokerAlert900-opacity95: hsl(var(--color-jokerAlert) 68% 7%/ var(--opacity95)); /* jokerAlert900 */
+  
+  
+  
+  
+  
+  
+  
   /*############### 🈯 TYPOGRAPHY 🈯 ############### */
 
   /*--fontprimaryFont 🏎️ START - --*/
@@ -367,44 +1878,52 @@
 
   /*############### ⚛️ COMPONENT TOKENS ⚛️ ############### */
 
-  /*--borderRadius 🏎️ START --*/
 
-  --border-Radius200: 9px;
-  --border-Radius300: 11px;
+ /*--borderRadius 🏎️ START --*/
 
-  /*💠 DEFAULT RADIUS */
-  --border-Radius400: 14px;
-  /*💠 DEFAULT RADIUS */
+--border-Radius200: 9px;
+--border-Radius300: 11px;
+
+/*💠 DEFAULT RADIUS */
+--border-Radius400: 14px;  
+ /*💠 DEFAULT RADIUS */
 
   --border-Radius500: 18px;
-  --border-RadiusCircle: 50%; /* <---- use for making circle so shape would be same height and width and then you add border radiusCircle as the value and it will be a perfect circle. */
+  --border-RadiusCircle:50%; /* <---- use for making circle. Shape would be same height and width and then you add "border-radiusCircle" as the value and it will be a perfect circle. */ 
 
-  /*--borderRadius  🏁 END  --*/
+ /*--borderRadius  🏁 END  --*/
 
-  /*--boxShadow 🏎️ START --*/
+   
+/*--boxShadow 🏎️ START --*/
 
-  --shadow-color: 0deg 0% 0%;
-  --shadow-elevation-low: 0px 1px 1.1px hsl(var(--shadow-color) / 0.18),
-    0px 4.1px 4.4px -2.8px hsl(var(--shadow-color) / 0.16);
-  --shadow-elevation-medium: 0px 1px 1.1px hsl(var(--shadow-color) / 0.17),
-    0px 5px 5.4px -1.4px hsl(var(--shadow-color) / 0.16),
-    -0.2px 20.3px 21.8px -2.8px hsl(var(--shadow-color) / 0.14);
-  --shadow-elevation-high: 0px 1px 1.1px hsl(var(--shadow-color) / 0.19),
-    -0.1px 8.8px 9.4px -0.7px hsl(var(--shadow-color) / 0.18),
-    -0.2px 22px 23.6px -1.4px hsl(var(--shadow-color) / 0.17),
-    -0.5px 50.2px 53.8px -2.1px hsl(var(--shadow-color) / 0.16),
-    -1px 103px 110.5px -2.8px hsl(var(--shadow-color) / 0.15);
+--shadow-color: 0deg 0% 0%;
+--shadow-elevation-low:
+  0px 1px 1.1px hsl(var(--shadow-color) / var(--opacity20)),
+  0px 4.1px 4.4px -2.8px hsl(var(--shadow-color) / var(--opacity15));
+--shadow-elevation-medium:
+  0px 1px 1.1px hsl(var(--shadow-color) / var(--opacity20)),
+  0px 5px 5.4px -1.4px hsl(var(--shadow-color) / var(--opacity15)),
+  -0.2px 20.3px 21.8px -2.8px hsl(var(--shadow-color) / var(--opacity15)),;
+--shadow-elevation-high:
+  0px 1px 1.1px hsl(var(--shadow-color) / var(--opacity20)),
+  -0.1px 8.8px 9.4px -0.7px hsl(var(--shadow-color) / var(--opacity15)),
+  -0.2px 22px 23.6px -1.4px hsl(var(--shadow-color) / var(--opacity20)),
+  -0.5px 50.2px 53.8px -2.1px hsl(var(--shadow-color) / var(--opacity15)),
+  -1px 103px 110.5px -2.8px hsl(var(--shadow-color) / var(--opacity15));
 
-  /*--boxShadow  🏁 END  --*/
 
-  /*   Animated CTA Button */
+   /*--boxShadow  🏁 END  --*/
 
-  /* END ROOT*/
+
+/*   Animated CTA Button */
+      
+/* END ROOT*/
 }
+
 
 /* Full navbar container */
 .navbar {
-  background-color: black;
+  background-color: var(--color-jokerBlack900);
   width: 100%; /* Full-width navbar */
   height: 80px;
   box-sizing: border-box;
@@ -447,27 +1966,27 @@
 }
 
 .navbar-links li a {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
   font-weight: 500;
-  color: white;
+  color: var(--color-jokerWhite50);
   text-decoration: none;
 }
 
 /* Link styling */
 .navbar-links li a {
-  color: #dfdfdf;
+  color: var(--color-jokerBlack50);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .navbar-links li a:hover {
-  color: #dfc293; /* Mouse over button link */
+ color: var(--color-jokerGold200); /* Mouse over button link */
 }
 
 .navbar-links li a.active {
-  color: #dfc293; /* Highlight color for active links */
+  color: var(--color-jokerGold200); /* Highlight color for active links */
 }
 
 /* Buttons on the right */
@@ -480,8 +1999,8 @@
 
 .navbar-buttons button {
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--color-jokerWhite50);
+  color: var(--color-jokerWhite50);
   padding: 8px 16px;
   font-size: 14px;
   cursor: pointer;
@@ -494,15 +2013,17 @@
 
 .navbar-buttons .sign-up:hover,
 .navbar-buttons .log-in:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--color-jokerWhite50);
+  color: var(--color-jokerBlack900);
 }
+
 
 /* Global styles */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #1f1f1f;
+  background-color: var(--color-jokerBlack500);
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
