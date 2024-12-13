@@ -290,6 +290,47 @@
   color: var(--color-jokerWhite50);
 }
 
-.code { font-family: 'Courier New', Courier, monospace; font-size: var(--font-sizeParagraph03); border: 1px solid #333; padding: 1rem;}
 
-.copyButton {height: 2rem; width: 2rem;}
+.style-code-name {
+  
+
+  font-weight: 700;
+  color: var(--color-jokerWhite50);
+}
+.code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: var(--font-sizeParagraph03);
+  border: 1px solid #333;
+  border-radius: var(--border-Radius200);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.code .copyTextSuccess {color: var(--color-jokerGreen200);}
+.copyButton {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: var(--color-jokerBlack300);
+  border: 1px solid var(--color-jokerBlack100-opacity30);
+  border-radius: var(--border-Radius200);
+  box-shadow: var(--shadow-elevation-medium);
+  transition: all 200ms ease;
+}
+.copyButton:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease;
+  background: var(--color-jokerBlack300);
+  border: 1px solid var(--color-jokerBlack100-opacity80);
+  box-shadow: var(--shadow-elevation-high);
+  transform: translateY(-2px);
+}
+.copy-icon {
+  height: 20px;
+  width: 20px;
+  fill: var(--color-jokerBlack100);
+  
+}
+.copySuccess {background-color: var(--color-jokerGreen400-opacity30); font-size:0.8rem; border: 1px solid var(--color-jokerGreen300-opacity60);}
+.copySuccess:hover {background-color: var(--color-jokerGreen400-opacity30); border: 1px solid var(--color-jokerGreen300-opacity60);}
