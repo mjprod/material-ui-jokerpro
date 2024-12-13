@@ -292,11 +292,10 @@
 
 
 .style-code-name {
-  
-
   font-weight: 700;
   color: var(--color-jokerWhite50);
 }
+.code-example {font-size: var(--font-sizeParagraph03);}
 .code {
   font-family: "Courier New", Courier, monospace;
   font-size: var(--font-sizeParagraph03);
