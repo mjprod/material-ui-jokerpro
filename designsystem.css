@@ -290,12 +290,27 @@
   color: var(--color-jokerWhite50);
 }
 
+.codeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--color-jokerBlack50-opacity10);
+  border-radius: 1rem;
+
+  padding: 2rem;
+  color: var(--color-jokerWhite50);
+}
 
 .style-code-name {
   font-weight: 700;
   color: var(--color-jokerWhite50);
 }
-.code-example {font-size: var(--font-sizeParagraph03);}
+
+.code-example {
+  font-size: var(--font-sizeParagraph03);
+  color: var(--color-jokerBlack100);
+  line-height: 170%;
+}
 .code {
   font-family: "Courier New", Courier, monospace;
   font-size: var(--font-sizeParagraph03);
@@ -306,8 +321,25 @@
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+  transition: all 200ms ease;
 }
-.code .copyTextSuccess {color: var(--color-jokerGreen200);}
+.code .copyTextSuccess {
+  color: var(--color-jokerGreen400);
+  animation: slide-rotate-vertical-right 0.75s ease;
+}
+@keyframes slide-rotate-vertical-right {
+  0% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    filter: blur(3px);
+    opacity: 0;
+  }
+}
+
+
 .copyButton {
   height: 2.5rem;
   width: 2.5rem;
@@ -329,7 +361,13 @@
   height: 20px;
   width: 20px;
   fill: var(--color-jokerBlack100);
-  
 }
-.copySuccess {background-color: var(--color-jokerGreen400-opacity30); font-size:0.8rem; border: 1px solid var(--color-jokerGreen300-opacity60);}
-.copySuccess:hover {background-color: var(--color-jokerGreen400-opacity30); border: 1px solid var(--color-jokerGreen300-opacity60);}
+.copySuccess {
+  background-color: var(--color-jokerGreen400-opacity30);
+  font-size: 0.8rem;
+  border: 1px solid var(--color-jokerGreen300-opacity60);
+}
+.copySuccess:hover {
+  background-color: var(--color-jokerGreen400-opacity30);
+  border: 1px solid var(--color-jokerGreen300-opacity60);
+}
