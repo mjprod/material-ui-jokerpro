@@ -31,5 +31,5 @@ async function copyCode(block, button) {
     button.innerHTML = `${copyButtonSVG} ${copyButtonLabel}`;
     button.classList.remove("copySuccess");
     code.classList.remove("copyTextSuccess");
-  }, 1000);
+  }, 500);
 }
