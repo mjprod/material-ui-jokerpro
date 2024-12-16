@@ -11,5 +11,5 @@
     "esModuleInterop": true,
     "lib": ["ES2015", "DOM"]
   },
-  "include": ["src/**/*", "codecopy.js"]
+  "include": ["src/**/*", "codeCopyText.js"]
 }

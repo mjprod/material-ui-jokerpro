@@ -314,9 +314,11 @@
 .code {
   font-family: "Courier New", Courier, monospace;
   font-size: var(--font-sizeParagraph03);
-  border: 1px solid #333;
-  border-radius: var(--border-Radius200);
-  padding: 1rem;
+  border: 1px solid var(--color-jokerBlack50-opacity20) ;
+  box-shadow: var(--shadow-elevation-medium);
+  background: var(--color-jokerBlack500);
+  border-radius: 0 var(--border-Radius400);
+  padding: 0.3rem 1.25rem;
   display: flex;
   flex-direction: row;
   align-items: center;
