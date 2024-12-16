@@ -289,6 +289,37 @@
   background-color: var(--color-jokerAlert900);
   color: var(--color-jokerWhite50);
 }
+/* color chip css */
+.swatch-holder {
+  display: grid;
+   gap: 1rem;
+}
+.swatch-group {
+  display: flex;
+  flex-direction: column;
+   gap: 1rem;
+}
+
+.colorchip-code-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-jokerBlack400);
+  border: 1px solid var(--color-jokerBlack50-opacity10);
+  border-radius: 1rem;
+  color: var(--color-jokerWhite50);
+}
+.colorchip-code-container .copyTextSuccess {
+  color: var(--color-jokerGreen100);
+  text-shadow: 0px 0px 8px var(--color-jokerGreen200);
+  transform: translateY(-3px);
+  transition: all 200ms ease-in-out;
+}
+
+.opacity-code-container {background-color: rebeccapurple; width: 100%;}
+
+
+
 
 .codeholder {
   display: flex;
