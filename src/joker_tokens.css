@@ -1927,6 +1927,8 @@
   /*--fontLineHeight  🏁 END  --*/
 
    /*--font Weight 🏎️ START --*/
+   --font-weight200: 200;
+   --font-weight300: 300;
    --font-weight400: 400;
    --font-weight500: 500;
    --font-weight600: 600;
