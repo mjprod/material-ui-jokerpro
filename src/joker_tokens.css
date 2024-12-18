@@ -1874,7 +1874,7 @@
   /*############### 🈯 TYPOGRAPHY 🈯 ############### */
 
   /*--fontprimaryFont 🏎️ START - --*/
-  --font-primaryFont: Inter, Arial, Helvetica, sans-serif;
+  --font-primaryFont: "Inter", Arial, Helvetica, sans-serif;
   /*--fontprimaryFont  🏁 END  --*/
 
   /*--fontSizing 🏎️ START - --*/
@@ -1988,7 +1988,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-primaryFont);
   background-color: var(--color-jokerBlack500);
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
