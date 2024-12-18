@@ -1927,10 +1927,12 @@
   /*--fontLineHeight  🏁 END  --*/
 
    /*--font Weight 🏎️ START --*/
+   --font-weight200: 200;
+   --font-weight300: 300;
    --font-weight400: 400;
    --font-weight500: 500;
    --font-weight600: 600;
-   --font-weight400: 700;
+   --font-weight700: 700;
 
    /*--font Weight  🏁 END  --*/
 
@@ -1995,10 +1997,10 @@ body {
 
 
 /*Headings*/
-.heading01 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading01); line-height: var(--font-lineHeightBase); letter-spacing: -2px;}
-.heading02 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading02); line-height: var(--font-lineHeightBase); letter-spacing: -2px;}
-.heading03 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading03); line-height: var(--font-lineHeightBase); letter-spacing: -2px;}
-.heading04 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading04); line-height: var(--font-lineHeightBase); letter-spacing: -2px;}
+.heading01 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading01); line-height: var(--font-lineHeightBase); letter-spacing: -2px; font-weight: var(--font-weight400); margin: unset;}
+.heading02 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading02); line-height: var(--font-lineHeightBase); letter-spacing: -2px;font-weight: var(--font-weight400);margin: unset;}
+.heading03 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading03); line-height: var(--font-lineHeightBase); letter-spacing: -2px;font-weight: var(--font-weight400);margin: unset;}
+.heading04 {font-family: var(--font-primaryFont); font-size: var(--font-sizeHeading04); line-height: var(--font-lineHeightBase); letter-spacing: -2px;font-weight: var(--font-weight400);margin: unset;}
 
 /* Paragraphs */
 .paragraph01 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph01); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
