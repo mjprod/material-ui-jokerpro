@@ -355,7 +355,7 @@
   align-items: center;
   gap: 1rem;
   transition: all 100ms  ease-in-out;
-  text-wrap: wrap;
+  
 }
 .code .copyTextSuccess {
   color: var(--color-jokerGreen100);
