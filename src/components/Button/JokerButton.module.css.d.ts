@@ -7,6 +7,7 @@ declare const styles: {
   readonly "highlighted": string;
   readonly "large": string;
   readonly "link": string;
+  readonly "medium": string;
   readonly "normal": string;
   readonly "primary": string;
   readonly "rotate": string;
