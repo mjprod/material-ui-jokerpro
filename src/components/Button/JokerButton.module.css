@@ -76,7 +76,7 @@
 .link {
   color: var(--color-jokerBlack50);
   display: inline-flex;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .link.highlighted {
@@ -214,4 +214,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.underlined {
+  text-decoration: underline;
 }
