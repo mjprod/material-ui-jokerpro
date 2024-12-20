@@ -1,197 +1,217 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Inter;
-    font-weight: 500;
-    gap: 5px;
-    border-radius: 14px;
-    cursor: pointer;
-    position: relative;
-    transition: all 400ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  gap: 8px;
+  border-radius: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: all 400ms ease;
 }
 
 .button-equal-width {
-    flex: 1 1 200px;
+  flex: 1 1 200px;
 }
 
 /* CTA Button */
 .cta {
-    background-color: var(--color-jokerBlack200);
-    color: var(--color-jokerWhite50);
-    border: 1px solid var(--color-jokerBlack100);
+  background-color: var(--color-jokerBlack200);
+  color: var(--color-jokerWhite50);
+  border: 1px solid var(--color-jokerBlack100);
 }
 
 .cta:hover {
-    background-color: var(--color-jokerBlack300);
-    transform: scale(1.01);
-    filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
+  background-color: var(--color-jokerBlack300);
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
 }
 
 /* Primary Button */
 .primary:hover {
-    border: 1px solid var(--color-jokerBlack100);
-    background-color: var(--color-jokerBlack200);
-    color: var(--color-jokerWhite50);
-    transform: scale(1.01);
-    filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
+  border: 1px solid var(--color-jokerBlack100);
+  background-color: var(--color-jokerBlack200);
+  color: var(--color-jokerWhite50);
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
 }
 
 .primary {
-    border: 1px solid var(--color-jokerBlack200);
-    background-color: var(--color-jokerBlack500);
-    color: var(--color-jokerWhite50);
+  border: 1px solid var(--color-jokerBlack200);
+  background-color: var(--color-jokerBlack500);
+  color: var(--color-jokerWhite50);
 }
 
 /* Seconday */
 .secondary {
-    border: 1px solid var(--color-jokerBlack300);
-    background-color: transparent;
-    color: var(--color-jokerBlack100);
+  border: 1px solid var(--color-jokerBlack300);
+  background-color: transparent;
+  color: var(--color-jokerBlack100);
 }
 
 .secondary:hover {
-    border: 1px solid var(--color-jokerBlack100);
-    background-color: var(--color-jokerBlack200);
-    color: var(--color-jokerWhite50);
-    transform: scale(1.01);
-    filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
+  border: 1px solid var(--color-jokerBlack100);
+  background-color: var(--color-jokerBlack200);
+  color: var(--color-jokerWhite50);
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
 }
 
 /* Text Button */
 .text:hover {
-    background-color: var(--color-jokerBlack200);
-    color: var(--color-jokerWhite50);
-    filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
+  background-color: var(--color-jokerBlack200);
+  color: var(--color-jokerWhite50);
+  filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
 }
 
 .text {
-    background-color: transparent;
-    color: var(--color-jokerBlack50);
-    border: none;
+  background-color: transparent;
+  color: var(--color-jokerBlack50);
+  border: none;
 }
 
 /* Link Button */
 .link {
-    color: var(--color-jokerBlack50);
-    display: inline-flex;
-    text-decoration: underline;
+  color: var(--color-jokerBlack50);
+  display: inline-flex;
+  text-decoration: underline;
 }
 
 .link.highlighted {
-    color: var(--color-jokerGold400);
+  color: var(--color-jokerGold400);
 }
 
 .link.highlighted:hover {
-    color: var(--color-jokerGold500);
+  color: var(--color-jokerGold500);
 }
 
 .link:hover {
-    color: var(--color-jokerWhite50);
+  color: var(--color-jokerWhite50);
 }
 
 .disabled {
-    color: var(--color-jokerBlack100);
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+  color: var(--color-jokerBlack100);
 }
 
 /* Size */
 .small {
-    font-size: 14px;
-    padding: 8px 15px 8px 15px;
-    border-radius: 9px;
+  font-size: 14px;
+  padding: 8px 15px 8px 15px;
+  border-radius: 9px;
 }
 
 .small img {
-    height: 20px;
+  height: 20px;
 }
 
 .normal {
-    font-size: 18px;
-    padding: 16px 32px;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.normal img {
+  height: 24px;
+  width: 24px;
+}
+
+.medium {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.medium img {
+  height: 24px;
+  width: 24px;
 }
 
 .large {
-    font-size: 20px;
-    padding: 20px 34px;
+  font-size: 20px;
+  padding: 20px 34px;
 }
 
 .link.small {
-    padding: 0px;
+  padding: 0px;
 }
 
 .link.normal {
-    padding: 0px;
+  padding: 0px;
 }
 
 .link.large {
-    padding: 0px;
+  padding: 0px;
 }
 
 /* Animation */
 .animated {
-    display: inline-flex;
-    border: 0px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    border-radius: 14px;
-    transition: all 400ms ease;
+  display: inline-flex;
+  border: 0px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 14px;
+  transition: all 400ms ease;
 }
 
 .animated.small {
-    padding: 0;
-    border-radius: 9px;
+  padding: 0;
+  border-radius: 9px;
 }
 
 .animated.normal {
-    padding: 0;
+  padding: 0;
 }
 
 .animated.large {
-    padding: 0;
+  padding: 0;
 }
 
 .animated .button {
-    margin: 1px;
-    position: relative;
-    z-index: 1;
-    filter: none;
+  margin: 1px;
+  position: relative;
+  z-index: 1;
+  filter: none;
 }
 
 .animated .button:hover {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .animated:hover {
-    transform: scale(1.01);
-    filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 5px var(--color-jokerGold700));
 }
 
 .animated::after {
-    content: "";
-    display: block;
-    background: linear-gradient(90deg,
-            var(--color-jokerBlack300) 0%,
-            var(--color-jokerGold200) 60%,
-            var(--color-jokerBlack300) 100%);
-    height: 15rem;
-    width: 18.5rem;
-    transform: translate(0);
-    position: absolute;
-    animation: rotate 4s linear infinite;
-    z-index: 0;
-    transform-origin: top center;
-    filter: blur(5rem);
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    var(--color-jokerBlack300) 0%,
+    var(--color-jokerGold200) 60%,
+    var(--color-jokerBlack300) 100%
+  );
+  height: 15rem;
+  width: 18.5rem;
+  transform: translate(0);
+  position: absolute;
+  animation: rotate 4s linear infinite;
+  z-index: 0;
+  transform-origin: top center;
+  filter: blur(5rem);
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0);
-    }
+  from {
+    transform: rotate(0);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }

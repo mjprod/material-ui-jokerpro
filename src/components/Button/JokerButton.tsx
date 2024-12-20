@@ -13,6 +13,7 @@ export enum ButtonType {
 export enum ButtonSize {
   Small = "Small",
   Normal = "Normal",
+  Medium = "Medium",
   Large = "Large",
 }
 
@@ -65,6 +66,8 @@ const JokerButton: React.FC<ButtonProps> = ({
     switch (size) {
       case ButtonSize.Small:
         return styles["small"];
+      case ButtonSize.Medium:
+        return styles["medium"];
       case ButtonSize.Large:
         return styles["large"];
       default:
