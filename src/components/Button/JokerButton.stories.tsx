@@ -9,11 +9,15 @@ const meta: Meta<typeof JokerButton> = {
   argTypes: {
     type: {
       control: { type: "select" },
-      options: Object.keys(ButtonType).map((key) => ButtonType[key as keyof typeof ButtonType]),
+      options: Object.keys(ButtonType).map(
+        (key) => ButtonType[key as keyof typeof ButtonType]
+      ),
     },
     size: {
       control: { type: "select" },
-      options: Object.keys(ButtonSize).map((key) => ButtonSize[key as keyof typeof ButtonSize]),
+      options: Object.keys(ButtonSize).map(
+        (key) => ButtonSize[key as keyof typeof ButtonSize]
+      ),
     },
     disabled: { control: "boolean" },
     animated: { control: "boolean" },
