@@ -31,6 +31,7 @@ type ButtonProps = {
   size?: ButtonSize;
   style?: React.CSSProperties;
   equal?: boolean;
+  underlined?: boolean;
 };
 
 const JokerButton: React.FC<ButtonProps> = ({
@@ -45,6 +46,7 @@ const JokerButton: React.FC<ButtonProps> = ({
   size = ButtonSize.Normal,
   style = {},
   equal = false,
+  underlined = false,
   ...props
 }) => {
   const getButtonStyle = (type: ButtonType) => {
@@ -81,7 +83,8 @@ const JokerButton: React.FC<ButtonProps> = ({
     getSize(size),
     disabled && styles["disabled"],
     equal && styles["button-equal-width"],
-    highlighted && styles["highlighted"]
+    highlighted && styles["highlighted"],
+    underlined && styles["underlined"]
   );
 
   const handleClick = (
@@ -106,7 +109,7 @@ const JokerButton: React.FC<ButtonProps> = ({
       {text}
     </a>
   ) : (
-    <div className={clsx(styles["button"], animated && styles["animated"])}>
+    <div className={clsx(styles["button"], !disabled && animated && styles["animated"])}>
       <button
         className={buttonClass}
         {...props}
