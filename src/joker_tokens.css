@@ -1976,7 +1976,32 @@
 
 
 /*   Animated CTA Button */
-      
+
+
+ /******* 📐 Padding and margins 📐 *******/
+
+/*** navbar */
+--max-width-nav-bar: 94.5rem;
+
+/***Inner Grid */ 
+--max-width-inner-grid: 71.25rem;
+
+/*** Header video padding  ***/ 
+--max-width-header-container: 90.5rem;
+--padding-header-banner: 19.25rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* END ROOT*/
 }
 
@@ -2004,4 +2029,10 @@ body {
 .paragraph01 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph01); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
 .paragraph02 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph02); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
 .paragraph03 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph03); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
+
+
+
+
+
+ 
 
