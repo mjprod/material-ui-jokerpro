@@ -1988,9 +1988,15 @@
 
 /*** Header video padding  ***/ 
 --max-width-header-container: 90.5rem;
---padding-header-banner: 19.25rem;
 
 
+/*** carousel list paddings ****/ 
+
+/* First item*/ 
+--first-item-padding-left: 16.2vw;
+
+ /* last item */
+ --last-item-padding-right: 20vw;
 
 
 
