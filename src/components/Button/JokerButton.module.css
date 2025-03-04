@@ -63,7 +63,6 @@
 .text:hover {
   background-color: var(--color-jokerBlack200);
   color: var(--color-jokerWhite50);
-  
 }
 
 .text {
@@ -100,7 +99,7 @@
 
 /* Size */
 .small {
-  font-size: var(--paragraph03);
+  font-size: var(--font-sizeParagraph03);
   padding: 0.5rem 1rem;
   border-radius: var(--border-Radius200);
 }
@@ -110,7 +109,7 @@
 }
 
 .normal {
-  font-size: var(--paragraph03);
+  font-size: var(--font-sizeParagraph03);
   padding: 0.8rem 1.5rem;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .medium {
-  font-size: var(--paragraph03);
+  font-size: var(--font-sizeParagraph03);
   padding: 0.8rem 1.5rem;
 }
 
@@ -130,7 +129,7 @@
 }
 
 .large {
-  font-size: var(--paragraph01);
+  font-size: var(--font-sizeParagraph01);
   padding: 0.8rem 1.5rem;
 }
 
