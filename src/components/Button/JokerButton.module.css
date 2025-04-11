@@ -12,6 +12,10 @@
   transition: all 400ms ease;
 }
 
+.button.full-width {
+  width: 100%;
+}
+
 /* .button-equal-width {
   flex: 1 1 200px;
 } */
@@ -100,7 +104,7 @@
 /* Size */
 .small {
   font-size: var(--font-sizeParagraph03);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem 0.5rem 1rem;
   border-radius: var(--border-Radius200);
 }
 
@@ -110,7 +114,7 @@
 
 .normal {
   font-size: var(--font-sizeParagraph03);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.75rem 0.8rem 1.5rem;
 }
 
 .normal img {
@@ -120,7 +124,7 @@
 
 .medium {
   font-size: var(--font-sizeParagraph03);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.75rem 0.8rem 1.5rem;
 }
 
 .medium img {
@@ -130,7 +134,7 @@
 
 .large {
   font-size: var(--font-sizeParagraph01);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.75rem 0.8rem 1.5rem;
 }
 
 .link.small {

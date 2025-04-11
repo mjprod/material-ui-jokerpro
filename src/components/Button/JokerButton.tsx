@@ -32,6 +32,7 @@ type ButtonProps = {
   style?: React.CSSProperties;
   equal?: boolean;
   underlined?: boolean;
+  isFullWidth?: boolean;
 };
 
 const JokerButton: React.FC<ButtonProps> = ({
@@ -47,6 +48,7 @@ const JokerButton: React.FC<ButtonProps> = ({
   style = {},
   equal = false,
   underlined = false,
+  isFullWidth = false,
   ...props
 }) => {
   const getButtonStyle = (type: ButtonType) => {
@@ -109,7 +111,13 @@ const JokerButton: React.FC<ButtonProps> = ({
       {text}
     </a>
   ) : (
-    <div className={clsx(styles["button"], !disabled && animated && styles["animated"])}>
+    <div
+      className={clsx(
+        styles["button"],
+        !disabled && animated && styles["animated"],
+        isFullWidth && ["full-width"]
+      )}
+    >
       <button
         className={buttonClass}
         {...props}
