@@ -103,7 +103,7 @@
 
 /* Size */
 .small {
-  font-size: var(--font-sizeParagraph03);
+  font-size: var(--font-sizeParagraph02);
   padding: 0.5rem 1.2rem 0.5rem 1rem;
   border-radius: var(--border-Radius200);
 }
@@ -113,7 +113,7 @@
 }
 
 .normal {
-  font-size: var(--font-sizeParagraph03);
+  font-size: var(--font-sizeParagraph02);
   padding: 0.8rem 1.75rem 0.8rem 1.5rem;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .medium {
-  font-size: var(--font-sizeParagraph03);
+  font-size: var(--font-sizeParagraph02);
   padding: 0.8rem 1.75rem 0.8rem 1.5rem;
 }
 
