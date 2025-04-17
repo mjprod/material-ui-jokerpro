@@ -1900,22 +1900,10 @@
     calc(var(--font-sizeBase) + 0.3864rem) + 0.5682vw,
     calc(var(--font-sizeBase) + 1rem)
   );
-  --font-sizeParagraph01: clamp(
-    calc(var(--font-sizeBase) + 0.125rem),
-    calc(var(--font-sizeBase) + 0.0966rem) + 0.142vw,
-    calc(var(--font-sizeBase) + 0.25rem)
-  );
-  --font-sizeParagraph02: clamp(
-    var(--font-sizeBase),
-    calc(var(--font-sizeBase) - 0.0284rem) + 0.142vw,
-    calc(var(--font-sizeBase) + 0.125rem)
-  );
 
-  --font-sizeParagraph03: clamp(
-    calc(var(--font-sizeBase) - 0.125rem),
-    calc(var(--font-sizeBase) - 0.1534rem) + 0.142vw,
-    var(--font-sizeBase)
-  );
+  --font-sizeParagraph01: calc(var(--font-sizeBase) + 0.125rem);
+  --font-sizeParagraph02: var(--font-sizeBase);
+
 
   
 
@@ -2035,17 +2023,13 @@ body {
 /* Paragraphs */
 .paragraph01 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph01); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
 .paragraph02 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph02); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
-.paragraph03 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph03); line-height: var(--font-lineHeightBase); letter-spacing: 0px;}
 
 
 
 
 
 
-@media only screen and (max-width: 48rem) {
-  .paragraph02 {font-family: var(--font-primaryFont); font-size: var(--font-sizeParagraph02); line-height: var(--font-lineHeightL); letter-spacing: 0px;}
-  }
-  
+
 
 
 
