@@ -86,7 +86,8 @@ const JokerButton: React.FC<ButtonProps> = ({
     disabled && styles["disabled"],
     equal && styles["button-equal-width"],
     highlighted && styles["highlighted"],
-    underlined && styles["underlined"]
+    underlined && styles["underlined"],
+    isFullWidth && styles["full-width"]
   );
 
   const handleClick = (
@@ -115,7 +116,7 @@ const JokerButton: React.FC<ButtonProps> = ({
       className={clsx(
         styles["button"],
         !disabled && animated && styles["animated"],
-        isFullWidth && ["full-width"]
+        isFullWidth && styles["full-width"]
       )}
     >
       <button
