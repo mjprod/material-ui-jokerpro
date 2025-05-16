@@ -48,6 +48,19 @@
   color: var(--color-jokerWhite50);
 }
 
+.primary.highlighted {
+  color: var(--color-jokerGold400);
+  background-color: var(--color-jokerGold1000);
+  border: 1px solid var(--color-jokerGold400);
+}
+
+.primary.highlighted:hover {
+  border: 1px solid var(--color-jokerBlack100);
+  background-color: var(--color-jokerBlack300);
+  transform: scale(1.01);
+  filter: drop-shadow(0 2px 8px 0px var(--color-jokerGold400));
+}
+
 /* Seconday */
 .secondary {
   border: 1px solid var(--color-jokerBlack300);
