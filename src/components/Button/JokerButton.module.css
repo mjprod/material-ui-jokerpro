@@ -12,13 +12,9 @@
   transition: all 400ms ease;
 }
 
-.button.full-width {
-  width: 100%;
+.button-equal-width {
+  flex: 1 1 "100%";
 }
-
-/* .button-equal-width {
-  flex: 1 1 200px;
-} */
 
 /* CTA Button */
 .cta {
@@ -46,6 +42,19 @@
   border: 1px solid var(--color-jokerBlack200);
   background-color: var(--color-jokerBlack500);
   color: var(--color-jokerWhite50);
+}
+
+.primary.highlighted {
+  color: var(--color-jokerGold400);
+  background-color: var(--color-jokerGold1000);
+  border: 1px solid var(--color-jokerGold400);
+}
+
+.primary.highlighted:hover {
+  border: 1px solid var(--color-jokerBlack100);
+  background-color: var(--color-jokerBlack300);
+  transform: scale(1.01);
+  filter: drop-shadow(0 2px 8px 0px var(--color-jokerGold400));
 }
 
 /* Seconday */
