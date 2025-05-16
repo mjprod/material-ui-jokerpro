@@ -32,8 +32,25 @@ type ButtonProps = {
   style?: React.CSSProperties;
   equal?: boolean;
   underlined?: boolean;
-  isFullWidth?: boolean;
 };
+
+
+/**
+ * JokerButton component renders a customizable button or link.
+ *
+ * @param {ButtonType} type - The style of the button (CTA, Link, Text, Primary, Secondary).
+ * @param {string} text - The display text of the button.
+ * @param {(e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void} [onClick] - Click handler function.
+ * @param {string} [href] - URL to navigate to when rendering as a link.
+ * @param {string} [icon] - Icon image source to display inside the button.
+ * @param {boolean} [disabled=false] - If true, the button is disabled.
+ * @param {boolean} [animated] - If true, apply animation styles.
+ * @param {boolean} [highlighted] - If true, apply highlighted styles.
+ * @param {ButtonSize} [size=ButtonSize.Normal] - The size of the button (Small, Normal, Medium, Large).
+ * @param {React.CSSProperties} [style] - Custom inline styles.
+ * @param {boolean} [equal] - If true, button will have equal width.
+ * @param {boolean} [underlined] - If true and rendering as a link, apply underline style.
+ */
 
 const JokerButton: React.FC<ButtonProps> = ({
   type = ButtonType.CTA,
@@ -48,7 +65,6 @@ const JokerButton: React.FC<ButtonProps> = ({
   style = {},
   equal = false,
   underlined = false,
-  isFullWidth = false,
   ...props
 }) => {
   const getButtonStyle = (type: ButtonType) => {
@@ -87,7 +103,6 @@ const JokerButton: React.FC<ButtonProps> = ({
     equal && styles["button-equal-width"],
     highlighted && styles["highlighted"],
     underlined && styles["underlined"],
-    isFullWidth && styles["full-width"]
   );
 
   const handleClick = (
@@ -116,7 +131,7 @@ const JokerButton: React.FC<ButtonProps> = ({
       className={clsx(
         styles["button"],
         !disabled && animated && styles["animated"],
-        isFullWidth && styles["full-width"]
+        equal && styles["button-equal-width"],
       )}
     >
       <button
