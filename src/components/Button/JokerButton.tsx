@@ -109,7 +109,7 @@ const JokerButton: React.FC<ButtonProps> = ({
       aria-disabled={disabled}
       style={style}
     >
-      {text}
+      {icon && <img src={icon} />} {text}
     </a>
   ) : (
     <div
