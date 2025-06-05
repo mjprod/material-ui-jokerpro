@@ -20,14 +20,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 23.3.0 # Use the version your project requires
-      
-      - name: Enable Corepack and Yarn Berry
-        run: |
-          corepack enable
-          corepack prepare yarn@4.9.1 --activate
 
-      - name: Verify Yarn version
-        run: yarn -v
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install dependencies
         run: yarn install --no-immutable
